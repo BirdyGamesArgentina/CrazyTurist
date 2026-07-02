@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
         input.x = Input.GetAxisRaw("Horizontal");
         input.z = Input.GetAxisRaw("Vertical");
 
-        input = input.normalized;
+        input.Normalize();
     }
 
     private void FixedUpdate()
@@ -34,14 +34,13 @@ public class Player : MonoBehaviour
 
         currentVelocity = Vector3.MoveTowards(currentVelocity, targetVelocity, accelRate * Time.fixedDeltaTime);
 
-        rb.linearVelocity = new Vector3(currentVelocity.x, rb.linearVelocity.y + currentVelocity.z);
+        rb.linearVelocity = new Vector3(currentVelocity.x, rb.linearVelocity.y, currentVelocity.z);
 
         if (input != Vector3.zero)
         {
             Quaternion targetRotation = Quaternion.LookRotation(input);
 
             rb.MoveRotation(Quaternion.Slerp(rb.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime));
-
 
         }
     }
