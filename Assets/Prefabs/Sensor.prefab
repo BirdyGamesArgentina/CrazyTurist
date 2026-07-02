@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6255791361097365743}
   - component: {fileID: 2259686415444560629}
   - component: {fileID: 5182457244042992013}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sensor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,5 +92,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.6925149, y: 0.9490811, z: 1.3389325}
+  m_Center: {x: -0.0034940839, y: -0.025459439, z: -0.019217849}

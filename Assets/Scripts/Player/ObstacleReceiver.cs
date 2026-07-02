@@ -11,6 +11,6 @@ public class ObstacleReceiver : MonoBehaviour
 
     void OnHitObstacle(Obstacle obstacle)
     {
-
+        Debug.Log("Obstacle: " + obstacle.gameObject.name);
     }
 }
