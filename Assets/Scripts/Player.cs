@@ -2,48 +2,56 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float speed = 5f;
-  
-    
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 6f;
     [SerializeField] private float acceleration = 18f;
     [SerializeField] private float deceleration = 25f;
+    [SerializeField] private float rotationSpeed = 15f;
 
-    private Rigidbody2D rb;
-    private Vector2 input;
-    private Vector2 currentVelocity;
+    private Rigidbody rb;
+
+    private Vector3 input;
+    private Vector3 currentVelocity;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody>();
     }
 
     private void Update()
     {
         input.x = Input.GetAxisRaw("Horizontal");
-        input.y = Input.GetAxisRaw("Vertical");
+        input.z = Input.GetAxisRaw("Vertical");
 
         input = input.normalized;
     }
 
     private void FixedUpdate()
     {
-        Vector2 targetVelocity = input * moveSpeed;
+        Vector3 targetVelocity = input * moveSpeed;
 
         float accelRate = input.sqrMagnitude > 0.01f ? acceleration : deceleration;
 
-        currentVelocity = Vector2.MoveTowards(currentVelocity, targetVelocity, accelRate * Time.fixedDeltaTime);
+        currentVelocity = Vector3.MoveTowards(
+            currentVelocity,
+            targetVelocity,
+            accelRate * Time.fixedDeltaTime);
 
-        rb.linearVelocity = currentVelocity;
+        rb.linearVelocity = new Vector3(
+            currentVelocity.x,
+            rb.linearVelocity.y, // conserva la gravedad
+            currentVelocity.z);
 
-        if (input != Vector2.zero)
+        if (input != Vector3.zero)
         {
-            float angle = Mathf.Atan2(input.y, input.x) * Mathf.Rad2Deg;
-            rb.MoveRotation(angle - 90f); 
+            Quaternion targetRotation = Quaternion.LookRotation(input);
+
+            rb.MoveRotation(
+                Quaternion.Slerp(
+                    rb.rotation,
+                    targetRotation,
+                    rotationSpeed * Time.fixedDeltaTime));
         }
     }
-
-
 
 }
