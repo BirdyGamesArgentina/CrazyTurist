@@ -6,6 +6,7 @@ public class InterestPoint : MonoBehaviour
 {
     public UnityEvent onEnter;
     public UnityEvent onExit;
+    public UnityEvent onFinishVisit;
 
     public TextMeshProUGUI deb;
 
@@ -18,6 +19,7 @@ public class InterestPoint : MonoBehaviour
     [SerializeField] float time_to_trans = 1f;
     float timer_trans = 1f;
     bool anim = false;
+    bool oneshotAnim = false;
     [SerializeField] AnimationCurve curve;
 
     public void OnEnter()
@@ -25,6 +27,7 @@ public class InterestPoint : MonoBehaviour
         deb.text = "ENTER";
         onEnter.Invoke();
         anim = true;
+        
         timer_trans = 0f;
     }
 
@@ -38,13 +41,15 @@ public class InterestPoint : MonoBehaviour
 
     private void Update()
     {
-        if (anim)
+        if (!oneshotAnim)
         {
+            if (!anim) return;
+
             if (timer_trans < time_to_trans)
             {
                 timer_trans = timer_trans + 1 * Time.deltaTime;
 
-                float lerpValue = curve.Evaluate(timer_trans/ time_to_trans);
+                float lerpValue = curve.Evaluate(timer_trans / time_to_trans);
 
                 for (int i = 0; i < anims_lerped.Length; i++)
                 {
@@ -53,9 +58,12 @@ public class InterestPoint : MonoBehaviour
             }
             else
             {
+                oneshotAnim = true;
                 timer_trans = 0;
                 anim = false;
+                onFinishVisit.Invoke();
             }
         }
+        
     }
 }
