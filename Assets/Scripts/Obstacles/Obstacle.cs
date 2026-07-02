@@ -13,5 +13,6 @@ public class Obstacle : MonoBehaviour
     void Update()
     {
         transform.position = transform.position + direction * Time.deltaTime;
+        transform.forward = direction;
     }
 }
