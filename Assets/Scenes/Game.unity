@@ -762,13 +762,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118968344}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.70710677, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 10.94, z: 0}
+  m_LocalRotation: {x: 0.5544256, y: -0, z: -0, w: 0.83223325}
+  m_LocalPosition: {x: 0, y: 7, z: -2.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 67.342, y: 0, z: 0}
 --- !u!114 &2118968348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -782,7 +782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1804650408}
-  camera: {fileID: 2118968347}
+  lerpAmount: 0.2
 --- !u!1001 &739466639870359387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1059,10 +1059,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4758419664979668362, guid: 1ca35cb06b98b14428f3fe0c6a0f21a1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ca35cb06b98b14428f3fe0c6a0f21a1, type: 3}
 --- !u!1001 &6953641789819054172
 PrefabInstance:
