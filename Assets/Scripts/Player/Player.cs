@@ -32,25 +32,17 @@ public class Player : MonoBehaviour
 
         float accelRate = input.sqrMagnitude > 0.01f ? acceleration : deceleration;
 
-        currentVelocity = Vector3.MoveTowards(
-            currentVelocity,
-            targetVelocity,
-            accelRate * Time.fixedDeltaTime);
+        currentVelocity = Vector3.MoveTowards(currentVelocity, targetVelocity, accelRate * Time.fixedDeltaTime);
 
-        rb.linearVelocity = new Vector3(
-            currentVelocity.x,
-            rb.linearVelocity.y, // conserva la gravedad
-            currentVelocity.z);
+        rb.linearVelocity = new Vector3(currentVelocity.x, rb.linearVelocity.y + currentVelocity.z);
 
         if (input != Vector3.zero)
         {
             Quaternion targetRotation = Quaternion.LookRotation(input);
 
-            rb.MoveRotation(
-                Quaternion.Slerp(
-                    rb.rotation,
-                    targetRotation,
-                    rotationSpeed * Time.fixedDeltaTime));
+            rb.MoveRotation(Quaternion.Slerp(rb.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime));
+
+
         }
     }
 
