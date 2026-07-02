@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2347400116844352760}
+  - component: {fileID: 6052771975405156985}
   m_Layer: 0
   m_Name: bar3d
   m_TagString: Untagged
@@ -32,6 +33,22 @@ Transform:
   - {fileID: 5925037138222242565}
   m_Father: {fileID: 4816387832189844458}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6052771975405156985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420179314629337575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75726ee06f042bd42bed8035d63e2bb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillBar3D: {fileID: 2347400116844352760}
+  x: 0
+  y: 1
+  z: 0
 --- !u!1 &1722153243065218692
 GameObject:
   m_ObjectHideFlags: 0
@@ -5022,8 +5039,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793633828167382365}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0.15776172, z: -0, w: 0.98747724}
+  m_LocalPosition: {x: -3.17, y: 0, z: 1.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5032,7 +5049,7 @@ Transform:
   - {fileID: 1849428124193915926}
   - {fileID: 5728691014911731112}
   m_Father: {fileID: 4816387832189844458}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -18.154, z: 0}
 --- !u!1 &3030999793181713181
 GameObject:
   m_ObjectHideFlags: 0
@@ -5844,8 +5861,6 @@ GameObject:
   - component: {fileID: 4816387832189844458}
   - component: {fileID: 2547099464084758509}
   - component: {fileID: 8454322112960449617}
-  - component: {fileID: 3077122329463046278}
-  - component: {fileID: 2535762622908619178}
   m_Layer: 7
   m_Name: Interest POint Test
   m_TagString: Untagged
@@ -5964,8 +5979,8 @@ MonoBehaviour:
         m_CallState: 2
   deb: {fileID: 8092826790217595995}
   anims_lerped:
-  - {fileID: 3077122329463046278}
-  - {fileID: 2535762622908619178}
+  - {fileID: 3522643244621192289}
+  - {fileID: 6052771975405156985}
   time_to_trans: 1
   curve:
     serializedVersion: 2
@@ -5991,35 +6006,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &3077122329463046278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6787663980049210832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fa562d97ebdf8248987b7181bfd894d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fillbar: {fileID: 4791625044645654564}
---- !u!114 &2535762622908619178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6787663980049210832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75726ee06f042bd42bed8035d63e2bb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fillBar3D: {fileID: 2347400116844352760}
-  x: 0
-  y: 1
-  z: 0
 --- !u!1 &7577569794224562018
 GameObject:
   m_ObjectHideFlags: 0
@@ -6242,6 +6228,7 @@ GameObject:
   - component: {fileID: 7572791873793363356}
   - component: {fileID: 381555817665663217}
   - component: {fileID: 5441441398251782430}
+  - component: {fileID: 3522643244621192289}
   m_Layer: 5
   m_Name: bar
   m_TagString: Untagged
@@ -6307,6 +6294,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3522643244621192289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8037292101930153753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa562d97ebdf8248987b7181bfd894d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillbar: {fileID: 4791625044645654564}
 --- !u!1 &8329118587256544350
 GameObject:
   m_ObjectHideFlags: 0
