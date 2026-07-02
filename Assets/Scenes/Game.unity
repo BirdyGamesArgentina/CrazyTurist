@@ -276,9 +276,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -737118973273310041, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647652431243533566, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
+      propertyPath: m_Size.x
+      value: 0.41245592
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647652431243533566, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.81977177
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647652431243533566, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.0018022656
+      objectReference: {fileID: 0}
+    - target: {fileID: 4647652431243533566, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7006113923419541556, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
       propertyPath: m_Name
       value: PlayerBus
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503278029812799262, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
+      propertyPath: acceleration
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503278029812799262, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
+      propertyPath: deceleration
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 8245353935533433664, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
       propertyPath: m_LocalPosition.x
