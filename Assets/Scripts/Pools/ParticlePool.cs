@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Pool;
+using static UnityEngine.ParticleSystem;
 
 public class ParticlePool : MonoBehaviour
 {
@@ -26,10 +27,26 @@ public class ParticlePool : MonoBehaviour
     {
         instance._addToRegistry(_key, model);
     }
-    public static ParticleSystem Get(string _key)
+    public static ParticleSystem Get(string _key, bool releaseEvent)
     {
-        return instance._get(_key);
+        var part = instance._get(_key);
+
+        if (releaseEvent)
+        {
+            var pp = part.gameObject.AddComponent<PooledParticle>();
+            pp.SetKey(_key);
+            pp.OnFinished += Pp_OnFinished;
+        }
+
+        return part;
     }
+
+    private static void Pp_OnFinished(PooledParticle obj, string key)
+    {
+        obj.OnFinished -= Pp_OnFinished;
+        instance.registry[key].Release(obj.Particle);
+    }
+
     public static void Release(string _key, ParticleSystem torelease)
     {
         instance._release(_key, torelease);

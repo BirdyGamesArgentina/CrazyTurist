@@ -28,7 +28,7 @@ public class ObstacleReceiver : MonoBehaviour
 
         Vector3 dir = obstacle.transform.position - player.position;
         
-        var p = ParticlePool.Get(PARTICLE_SPARKS_NAME);
+        var p = ParticlePool.Get(PARTICLE_SPARKS_NAME, true);
         p.transform.position = player.position  + dir / 2f;
         p.Play();
 
