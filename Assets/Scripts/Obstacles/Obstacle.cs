@@ -4,15 +4,24 @@ public class Obstacle : MonoBehaviour
 {
     public Vector3 direction;
     [SerializeField] float obstacleSpeed;
+    [SerializeField] Rigidbody myRb;
 
-    void Start()
-    {
-        
-    }
+    [SerializeField] bool applyKnockBack;
+    [SerializeField] float knockbackForce = 5f;
 
     void Update()
     {
-        transform.position = transform.position + direction * Time.deltaTime;
         transform.forward = direction;
     }
+
+    private void FixedUpdate()
+    {
+        myRb.linearVelocity = direction * Time.deltaTime * obstacleSpeed;
+    }
+
+    public void HitKnockback(Vector3 dir)
+    {
+        myRb.AddForce(dir * knockbackForce, ForceMode.VelocityChange);
+    }
+
 }
