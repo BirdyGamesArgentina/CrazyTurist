@@ -784,6 +784,7 @@ MonoBehaviour:
   acceleration: 18
   deceleration: 25
   rotationSpeed: 15
+  root: {fileID: 0}
 --- !u!54 &5085892622173988893
 Rigidbody:
   m_ObjectHideFlags: 0

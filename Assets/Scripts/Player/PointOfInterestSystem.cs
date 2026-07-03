@@ -13,6 +13,10 @@ public class PointOfInterestSystem : MonoBehaviour
 
     [SerializeField] float quantToRemove = 2f;
 
+    [SerializeField] GameObject leftSide;
+    [SerializeField] GameObject rightSide;
+    [SerializeField] Transform player;
+
     bool anim = false;
 
     private void Awake()
@@ -49,6 +53,9 @@ public class PointOfInterestSystem : MonoBehaviour
         if (!anim) return;
         interest = interest - quantToRemove * Time.deltaTime;
         Refresh();
+
+        leftSide.transform.position = player.transform.position + Vector3.up + Vector3.left;
+        rightSide.transform.position = player.transform.position + Vector3.up + Vector3.right;
     }
 
     void Refresh()
@@ -66,5 +73,22 @@ public class PointOfInterestSystem : MonoBehaviour
     {
         interest -= toRemove;
         Refresh();
+    }
+
+    public void ShowSideFeedback(Side side)
+    {
+        if (side == Side.left)
+        {
+            leftSide.SetActive(true);
+        }
+        else if(side == Side.right)
+        {
+            rightSide.SetActive(true);
+        }
+    }
+    public void HideSideFeedback()
+    {
+        leftSide.SetActive(false);
+        rightSide.SetActive(false);
     }
 }

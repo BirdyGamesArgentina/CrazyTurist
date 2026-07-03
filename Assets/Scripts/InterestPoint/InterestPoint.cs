@@ -11,7 +11,6 @@ public abstract class InterestPoint : MonoBehaviour
 
     [Header("Interest Point Info")]
     public IP_ScriptableObject myMonument;
- 
 
     public void Enter()
     {
