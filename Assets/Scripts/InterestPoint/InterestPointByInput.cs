@@ -20,6 +20,7 @@ public class InterestPointByInput : InterestPoint
 
     protected override void OnEnter()
     {
+        if (spended) return;
         canInput = true;
         PointOfInterestSystem.Instance.ShowSideFeedback(side);
     }
@@ -32,8 +33,10 @@ public class InterestPointByInput : InterestPoint
 
     protected override void OnFinishVisit()
     {
+        spended = true;
         ScoreFeedbackManager.ShowScoreInPos("+"+interestQuantity, Color.green, pointToScore.position);
         PointOfInterestSystem.Instance.AddInterest(interestQuantity);
+        PointOfInterestSystem.Instance.HideSideFeedback();
     }
 
     private void Update()
@@ -44,12 +47,10 @@ public class InterestPointByInput : InterestPoint
         {
             if (Input.GetKeyDown(KeyCode.LeftArrow) && side == Side.left)
             {
-                spended = true;
                 FinishVisit();
             }
             if (Input.GetKeyDown(KeyCode.RightArrow) && side == Side.right)
             {
-                spended = true;
                 FinishVisit();
             }
         }

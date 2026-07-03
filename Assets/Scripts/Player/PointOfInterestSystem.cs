@@ -7,11 +7,18 @@ public class PointOfInterestSystem : MonoBehaviour
 {
     public static PointOfInterestSystem Instance;
 
+
+    float interest = 100;
+    [SerializeField] int maxInterest = 100;
+
+    public static float Interest { get { return Instance.interest; } }
+    public static float MaxInterest { get { return Instance.maxInterest; } }
+
+
     [SerializeField] Sensor sensor;
     [SerializeField] private Image img;
     [SerializeField] private float duration = 10f;
-    public float interest = 100;
-    [SerializeField] int maxInterest = 100;
+   
 
     [SerializeField] float quantToRemove = 2f;
 

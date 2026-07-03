@@ -193,13 +193,40 @@ MonoBehaviour:
         m_CallState: 2
   _onFinishVisit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 695233082874506793}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 7121066699345918173}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   myMonument: {fileID: 11400000, guid: f75936d83b40e4245b5a959526997034, type: 2}
   countOfX:
   - {fileID: 5399469753952355836}
   - {fileID: 579544284698292177}
   - {fileID: 3844354227305582889}
   peopleToLeave: 2
+  timeToFinish: 1
+  lerpedObject:
+  - {fileID: 3337421890106061606}
 --- !u!1 &2038085866939284646
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,7 +253,7 @@ Transform:
   m_GameObject: {fileID: 2038085866939284646}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.7, y: 0, z: -0.72}
+  m_LocalPosition: {x: -1.7, y: 0.05, z: -0.72}
   m_LocalScale: {x: 1, y: 0, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -654,7 +681,6 @@ GameObject:
   - component: {fileID: 469501765545208299}
   - component: {fileID: 4006008132978641983}
   - component: {fileID: 3723616112122258511}
-  - component: {fileID: 7818448438732007861}
   m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
@@ -730,27 +756,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7818448438732007861
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4969410016349106167}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5658136392952696141
 GameObject:
   m_ObjectHideFlags: 0
