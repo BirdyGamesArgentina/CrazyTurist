@@ -614,6 +614,7 @@ MonoBehaviour:
   _backToMenuButton: {fileID: 4641973263327960618}
   _panelTitle: {fileID: 2794774888975348006}
   _scoreText: {fileID: 1633569932216278155}
+  _panelTransition: {fileID: 1455780844366193831}
 --- !u!1 &7240582192742881784
 GameObject:
   m_ObjectHideFlags: 0

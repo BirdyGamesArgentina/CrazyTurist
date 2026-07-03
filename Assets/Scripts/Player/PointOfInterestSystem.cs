@@ -1,3 +1,5 @@
+using Game.Scripts.Shared.Events;
+using Game.Scripts.Shared.ServiceLocator;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,6 +19,10 @@ public class PointOfInterestSystem : MonoBehaviour
     [SerializeField] GameObject rightSide;
     [SerializeField] Transform player;
 
+    [SerializeField] private float scoreMultiplier;
+    private long _currentScore;
+    private InterestPoint lastInterestPoint;
+
 
     bool anim = false;
 
@@ -35,6 +41,11 @@ public class PointOfInterestSystem : MonoBehaviour
     public void OnEnterInterestPoint(InterestPoint _ip)
     {
         _ip.Enter();
+        if(_ip != lastInterestPoint)
+        {
+            lastInterestPoint = _ip;
+            _currentScore += (long)(player.GetComponent<Player>().GetPersonAmount() * scoreMultiplier * (interest / maxInterest));
+        }
     }
     public void OnExitInterestPoint(InterestPoint _ip)
     {
@@ -52,8 +63,7 @@ public class PointOfInterestSystem : MonoBehaviour
     private void Update()
     {
         if (!anim) return;
-        interest = interest - quantToRemove * Time.deltaTime;
-        Refresh();
+        RemoveInterest(quantToRemove * Time.deltaTime);
 
         leftSide.transform.position = player.transform.position + Vector3.up + Vector3.left;
         rightSide.transform.position = player.transform.position + Vector3.up + Vector3.right;
@@ -70,10 +80,15 @@ public class PointOfInterestSystem : MonoBehaviour
         Refresh();
     }
 
-    public void RemoveInterest(int toRemove)
+    public void RemoveInterest(float toRemove)
     {
         interest -= toRemove;
         Refresh();
+
+        if(interest <= 0)
+        {
+            ServiceLocator.Instance.GetService<IEventBus>().Publish(new OnEndScreenResult("Perdiste", _currentScore));
+        }
     }
 
     public void ShowSideFeedback(Side side)

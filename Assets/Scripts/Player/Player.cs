@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -16,6 +17,8 @@ public class Player : MonoBehaviour
     [Header("Contain")]
     public Transform[] Persons;
     public bool[] PositionUsed;
+    public int GetPersonAmount() => Persons.Count(x => x.childCount != 0);
+
 
     private void Awake()
     {
