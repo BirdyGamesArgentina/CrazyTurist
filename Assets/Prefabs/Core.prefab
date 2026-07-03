@@ -94,7 +94,7 @@ MonoBehaviour:
   duration: 10
   interest: 100
   maxInterest: 100
-  quantToRemove: 2
+  quantToRemove: 1
   leftSide: {fileID: 0}
   rightSide: {fileID: 0}
   player: {fileID: 0}
