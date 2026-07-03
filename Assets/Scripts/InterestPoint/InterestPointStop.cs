@@ -3,44 +3,25 @@ using UnityEngine;
 
 public class InterestPointStop : InterestPoint
 {
+
+    [SerializeField] ProgressionModule progressionModule;
+
+    [Header("Lógica de subida de personas")]
     public GameObject[] countOfX;
     public int peopleToLeave;
 
-    bool anim = false;
-    bool animOneshot = false;
-    [SerializeField] float timeToFinish = 1f;
-    float timer = 0f;
-    [SerializeField] LerpedObject[] lerpedObject;
+    private void Awake()
+    {
+        progressionModule.SetCallbackOnFinish(FinishVisit);
+    }
 
     protected override void OnEnter()
     {
-        if(!animOneshot) anim = true;
+        progressionModule.Begin();
     }
     protected override void OnExit()
     {
-        if (!animOneshot) anim |= false;
-    }
-
-    private void Update()
-    {
-        if (anim)
-        {
-            if (timer < timeToFinish)
-            {
-                timer += Time.deltaTime;
-                for (int i = 0; i < lerpedObject.Length; i++)
-                {
-                    lerpedObject[i].OnLerp(timer / timeToFinish);
-                }
-            }
-            else
-            {
-                FinishVisit();
-                anim = false;
-                timer = 0;
-                animOneshot = true;
-            }
-        }
+        progressionModule.End();
     }
 
     protected override void OnFinishVisit()
