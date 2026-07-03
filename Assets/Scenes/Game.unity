@@ -14174,6 +14174,10 @@ PrefabInstance:
       propertyPath: sensor
       value: 
       objectReference: {fileID: 4751259487898696458}
+    - target: {fileID: 4919375670177930330, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+      propertyPath: particleSparks
+      value: 
+      objectReference: {fileID: 3235197360494537455, guid: 2eb4414cba434764ebaf4a63a9d1c140, type: 3}
     - target: {fileID: 5882093463487496727, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
