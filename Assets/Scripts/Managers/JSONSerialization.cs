@@ -54,12 +54,12 @@ public static class JSONSerialization
 
     public static string DirectoryDocuments(string path)
     {
-        string pathDocuments = System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments).Replace("\\", "/") + "/" + Application.productName;
+        string pathDocuments = Application.persistentDataPath + "/" + Application.productName;
 
-        if (!Directory.Exists(pathDocuments))
-            Directory.CreateDirectory(pathDocuments);
+        //if (!Directory.Exists(pathDocuments))
+        //    Directory.CreateDirectory(pathDocuments);
 
-        pathDocuments += "/" + path;
+        //pathDocuments += "/" + path;
 
         return pathDocuments;
     }

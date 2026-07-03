@@ -36,13 +36,13 @@ public class SetMainButton : MonoSingleton<SetMainButton>
 
     private void Start()
     {
-        if (InputSwitcher.instance.isJoystick) keyboard = false;
-        else keyboard = true;
-        InputSwitcher.instance.OnChangeJoystick += OnJoystick;
-        InputSwitcher.instance.OnChangeKeyboard += OnKeyboard;
+        //if (InputSwitcher.instance.isJoystick) keyboard = false;
+        //else keyboard = true;
+        //InputSwitcher.instance.OnChangeJoystick += OnJoystick;
+        //InputSwitcher.instance.OnChangeKeyboard += OnKeyboard;
         lastInteract = EventSystem.current.firstSelectedGameObject;
-        InputSwitcher.instance.input.actions.FindAction("Close").started += CloseScreen;
-        SceneLoader.Instance.OnStartLoadScene += DeleteReferences;
+        //InputSwitcher.instance.input.actions.FindAction("Close").started += CloseScreen;
+        //SceneLoader.Instance.OnStartLoadScene += DeleteReferences;
     }
 
     void DeleteReferences()
