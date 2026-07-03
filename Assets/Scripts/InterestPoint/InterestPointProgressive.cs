@@ -32,8 +32,6 @@ public class InterestPointProgressive : InterestPoint
         
     }
 
-    
-
     private void Update()
     {
         if (!oneshotAnim)

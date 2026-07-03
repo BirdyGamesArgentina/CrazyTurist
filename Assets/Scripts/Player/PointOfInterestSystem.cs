@@ -8,7 +8,7 @@ public class PointOfInterestSystem : MonoBehaviour
     [SerializeField] Sensor sensor;
     [SerializeField] private Image img;
     [SerializeField] private float duration = 10f;
-    [SerializeField] float interest = 100;
+    public float interest = 100;
     [SerializeField] int maxInterest = 100;
 
     [SerializeField] float quantToRemove = 2f;
@@ -16,6 +16,7 @@ public class PointOfInterestSystem : MonoBehaviour
     [SerializeField] GameObject leftSide;
     [SerializeField] GameObject rightSide;
     [SerializeField] Transform player;
+
 
     bool anim = false;
 

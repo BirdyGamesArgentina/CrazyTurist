@@ -4,17 +4,41 @@ using UnityEngine;
 public class InterestPointStop : InterestPoint
 {
     public GameObject[] countOfX;
+    public int peopleToLeave;
 
     protected override void OnEnter()
     {
-        int count = Mathf.Min(countOfX.Length, Player.instance.Persons.Length);
-
-        for (int i = 0; i < count; i++)
+        if (PointOfInterestSystem.Instance.interest < 50)
         {
-            countOfX[i].transform.position = Player.instance.Persons[i].position;
-            countOfX[i].transform.SetParent(Player.instance.Persons[i], false);
+            int left = 0;
 
-            countOfX[i].transform.localPosition = Vector3.zero;
+            for (int i = 0; i < Player.instance.Persons.Length && left < peopleToLeave; i++)
+            {
+                Transform seat = Player.instance.Persons[i];
+
+                if (seat.childCount == 0)
+                    continue;
+
+                GameObject person = seat.GetChild(0).gameObject;
+
+                person.transform.SetParent(null);
+                person.SetActive(false);
+
+                left++;
+            }
+        }
+        int personIndex = 0;
+
+        for (int i = 0; i < Player.instance.Persons.Length && personIndex < countOfX.Length; i++)
+        {
+            Transform seat = Player.instance.Persons[i];
+
+            if (seat.childCount > 0)
+                continue; 
+            countOfX[personIndex].transform.SetParent(seat, false);
+            countOfX[personIndex].transform.localPosition = Vector3.zero;
+
+            personIndex++;
         }
     }
     protected override void OnExit()
