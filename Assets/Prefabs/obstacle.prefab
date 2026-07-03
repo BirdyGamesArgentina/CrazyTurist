@@ -189,8 +189,8 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: -1}
   obstacleSpeed: 100
   myRb: {fileID: 6050028807799618209}
-  applyKnockBack: 0
-  knockbackForce: 10
+  applyKnockBack: 1
+  knockbackForce: 50
   interest: 5
 --- !u!54 &6050028807799618209
 Rigidbody:

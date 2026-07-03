@@ -6,7 +6,7 @@ public class Obstacle : MonoBehaviour
     [SerializeField] float obstacleSpeed;
     [SerializeField] Rigidbody myRb;
 
-    [SerializeField] bool applyKnockBack;
+    [SerializeField] bool applyKnockBack = true;
     [SerializeField] float knockbackForce = 5f;
 
     [SerializeField] int interest = 5;
@@ -30,7 +30,7 @@ public class Obstacle : MonoBehaviour
 
     public void HitKnockback(Vector3 dir)
     {
-        myRb.AddForce(dir * knockbackForce, ForceMode.VelocityChange);
+        if(applyKnockBack) myRb.AddForce(dir * knockbackForce, ForceMode.Acceleration);
     }
 
 }
