@@ -11,10 +11,10 @@ public class PointOfInterestSystem : MonoBehaviour
 
     public void OnEnterInterestPoint(InterestPoint _ip)
     {
-        _ip.OnEnter();
+        _ip.Enter();
     }
     public void OnExitInterestPoint(InterestPoint _ip)
     {
-        _ip.OnExit();
+        _ip.Exit();
     }
 }

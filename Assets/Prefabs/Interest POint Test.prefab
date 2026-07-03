@@ -5860,7 +5860,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4816387832189844458}
   - component: {fileID: 2547099464084758509}
-  - component: {fileID: 8454322112960449617}
+  - component: {fileID: 1044694145227670949}
   m_Layer: 7
   m_Name: Interest POint Test
   m_TagString: Untagged
@@ -5908,7 +5908,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 9.951713, y: 1, z: 5.8672934}
   m_Center: {x: 2.4571066, y: 0, z: -0.7197089}
---- !u!114 &8454322112960449617
+--- !u!114 &1044694145227670949
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5917,10 +5917,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6787663980049210832}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9735a83c93ebec747bcfa10d6bead2a7, type: 3}
+  m_Script: {fileID: 11500000, guid: ab337eb9cc829cf42b9b373364609509, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onEnter:
+  _onEnter:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2925156391121092592}
@@ -5928,14 +5928,14 @@ MonoBehaviour:
         m_MethodName: set_material
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2100000, guid: 85d7dd0d1ac3c83499f00699a87ab5f9, type: 2}
+          m_ObjectArgument: {fileID: 2100000, guid: cbb7fc5f795a62548bbdd3b18c47bedf, type: 2}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onExit:
+  _onExit:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2925156391121092592}
@@ -5950,7 +5950,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onFinishVisit:
+  _onFinishVisit:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3096214849000207689}
@@ -5975,13 +5975,9 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
-  deb: {fileID: 8092826790217595995}
-  anims_lerped:
-  - {fileID: 3522643244621192289}
-  - {fileID: 6052771975405156985}
-  time_to_trans: 1
+  time_to_trans: 3
   curve:
     serializedVersion: 2
     m_Curve:
@@ -5997,15 +5993,18 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: 0.24489795
+      outSlope: 0.24489795
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.7
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  anims_lerped:
+  - {fileID: 6052771975405156985}
+  - {fileID: 3522643244621192289}
 --- !u!1 &7577569794224562018
 GameObject:
   m_ObjectHideFlags: 0

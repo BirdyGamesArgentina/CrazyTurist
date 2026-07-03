@@ -1,43 +1,32 @@
-using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
 
-public class InterestPoint : MonoBehaviour
+public class InterestPointProgressive : InterestPoint
 {
-    public UnityEvent onEnter;
-    public UnityEvent onExit;
-    public UnityEvent onFinishVisit;
 
-    public TextMeshProUGUI deb;
-
-    /// <summary>
-    /// LerpedObject tienen una funcion de OnLerp para que se le puedan ejecutar diferentes animaciones
-    /// que vayan en paralelo con la curva de animacion
-    /// </summary>
-    [SerializeField] LerpedObject[] anims_lerped; // ejecuta el OnLerp(float)
-
+    [Header("Tiempo de Completado")]
     [SerializeField] float time_to_trans = 1f;
     float timer_trans = 1f;
     bool anim = false;
     bool oneshotAnim = false;
     [SerializeField] AnimationCurve curve;
-
-    public void OnEnter()
+    [SerializeField] LerpedObject[] anims_lerped; // ejecuta el OnLerp(float)
+    protected override void OnEnter()
     {
-        deb.text = "ENTER";
-        onEnter.Invoke();
         anim = true;
-        
         timer_trans = 0f;
     }
-
-    public void OnExit()
+    protected override void OnExit()
     {
-        deb.text = "EXIT";
-        onExit.Invoke();
         anim = false;
         timer_trans = 0f;
     }
+
+    protected override void OnFinishVisit()
+    {
+        
+    }
+
+    
 
     private void Update()
     {
@@ -61,9 +50,8 @@ public class InterestPoint : MonoBehaviour
                 oneshotAnim = true;
                 timer_trans = 0;
                 anim = false;
-                onFinishVisit.Invoke();
+                FinishVisit();
             }
         }
-        
     }
 }
