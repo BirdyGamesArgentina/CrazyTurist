@@ -86,6 +86,12 @@ public class PointOfInterestSystem : MonoBehaviour
         interest += toAdd;
         Refresh();
     }
+    public void CompleteInterest()
+    {
+        ScoreFeedbackManager.ShowScoreInPos("Interés lleno", Color.green, player.transform.position + Vector3.up);
+        interest = maxInterest;
+        Refresh();
+    }
 
     public void RemoveInterest(float toRemove)
     {
