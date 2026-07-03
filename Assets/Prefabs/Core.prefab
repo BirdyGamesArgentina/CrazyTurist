@@ -45,6 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sensor: {fileID: 0}
+  img: {fileID: 0}
+  duration: 10
+  interest: 100
+  maxInterest: 100
+  quantToRemove: 2
 --- !u!1 &2211195258418969788
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,6 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensor: {fileID: 0}
   particleSparks: {fileID: 21302725114985546, guid: 487ddaff378e6964f9d2ec4b308fe66f, type: 3}
+  player: {fileID: 0}
 --- !u!1 &8647103327748184135
 GameObject:
   m_ObjectHideFlags: 0
