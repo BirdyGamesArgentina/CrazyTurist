@@ -27,10 +27,15 @@ public class ObstacleReceiver : MonoBehaviour
         Debug.Log("Obstacle: " + obstacle.gameObject.name);
 
         Vector3 dir = obstacle.transform.position - player.position;
-        
+
         var p = ParticlePool.Get(PARTICLE_SPARKS_NAME, true);
-        p.transform.position = player.position  + dir / 2f;
+        var collision_center = player.position + dir / 2f;
+
+        p.transform.position = collision_center;
         p.Play();
+
+        PointOfInterestSystem.Instance.RemoveInterest(obstacle.InterestToRemove);
+        ScoreFeedbackManager.ShowScoreInPos("-" + obstacle.InterestToRemove, Color.red, collision_center + Vector3.up);
 
         dir.Normalize();
         obstacle.HitKnockback(dir);

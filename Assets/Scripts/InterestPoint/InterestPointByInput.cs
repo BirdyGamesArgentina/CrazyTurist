@@ -32,7 +32,7 @@ public class InterestPointByInput : InterestPoint
 
     protected override void OnFinishVisit()
     {
-        ScoreFeedbackManager.ShowScoreInPos(interestQuantity.ToString(), Color.green, pointToScore.position);
+        ScoreFeedbackManager.ShowScoreInPos("+"+interestQuantity, Color.green, pointToScore.position);
         PointOfInterestSystem.Instance.AddInterest(interestQuantity);
     }
 
