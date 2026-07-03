@@ -12,10 +12,17 @@ public class Player : MonoBehaviour
 
     private Vector3 input;
     private Vector3 currentVelocity;
+    public static Player instance;
+    [Header("Contain")]
+    public Transform[] Persons;
+    public bool[] PositionUsed;
 
     private void Awake()
     {
+        instance = this;
         rb = GetComponent<Rigidbody>();
+
+        PositionUsed = new bool[Persons.Length];
     }
 
     private void Update()

@@ -5,5 +5,4 @@ using UnityEngine;
 public class IP_ScriptableObject : ScriptableObject
 {
     public string nameOfMonument, informationText;
-    public int id;
 }
