@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     [Header("Contain")]
     public Transform[] Persons;
     public bool[] PositionUsed;
-    public int GetPersonAmount() => Persons.Count(x => x.childCount != 0);
+    public static int PeopleAmount { get { return instance.Persons.Count(x => x.childCount != 0); } }
 
     [Header("Game Feel")]
     public GameObject[] wheels;

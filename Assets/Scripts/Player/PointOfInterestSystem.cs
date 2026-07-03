@@ -1,5 +1,6 @@
 using Game.Scripts.Shared.Events;
 using Game.Scripts.Shared.ServiceLocator;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -30,6 +31,8 @@ public class PointOfInterestSystem : MonoBehaviour
     private long _currentScore;
     private InterestPoint lastInterestPoint;
 
+    [SerializeField] TextMeshProUGUI ticketsArrive;
+    [SerializeField] Animator ticketsArrive_animator;
 
     bool anim = false;
 
@@ -43,6 +46,8 @@ public class PointOfInterestSystem : MonoBehaviour
     {
         sensor.SubscribeToInterestPoint(OnEnterInterestPoint, OnExitInterestPoint);
         img.fillAmount = 1f;
+
+        RefreshTickets(NO_Animate: true);
     }
 
     public void OnEnterInterestPoint(InterestPoint _ip)
@@ -51,7 +56,7 @@ public class PointOfInterestSystem : MonoBehaviour
         if(_ip != lastInterestPoint)
         {
             lastInterestPoint = _ip;
-            _currentScore += (long)(player.GetComponent<Player>().GetPersonAmount() * scoreMultiplier * (interest / maxInterest));
+            _currentScore += (long)(Player.PeopleAmount * scoreMultiplier * (interest / maxInterest));
         }
     }
     public void OnExitInterestPoint(InterestPoint _ip)
@@ -65,6 +70,12 @@ public class PointOfInterestSystem : MonoBehaviour
         anim = true;
         interest = maxInterest;
 
+    }
+
+    public void RefreshTickets(bool NO_Animate = false)
+    {
+        ticketsArrive.text = Player.PeopleAmount.ToString();
+        if(!NO_Animate) ticketsArrive_animator.Play("TicketModify");
     }
 
     private void Update()

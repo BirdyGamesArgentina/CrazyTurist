@@ -58,5 +58,7 @@ public class InterestPointStop : InterestPoint
 
             personIndex++;
         }
+
+        PointOfInterestSystem.Instance.RefreshTickets();
     }
 }
