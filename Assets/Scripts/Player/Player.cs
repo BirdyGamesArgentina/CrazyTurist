@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
     public float steerAngle = 140f;
     public AnimationCurve steeringBySpeed =
         AnimationCurve.Linear(0, 1, 1, 0.35f);
+    public float rotationFacility = 300f;
 
     [Header("Grip")]
     [Range(0, 1)]
@@ -92,7 +93,7 @@ public class Player : MonoBehaviour
         currentSteerVelocity = Mathf.MoveTowards(
             currentSteerVelocity,
             targetYawSpeed,
-            200 * Time.fixedDeltaTime); // rapidez con la que "agarra" el volante
+            rotationFacility * Time.fixedDeltaTime); // rapidez con la que "agarra" el volante
 
         transform.Rotate(0f, currentSteerVelocity * Time.fixedDeltaTime, 0f);
 
