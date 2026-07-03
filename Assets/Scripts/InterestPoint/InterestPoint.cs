@@ -9,6 +9,10 @@ public abstract class InterestPoint : MonoBehaviour
     public UnityEvent _onExit;
     public UnityEvent _onFinishVisit;
 
+    [Header("Interest Point Info")]
+    public IP_ScriptableObject myMonument;
+ 
+
     public void Enter()
     {
         _onEnter.Invoke();

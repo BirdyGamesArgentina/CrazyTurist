@@ -11,15 +11,8 @@ public class InterestPointProgressive : InterestPoint
     bool oneshotAnim = false;
     [SerializeField] AnimationCurve curve;
     [SerializeField] LerpedObject[] anims_lerped; // ejecuta el OnLerp(float)
-    public IP_ScriptableObject myMonument;
     protected override void OnEnter()
     {
-        if(SOManager.instance == null)
-        {
-            Debug.LogError("SOManager instance is null. Make sure the SOManager script is attached to a GameObject in the scene.");
-            return;
-        }
-
         SOManager.instance.myNameOnCanva.text = myMonument.nameOfMonument;
         SOManager.instance.MyInformationInCanva.text = myMonument.informationText;
         SOManager.instance.myImage.SetActive(true);
