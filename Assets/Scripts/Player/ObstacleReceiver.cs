@@ -35,7 +35,7 @@ public class ObstacleReceiver : MonoBehaviour
         p.Play();
 
         PointOfInterestSystem.Instance.RemoveInterest(obstacle.InterestToRemove);
-        ScoreFeedbackManager.ShowScoreInPos("-" + obstacle.InterestToRemove, Color.red, collision_center);
+        ScoreFeedbackManager.ShowScoreInPos("-" + obstacle.InterestToRemove, Color.red, collision_center + Vector3.up);
 
         dir.Normalize();
         obstacle.HitKnockback(dir);
