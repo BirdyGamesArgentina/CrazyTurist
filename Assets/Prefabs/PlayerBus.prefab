@@ -780,10 +780,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e5ef4972c15d2e498657fc4abe2a0ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 6
-  acceleration: 9
-  deceleration: 10
-  rotationSpeed: 6
   Persons:
   - {fileID: 1881672751906074854}
   - {fileID: 88314626610785687}
@@ -810,6 +806,37 @@ MonoBehaviour:
   - {fileID: 2242534218021821688}
   - {fileID: 1314773104713722998}
   PositionUsed: 
+  maxSpeed: 12
+  reverseSpeed: 5
+  acceleration: 5
+  brake: 20
+  coast: 10
+  steerAngle: 140
+  steeringBySpeed:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: -0.65
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.35
+      inSlope: -0.65
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  grip: 0.6
 --- !u!54 &5085892622173988893
 Rigidbody:
   m_ObjectHideFlags: 0

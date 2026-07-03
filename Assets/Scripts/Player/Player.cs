@@ -3,16 +3,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [Header("Movement")]
-    [SerializeField] private float moveSpeed = 6f;
-    [SerializeField] private float acceleration = 18f;
-    [SerializeField] private float deceleration = 25f;
-    [SerializeField] private float rotationSpeed = 15f;
-
-    private Rigidbody rb;
-
-    private Vector3 input;
-    private Vector3 currentVelocity;
     public static Player instance;
     [Header("Contain")]
     public Transform[] Persons;
@@ -24,35 +14,111 @@ public class Player : MonoBehaviour
     {
         instance = this;
         rb = GetComponent<Rigidbody>();
-
+        rb.interpolation = RigidbodyInterpolation.Interpolate;
+        rb.constraints =
+            RigidbodyConstraints.FreezeRotationX |
+            RigidbodyConstraints.FreezeRotationZ;
         PositionUsed = new bool[Persons.Length];
     }
 
-    private void Update()
+    [Header("Speed")]
+    public float maxSpeed = 30f;
+    public float reverseSpeed = 10f;
+    public float acceleration = 20f;
+    public float brake = 40f;
+    public float coast = 10f;
+
+    [Header("Steering")]
+    public float steerAngle = 140f;
+    public AnimationCurve steeringBySpeed =
+        AnimationCurve.Linear(0, 1, 1, 0.35f);
+
+    [Header("Grip")]
+    [Range(0, 1)]
+    public float grip = 8f;
+
+    Rigidbody rb;
+
+    float speed;
+    private float currentSteerVelocity;
+
+    void FixedUpdate()
     {
-        input.x = Input.GetAxisRaw("Horizontal");
-        input.z = Input.GetAxisRaw("Vertical");
+        float throttle = Input.GetAxisRaw("Vertical");
+        float steer = Input.GetAxisRaw("Horizontal");
 
-        input.Normalize();
-    }
-
-    private void FixedUpdate()
-    {
-        Vector3 targetVelocity = input * moveSpeed;
-
-        float accelRate = input.sqrMagnitude > 0.01f ? acceleration : deceleration;
-
-        currentVelocity = Vector3.MoveTowards(currentVelocity, targetVelocity, accelRate * Time.fixedDeltaTime);
-
-        rb.linearVelocity = new Vector3(currentVelocity.x, rb.linearVelocity.y, currentVelocity.z);
-
-        if (input != Vector3.zero)
+        //
+        // SPEED
+        //
+        if (throttle > 0)
         {
-            Quaternion targetRotation = Quaternion.LookRotation(input);
-
-            rb.transform.rotation = Quaternion.Slerp(rb.transform.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
-
+            speed += acceleration * Time.fixedDeltaTime;
         }
+        else if (throttle < 0)
+        {
+            if (speed > 0)
+                speed -= brake * Time.fixedDeltaTime;
+            else
+                speed -= acceleration * Time.fixedDeltaTime;
+        }
+        else
+        {
+            speed = Mathf.MoveTowards(
+                speed,
+                0,
+                coast * Time.fixedDeltaTime);
+        }
+
+        speed = Mathf.Clamp(speed, -reverseSpeed, maxSpeed);
+
+        //
+        // STEERING
+        //
+        float steeringMultiplier =
+            steeringBySpeed.Evaluate(Mathf.Abs(speed) / maxSpeed);
+
+        float yaw =
+            steer *
+            steerAngle *
+            steeringMultiplier *
+            Time.fixedDeltaTime;
+
+        float speed01 = Mathf.Clamp01(Mathf.Abs(speed) / maxSpeed);
+
+        float maxYawSpeed = Mathf.Lerp(180f, 70f, speed01);
+
+        float targetYawSpeed = steer * maxYawSpeed;
+
+        currentSteerVelocity = Mathf.MoveTowards(
+            currentSteerVelocity,
+            targetYawSpeed,
+            200 * Time.fixedDeltaTime); // rapidez con la que "agarra" el volante
+
+        transform.Rotate(0f, currentSteerVelocity * Time.fixedDeltaTime, 0f);
+
+        //
+        // VELOCITY
+        //
+        Vector3 localVelocity = transform.InverseTransformDirection(rb.linearVelocity);
+
+        localVelocity.z = speed;
+
+        localVelocity.x = Mathf.Lerp(
+            localVelocity.x,
+            0,
+            grip * Time.fixedDeltaTime);
+
+
+        Vector3 desiredVelocity = transform.forward * speed;
+
+        // Conservá la componente vertical para que la gravedad siga funcionando.
+        desiredVelocity.y = rb.linearVelocity.y;
+
+        rb.linearVelocity = Vector3.Lerp(
+            rb.linearVelocity,
+            desiredVelocity,
+            10f * Time.fixedDeltaTime);
     }
+
 
 }
