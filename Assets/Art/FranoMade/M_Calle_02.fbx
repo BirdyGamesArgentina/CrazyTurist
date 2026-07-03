@@ -11,8 +11,8 @@ FBXHeaderExtension:  {
 		Day: 3
 		Hour: 12
 		Minute: 23
-		Second: 2
-		Millisecond: 473
+		Second: 7
+		Millisecond: 996
 	}
 	Creator: "FBX SDK/FBX Plugins version 2020.0.1"
 	OtherFlags:  {
@@ -31,19 +31,19 @@ FBXHeaderExtension:  {
 			Comment: ""
 		}
 		Properties70:  {
-			P: "DocumentUrl", "KString", "Url", "", "C:\Juegos\Repos\CrazyTurist\Assets\Art\FranoMade\M_Calle_00.fbx"
-			P: "SrcDocumentUrl", "KString", "Url", "", "C:\Juegos\Repos\CrazyTurist\Assets\Art\FranoMade\M_Calle_00.fbx"
+			P: "DocumentUrl", "KString", "Url", "", "C:\Juegos\Repos\CrazyTurist\Assets\Art\FranoMade\M_Calle_02.fbx"
+			P: "SrcDocumentUrl", "KString", "Url", "", "C:\Juegos\Repos\CrazyTurist\Assets\Art\FranoMade\M_Calle_02.fbx"
 			P: "Original", "Compound", "", ""
 			P: "Original|ApplicationVendor", "KString", "", "", "SideFX Software"
 			P: "Original|ApplicationName", "KString", "", "", "Houdini"
 			P: "Original|ApplicationVersion", "KString", "", "", "21.0.440"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "03/07/2026 15:23:02.470"
-			P: "Original|FileName", "KString", "", "", "C:\Juegos\Repos\CrazyTurist\Assets\Art\FranoMade\M_Calle_00.fbx"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "03/07/2026 15:23:07.994"
+			P: "Original|FileName", "KString", "", "", "C:\Juegos\Repos\CrazyTurist\Assets\Art\FranoMade\M_Calle_02.fbx"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "SideFX Software"
 			P: "LastSaved|ApplicationName", "KString", "", "", "Houdini"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "21.0.440"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "03/07/2026 15:23:02.470"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "03/07/2026 15:23:07.994"
 			P: "Original|ApplicationActiveProject", "KString", "", "", "C:\Users\FioreFran"
 			P: "Original|ApplicationNativeFile", "KString", "", "", "C:\Juegos\Houdini\CrazyTurist.hip"
 		}
@@ -80,7 +80,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 465035911168, "", "Scene" {
+	Document: 465069108224, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", ""
@@ -201,16 +201,32 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 465051417728, "Geometry::matchsize7", "Mesh" {
+	Geometry: 465050016128, "Geometry::Calle_02", "Mesh" {
 		Vertices: *24 {
-			a: 2.5,0,2.5,-2.5,0,2.5,2.5,0.300000011920929,2.5,-2.5,0.300000011920929,2.5,-2.5,0,-2.5,2.5,0,-2.5,-2.5,0.300000011920929,-2.5,2.5,0.300000011920929,-2.5
+			a: 8,0,2.50545597076416,-8,0,2.50545597076416,8,0.30123907327652,2.50545597076416,-8,0.30123907327652,2.50545597076416,-8,0,-2.50545597076416,8,0,-2.50545597076416,-8,0.30123907327652,-2.50545597076416,8,0.30123907327652,-2.50545597076416
 		} 
 		PolygonVertexIndex: *24 {
-			a: 2,3,1,-1,6,7,5,-5,3,2,7,-7,0,1,4,-6,7,2,0,-6,3,6,4,-2
+			a: 7,5,4,-7,0,2,3,-2,7,6,3,-3,6,4,1,-4,4,5,0,-2,5,7,2,-1
 		} 
 		GeometryVersion: 124
+		LayerElementColor: 0 {
+			Version: 101
+			Name: "Cd"
+			MappingInformationType: "ByPolygon"
+			ReferenceInformationType: "Direct"
+			Colors: *24 {
+				a: 0.0701878815889359,0.0729999989271164,0.0513920001685619,1,0.0701878815889359,0.0729999989271164,0.0513920001685619,1,0.0701878815889359,0.0729999989271164,0.0513920001685619,1,0.0701878815889359,0.0729999989271164,0.0513920001685619,1,0.0701878815889359,0.0729999989271164,0.0513920001685619,1,0.0701878815889359,0.0729999989271164,0.0513920001685619,1
+			} 
+		}
+		Layer: 0 {
+			Version: 100
+			LayerElement:  {
+				Type: "LayerElementColor"
+				TypedIndex: 0
+			}
+		}
 	}
-	Model: 465048316672, "Model::matchsize7", "Mesh" {
+	Model: 465048294912, "Model::Calle_02", "Mesh" {
 		Version: 232
 		Properties70:  {
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
@@ -227,11 +243,11 @@ Objects:  {
 
 Connections:  {
 	
-	;Model::matchsize7, Model::RootNode
-	C: "OO",465048316672,0
+	;Model::Calle_02, Model::RootNode
+	C: "OO",465048294912,0
 	
-	;Geometry::matchsize7, Model::matchsize7
-	C: "OO",465051417728,465048316672
+	;Geometry::Calle_02, Model::Calle_02
+	C: "OO",465050016128,465048294912
 }
 ;Takes section
 ;----------------------------------------------------

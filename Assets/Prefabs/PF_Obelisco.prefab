@@ -94,6 +94,7 @@ PrefabInstance:
     - {fileID: 5125962513971794612, guid: 91b0a6d69d30eed4db7faeb88ec88fd4, type: 3}
     - {fileID: 4215546595451130420, guid: 91b0a6d69d30eed4db7faeb88ec88fd4, type: 3}
     - {fileID: 5063088710826264072, guid: 91b0a6d69d30eed4db7faeb88ec88fd4, type: 3}
+    - {fileID: 7524301582193739127, guid: 91b0a6d69d30eed4db7faeb88ec88fd4, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6260691133897385742, guid: 91b0a6d69d30eed4db7faeb88ec88fd4, type: 3}
       insertIndex: -1
@@ -153,6 +154,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a0f0c7e28008f084e91b91cc47a232f6, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: bf435444070be0545bd2b9a0298295e9, type: 2}
     - target: {fileID: 919132149155446097, guid: a0f0c7e28008f084e91b91cc47a232f6, type: 3}
       propertyPath: m_Name
       value: M_Obelisco
