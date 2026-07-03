@@ -9,6 +9,8 @@ public class Obstacle : MonoBehaviour
     [SerializeField] bool applyKnockBack;
     [SerializeField] float knockbackForce = 5f;
 
+   
+
     void Update()
     {
         transform.forward = direction;

@@ -16,6 +16,8 @@ public class InterestPointByInput : InterestPoint
 
     [SerializeField] int interestQuantity = 20;
 
+    [SerializeField] Transform pointToScore;
+
     protected override void OnEnter()
     {
         canInput = true;
@@ -30,6 +32,7 @@ public class InterestPointByInput : InterestPoint
 
     protected override void OnFinishVisit()
     {
+        ScoreFeedbackManager.ShowScoreInPos(interestQuantity.ToString(), Color.green, pointToScore.position);
         PointOfInterestSystem.Instance.AddInterest(interestQuantity);
     }
 
