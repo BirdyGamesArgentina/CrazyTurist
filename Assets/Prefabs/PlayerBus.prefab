@@ -836,6 +836,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  rotationFacility: 300
   grip: 0.6
 --- !u!54 &5085892622173988893
 Rigidbody:
@@ -933,6 +934,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1292430323415511995, guid: 75466016ee200f749ab846c156cbfefd, type: 3}
+      propertyPath: m_ConnectedBody
+      value: 
+      objectReference: {fileID: 5085892622173988893}
     - target: {fileID: 6097184160198101810, guid: 75466016ee200f749ab846c156cbfefd, type: 3}
       propertyPath: m_Name
       value: Model
