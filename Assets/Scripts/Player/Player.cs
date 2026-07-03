@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     public bool[] PositionUsed;
     public int GetPersonAmount() => Persons.Count(x => x.childCount != 0);
 
+    [Header("Game Feel")]
+    public GameObject[] wheels;
 
     private void Awake()
     {
@@ -48,6 +50,22 @@ public class Player : MonoBehaviour
         float throttle = Input.GetAxisRaw("Vertical");
         float steer = Input.GetAxisRaw("Horizontal");
 
+        float wheelAngle = steer * 35f;
+
+        Quaternion targetRotation = Quaternion.Euler(0, wheelAngle, 0);
+
+        wheels[0].transform.localRotation = Quaternion.Slerp(wheels[0].transform.localRotation, targetRotation, 8f * Time.fixedDeltaTime);
+
+        wheels[1].transform.localRotation = Quaternion.Slerp(wheels[1].transform.localRotation, targetRotation, 8f * Time.fixedDeltaTime);
+
+
+
+
+        float steerForBus = steer;
+
+        if (Mathf.Abs(speed) < 0.1f)
+            steerForBus = 0f;
+
         //
         // SPEED
         //
@@ -58,7 +76,11 @@ public class Player : MonoBehaviour
         else if (throttle < 0)
         {
             if (speed > 0)
+            {
                 speed -= brake * Time.fixedDeltaTime;
+
+  
+            }
             else
                 speed -= acceleration * Time.fixedDeltaTime;
         }
@@ -88,7 +110,7 @@ public class Player : MonoBehaviour
 
         float maxYawSpeed = Mathf.Lerp(180f, 70f, speed01);
 
-        float targetYawSpeed = steer * maxYawSpeed;
+        float targetYawSpeed = steerForBus * maxYawSpeed;
 
         currentSteerVelocity = Mathf.MoveTowards(
             currentSteerVelocity,

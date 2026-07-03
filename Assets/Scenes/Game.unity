@@ -250,6 +250,16 @@ MonoBehaviour:
   myNameOnCanva: {fileID: 1882953488}
   MyInformationInCanva: {fileID: 698350248}
   myImage: {fileID: 1262148107}
+--- !u!1 &937719015 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 429913600586233637, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
+  m_PrefabInstance: {fileID: 4751259487898696457}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1047029077 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8265914430604701391, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
+  m_PrefabInstance: {fileID: 4751259487898696457}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1086531902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,6 +1107,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerBus
       objectReference: {fileID: 0}
+    - target: {fileID: 7503278029812799262, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
+      propertyPath: wheels.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503278029812799262, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
+      propertyPath: 'wheels.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1047029077}
+    - target: {fileID: 7503278029812799262, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
+      propertyPath: 'wheels.Array.data[1]'
+      value: 
+      objectReference: {fileID: 937719015}
     - target: {fileID: 8245353935533433664, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
