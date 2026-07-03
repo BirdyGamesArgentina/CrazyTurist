@@ -13,9 +13,12 @@ public class InterestPointProgressive : InterestPoint
     [SerializeField] LerpedObject[] anims_lerped; // ejecuta el OnLerp(float)
     protected override void OnEnter()
     {
-        SOManager.instance.myNameOnCanva.text = myMonument.nameOfMonument;
-        SOManager.instance.MyInformationInCanva.text = myMonument.informationText;
-        SOManager.instance.myImage.SetActive(true);
+        if (myMonument == null)
+        {
+            SOManager.instance.myNameOnCanva.text = myMonument.nameOfMonument;
+            SOManager.instance.MyInformationInCanva.text = myMonument.informationText;
+            SOManager.instance.myImage.SetActive(true);
+        }
         anim = true;
         timer_trans = 0f;
 

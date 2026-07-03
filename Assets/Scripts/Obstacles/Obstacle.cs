@@ -9,7 +9,14 @@ public class Obstacle : MonoBehaviour
     [SerializeField] bool applyKnockBack;
     [SerializeField] float knockbackForce = 5f;
 
-   
+    [SerializeField] int interest = 5;
+    public int InterestToRemove
+    {
+        get 
+        {
+            return interest;
+        }
+    }
 
     void Update()
     {
