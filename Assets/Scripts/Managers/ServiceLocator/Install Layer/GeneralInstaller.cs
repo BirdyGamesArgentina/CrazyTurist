@@ -12,6 +12,7 @@ namespace Game.Scripts.Shared.ServiceLocator
 
         public void InstallDependencies()
         {
+            new ServiceLocator();
             foreach (Installer i in installers)
                 i.Install(ServiceLocator.Instance);
         }

@@ -594,7 +594,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7206386114603114354}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -612,8 +612,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _resetButton: {fileID: 4287506433681124359}
   _backToMenuButton: {fileID: 4641973263327960618}
-  _panelTitle: {fileID: 0}
-  _scoreText: {fileID: 0}
+  _panelTitle: {fileID: 2794774888975348006}
+  _scoreText: {fileID: 1633569932216278155}
 --- !u!1 &7240582192742881784
 GameObject:
   m_ObjectHideFlags: 0
