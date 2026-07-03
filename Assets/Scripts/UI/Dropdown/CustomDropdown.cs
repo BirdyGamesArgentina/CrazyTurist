@@ -107,7 +107,7 @@ public class CustomDropdown : MonoBehaviour
 
     public void SelectItem(int index)
     {
-        
+        Debug.Log(index);
         items[CurrentSelectedItem].UnSelect();
 
         mainText.SetNewKey(items[index].GetComponentInChildren<LocalizedTextPro>().LocalizationKey);

@@ -135,7 +135,7 @@ namespace Assets.SimpleLocalization
 			//if (!Dictionary.ContainsKey(Language)) throw new KeyNotFoundException("Language not found: " + Language);
 			if (!Dictionary.ContainsKey(Language)) Language = "English";
 
-			if (!Dictionary[Language].ContainsKey(localizationKey))
+            if (!Dictionary.ContainsKey(Language) || !Dictionary[Language].ContainsKey(localizationKey))
 			{
 				Debug.LogWarning("Translation not found: " + localizationKey);
 				return localizationKey;

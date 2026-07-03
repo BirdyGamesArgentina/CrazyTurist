@@ -1,0 +1,123 @@
+Key,English,Spanish
+uigame.Upgrades,Skills,Habilidades
+uigame.Points,Points:,Puntos:
+uigame.MenuPauseTitle,MENU,MENÚ
+uigame.ResumeGame,Resume Game,Volver al Juego
+uigame.Settings,Settings,Opciones
+uigame.RestartButton,Restart Level,Reiniciar Nivel
+uigame.ReturnToMenu,Return to Menu,Volver al Menú
+uigame.EnterLevelTitle,Enter to the Level,Entrar al nivel
+uigame.EnterLevelQuestion,Are you sure you want to enter this level?,¿Seguro quieres entrar a este nivel?
+uigame.Yes,Yes,Sí
+uigame.No,No,No
+uigame.EndOfDemoTitle,End of the Demo,Final de la Demo
+uigame.EndOfDemoQuestion,This is the end of the Enough with the Witch demo.Thanks for playing!,Este es el final de la demo de Enough with the Witch. ¡Gracias por jugar!
+uigame.EndOfDemoButton,Delete Data,Borar datos
+uigame.LoseScreen,YOU LOSE...,HAS PERDIDO...
+uigame.PlayAgain,Play Again!,¡Volver a jugar!
+uigame.ReturnToHUB,Return to the base,Volver a la base
+uigame.WinScreen,YOU WIN!,¡HAS GANADO!
+uigame.Shop,Shop,Tienda
+uigame.Deck,Deck,Mazo
+uigame.Cards,Upgrade card,Mejora de carta
+uigame.Skip,Skip,Saltar
+uigame.PauseTitle,GAME PAUSED,JUEGO PAUSADO
+uigame.Close,Close,Cerrar
+settings.Graphics,Graphics,Gráficos
+settings.GResolution,Resolutions:,Resoluciones:
+settings.GWindowed,Windowed:,Modo ventana:
+settings.GQuality,Quality:,Imagen:
+settings.GQLow,Low,Bajo
+settings.GQMedium,Medium,Medio
+settings.GQHigh,High,Alto
+settings.GVsync,Vsync:,Sinc. Vertical:
+settings.GShadows,Shadows:,Sombras:
+settings.Off,Off,Apagado
+settings.GAntialiasing,Anti-Aliasing:,Suavizado:
+settings.Sounds,Sounds,Sonidos
+settings.SMusic,Music:,Música:
+settings.SEffects,Sound Effects:,Efectos de sonido:
+settings.Other,Others,Otros
+settings.OLanguage,Language:,Idioma:
+settings.OPauseGame,Automatic Upgrade:,Mejora Automática:
+settings.OXPBar,Show XP:,Mostrar Exp:
+settings.OTotemBar,Show Totem Bar:,Mostrar Barra de Totems:
+settings.OInvertBumpers,Invert Card Queue Order:,Invertir el orden de las cartas:
+uigame.DontHaveCurrency,You don't have enough currency,No tienes suficientes puntos.
+uigame.OkButton,Ok,Entiendo
+uigame.WantToBuy,Do you want to buy the card ,¿Quieres comprar la carta 
+uigame.BuyButton,Buy,Comprar
+uigame.Return,Return,Volver
+uigame.EquipCard,Equip,Equipar
+uigame.Buy,Buy,Comprar
+uigame.Chage,Change,Cambiar
+uigame.Melee,Sword,Espada
+uigame.Ranged,Wand,Báculo
+uigame.Shield,Shield,Escudo
+uigame.Boomerang,Boomerang,Búmeran
+uigame.Pet,Cage,Jaula
+uigame.ResetPowers,Do you want reset your weapons?,¿Quieres restablecer tus armas?
+uigame.Difficult,Difficult:,Dificultad:
+uigame.PlayLevel,Play Level,Jugar Nivel
+uigame.Stats,Stats,Estadísticas
+uigame.CardsInfo,Cards,Cartas
+uigame.WeaponsInfo,Weapons,Armas
+uigame.SkipCinematic,Skip Scene,Saltar Escena
+uigame.Credits,Credits,Créditos
+credit.GameProduced,Produced by:,Producido por:
+credit.Programming,Programming:,Programación:
+credit.3DArt,3D Art:,Arte 3D:
+credit.2DArt,2D Art:,Arte 2D:
+credit.Animations,Animations:,Animaciones:
+credit.VFX,VFX:,Efectos visuales:
+credit.AdditionalArt,Additional Art:,Arte Adicional:
+credit.GameDesign,Game Design:,Diseño:
+credit.SFX,SFX & Music:,Efectos de sonido & Música:
+credit.Music,Music:,Música:
+credit.SpecialThanks,Special Thanks:,Agradecimientos especiales:
+credit.GameEngine,Game Engine:,Motor:
+credit.ThanksPlaying,Thanks For Playing!,¡Gracias Por Jugar!
+settings.SMaster,Master:,Master:
+settings.SMute,Mute:,Silenciar:
+uigame.DemoTitle,You've reached the end of the demo,Has llegado al final de la demo
+uigame.DemoDesc,"Thank you for playing Enough with the Witch Demo! The final game will continue the story and add new cards and abilities, so add Enough with the Witch to your wishlist right now for stay tuned to the news!","¡Gracias por jugar a la demo de Enough with the Witch! ¡El juego completo continúa la istoria, y añade nuevas cartas y habilidades, así que añade a Enough with the Witch ahora para estar atento a las novedades!"
+uigame.DemoWishList,Wishlist Now!,Lista de Deseados
+uigame.DemoOk,Ok,Entendido
+uigame.Tutorial1,Collect cards and throw them at the <color=violet|totem>!,¡Agarra cartas y lánzalas al <color=violet|totem>!
+uigame.Tutorial2,<wave|Well done!>,<wave|¡Bien hecho!>
+uigame.Tutorial3,"Watch out! It's an <bubble|enemy>!
+Try throwing a card at it.","¡Cuidado! ¡Es un <bubble|enemigo>!
+Intenta lanzarle una carta."
+uigame.Tutorial4,Perfect! Now pick up the <color=blue|soul> it left behind.,¡Perfecto! Ahora recoge el <color=blue|alma> que dejó tirada.
+uigame.Tutorial5,"With enough <color=blue|souls>,
+you can level up your cards.","Con las suficientes <color=blue|almas>,
+puedes subir de nivel tus cartas."
+uigame.Tutorial6,"You can skip the upgrade selection by checking
+the automatic upgrade option in the options window","Puede saltarte la elección de mejoras marcando
+la opción de mejora automática en la ventana de opciones."
+uigame.Tutorial7,"Keep in mind that the upgrades
+will be lost once we return to <wave|our base>.","Ten en cuenta que las mejoras se perderan
+una vez que volvamos a <wave|nuestra base>."
+uigame.Tutorial8,Now destroy all the <color=violet|totems> to teach that witch a lesson!,"¡Ahora destruye todos los <color=violet|totems>
+para darle una lección a esa bruja!"
+uigame.SoulTutorial1,You've got <color=cyan|a soul>!,¡Has conseguido <color=cyan|un alma>!
+uigame.SoulTutorial2,"You can use it at the weapons stand to get new weapons
+or upgrade the ones you already have.","Puedes usarla en el puesto de armas para obtener nuevas
+o mejorar las que ya tienes."
+uigame.BloodTutorial1,You've got <color=red|Witch blood>!,¡Has conseguido <color=red|sangre de la Bruja>!
+uigame.BloodTutorial2,You can use it at the contracts stand to get new ones.,Puedes usarla en el puesto de contratos para obtener nuevos.
+uigame.SlotTutorial1,You've got <color=violet|a card>!,¡Has conseguido <color=violet|una carta>!
+uigame.SlotTutorial2,"You will now be able to equip yourself with one more contract in the contract post.
+<wave|(it is actually mandatory)>","Ahora podrás equiparte un contrato más en el puesto de contratos.
+<wave|(en realidad es obligatorio)>"
+uigame.BuyGameOnEquipError,You don't have enough blood for this card.,No tienes suficiente sangre para esta carta.
+uigame.BuyGameOnEquip,and equip it?,y equiparlo?
+uigame.endless.Wave,Wave:,Oleada:
+uigame.endless.ServerError,Server error. Try again later.,Error de servidor. Inténtelo más tarde.
+uigame.endless.NotConnected,The online leaderboard only works with Steam.,La tabla de puntuaciones en línea solo funciona con Steam.
+uigame.endless.Uploading,Uploading score...,Subiendo puntuación...
+uigame.endless.Downloading,Downloading leaderboard...,Descargando el resto de puntuaciones...
+uigame.Paused,Paused,Pausado
+uigame.Resume,Resume,Reanudar
+uigame.CantPlay,You can't play!,¡No puedes seguir!
+uigame.CantPlayDesc,You have a free slot of card unequiped! Equip it!,¡Tienes una espacio para equipar cartas vacío! ¡Equipa una!
