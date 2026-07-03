@@ -14352,6 +14352,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5085892622173988893, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
+      propertyPath: m_Constraints
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085892622173988893, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
+      propertyPath: m_ImplicitCom
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085892622173988893, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
+      propertyPath: m_ImplicitTensor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085892622173988893, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
+      propertyPath: m_InertiaTensor.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085892622173988893, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
+      propertyPath: m_InertiaRotation.w
+      value: 0.97493625
+      objectReference: {fileID: 0}
+    - target: {fileID: 5085892622173988893, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
+      propertyPath: m_InertiaRotation.z
+      value: 0.22248445
+      objectReference: {fileID: 0}
     - target: {fileID: 7006113923419541556, guid: e8f5f1d8b298f8847801a6c78198986b, type: 3}
       propertyPath: m_Name
       value: PlayerBus

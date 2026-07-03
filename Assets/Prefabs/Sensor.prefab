@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2836510641963431979}
   - component: {fileID: 6255791361097365743}
-  - component: {fileID: 2259686415444560629}
   - component: {fileID: 5182457244042992013}
   m_Layer: 9
   m_Name: Sensor
@@ -46,33 +45,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a12ddd79a46c1a64ea5bce5df907c250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &2259686415444560629
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 692023560321252939}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!65 &5182457244042992013
 BoxCollider:
   m_ObjectHideFlags: 0

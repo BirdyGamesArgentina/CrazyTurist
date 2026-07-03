@@ -783,7 +783,7 @@ MonoBehaviour:
   moveSpeed: 12
   acceleration: 9
   deceleration: 10
-  rotationSpeed: 15
+  rotationSpeed: 6
   Persons:
   - {fileID: 1881672751906074854}
   - {fileID: 88314626610785687}

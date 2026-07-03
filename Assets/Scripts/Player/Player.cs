@@ -50,7 +50,7 @@ public class Player : MonoBehaviour
         {
             Quaternion targetRotation = Quaternion.LookRotation(input);
 
-            rb.MoveRotation(Quaternion.Slerp(rb.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime));
+            rb.transform.rotation = Quaternion.Slerp(rb.transform.rotation, targetRotation, rotationSpeed * Time.fixedDeltaTime);
 
         }
     }
