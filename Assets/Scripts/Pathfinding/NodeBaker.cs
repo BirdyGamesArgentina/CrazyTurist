@@ -41,6 +41,7 @@ namespace PathFinding
 
         }
 
+#if UNITY_EDITOR
         private void OnEnable()
         {
             EditorApplication.playModeStateChanged += OnStateChange;
@@ -57,7 +58,7 @@ namespace PathFinding
                 this.enabled = false;
             }
         }
+#endif
     }
-
 }
 
