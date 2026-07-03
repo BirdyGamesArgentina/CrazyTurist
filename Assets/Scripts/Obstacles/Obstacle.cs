@@ -1,3 +1,4 @@
+using PathFinding;
 using UnityEngine;
 
 public class Obstacle : MonoBehaviour
@@ -18,6 +19,9 @@ public class Obstacle : MonoBehaviour
     [SerializeField] AnimationCurve curve;
     [SerializeField] Renderer[] renders;
 
+    //[SerializeField] Transform destiny;
+    [SerializeField] PathFinder pathfinder;
+
     public int InterestToRemove
     {
         get 
@@ -31,11 +35,27 @@ public class Obstacle : MonoBehaviour
         renders = GetComponentsInChildren<Renderer>();
     }
 
+    private void Start()
+    {
+        Invoke("OnStart", 0.5f);
+    }
+
+    void OnStart()
+    {
+        pathfinder.CallbackOnFinish(OnReachPOsition);
+        pathfinder.GoToPosition(PathFindingOptions.GetRandomPosition());
+    }
+
+    void OnReachPOsition()
+    {
+        pathfinder.GoToPosition(PathFindingOptions.GetRandomPosition());
+    }
+
     const string COLOR_PROP = "_Color";
     Color current = Color.white;
     void Update()
     {
-        transform.forward = direction;
+//        transform.forward = direction;
 
         if (inCD)
         {
@@ -63,7 +83,7 @@ public class Obstacle : MonoBehaviour
     private void FixedUpdate()
     {
         if (inCD) return;
-        myRb.linearVelocity = direction * Time.deltaTime * obstacleSpeed;
+        //myRb.linearVelocity = direction * Time.deltaTime * obstacleSpeed;
     }
 
     public void HitKnockback(Vector3 dir)

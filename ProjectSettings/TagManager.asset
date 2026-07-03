@@ -16,8 +16,8 @@ TagManager:
   - obstacle
   - playerSensor
   - noCameraRender
-  - 
-  - 
+  - pathFindingObstacle
+  - node
   - 
   - 
   - 
