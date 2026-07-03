@@ -22,6 +22,8 @@ public class Obstacle : MonoBehaviour
     //[SerializeField] Transform destiny;
     [SerializeField] PathFinder pathfinder;
 
+    [SerializeField] GameObject[] options;
+
     public int InterestToRemove
     {
         get 
@@ -38,6 +40,12 @@ public class Obstacle : MonoBehaviour
     private void Start()
     {
         Invoke("OnStart", 0.5f);
+
+        foreach (var op in options)
+        {
+            op.SetActive(false);
+        }
+        options[Random.Range(0, options.Length)].SetActive(true);
     }
 
     void OnStart()
@@ -76,6 +84,7 @@ public class Obstacle : MonoBehaviour
             {
                 timercd = 0f;
                 inCD = false;
+                pathfinder.Stunned(false);
             }
         }
     }
@@ -91,6 +100,8 @@ public class Obstacle : MonoBehaviour
         if (inCD) return;
         
         inCD = true;
+
+        pathfinder.Stunned(true);
 
         if (applyKnockBack)
         {

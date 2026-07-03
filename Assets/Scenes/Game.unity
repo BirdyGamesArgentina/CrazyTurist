@@ -171,10 +171,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pathfinding
       objectReference: {fileID: 0}
-    - target: {fileID: 6593379585555911132, guid: 5cb19d1724517184ab509c992d8b0d88, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

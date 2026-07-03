@@ -21,6 +21,8 @@ namespace PathFinding
 
         void Update()
         {
+            if (stun) return;
+
             if (walk)
             {
                 desired = path[index].transform.position - transform.position;
@@ -51,6 +53,12 @@ namespace PathFinding
                     transform.forward = velocity;
                 }
             }
+        }
+
+        bool stun = false;
+        public void Stunned(bool stun)
+        {
+            this.stun = stun;
         }
 
         int index = 0;
