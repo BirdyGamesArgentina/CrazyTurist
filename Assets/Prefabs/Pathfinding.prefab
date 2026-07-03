@@ -67,8 +67,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -187,8 +187,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -307,8 +307,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -430,8 +430,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -548,8 +548,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -672,8 +672,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -796,8 +796,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -947,8 +947,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -1067,8 +1067,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -1190,8 +1190,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -1313,8 +1313,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -1435,8 +1435,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -1784,8 +1784,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -1937,8 +1937,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -2057,8 +2057,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -2180,8 +2180,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -2303,8 +2303,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -2425,8 +2425,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -2546,8 +2546,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -2697,8 +2697,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -2820,8 +2820,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -2940,8 +2940,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -3060,8 +3060,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -3183,8 +3183,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -3306,8 +3306,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -3426,8 +3426,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -3549,8 +3549,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -3698,8 +3698,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -3818,8 +3818,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -3941,8 +3941,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -4059,8 +4059,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -4178,8 +4178,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -4301,8 +4301,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -4420,8 +4420,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -4544,8 +4544,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -4695,8 +4695,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -4814,8 +4814,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -4937,8 +4937,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -5059,8 +5059,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -5208,8 +5208,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -5327,8 +5327,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -5450,8 +5450,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -5572,8 +5572,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -5727,8 +5727,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -5924,8 +5924,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -6047,8 +6047,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -6196,8 +6196,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -6381,8 +6381,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -6504,8 +6504,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -6655,8 +6655,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -6779,8 +6779,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -6902,8 +6902,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -7022,8 +7022,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -7145,8 +7145,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -7263,8 +7263,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0
@@ -7381,8 +7381,8 @@ MonoBehaviour:
   sphereRadius: 0.25
   drawDetection: 0
   drawConnections: 0
-  costo: 3.402823e+38
-  costoFinal: 3.402823e+38
+  costo: 9999.9
+  costoFinal: 9999.9
   environmental: 0
   isVisited: 0
   isOpen: 0

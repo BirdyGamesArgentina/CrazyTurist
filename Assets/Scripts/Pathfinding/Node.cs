@@ -52,8 +52,8 @@ namespace PathFinding
         [SerializeField] bool drawDetection;
         [SerializeField] bool drawConnections;
 
-        public float costo = float.MaxValue;
-        public float costoFinal = float.MaxValue;
+        public float costo = 999f;
+        public float costoFinal = 999f;
 
         [Range(0, 3)]
         public int environmental = 0;
@@ -127,7 +127,7 @@ namespace PathFinding
 
         private void OnDrawGizmos()
         {
-
+            return;
 
             if (drawsphere)
             {
