@@ -1022,7 +1022,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1804650408}
-  lerpAmount: 0.2
+  lerpAmount: 0.5
 --- !u!1001 &672707251362170975
 PrefabInstance:
   m_ObjectHideFlags: 0
