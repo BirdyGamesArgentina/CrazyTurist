@@ -191,7 +191,96 @@ MonoBehaviour:
   myRb: {fileID: 6050028807799618209}
   applyKnockBack: 1
   knockbackForce: 50
+  cd: 1
   interest: 5
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -6.1882825
+      outSlope: -6.1882825
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.121107176
+      value: 0.25055456
+      inSlope: -0.16294289
+      outSlope: -0.16294289
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.20198123
+      value: 0.72467035
+      inSlope: 0.9009912
+      outSlope: 0.9009912
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.31357053
+      value: 0.27157158
+      inSlope: -0.61890507
+      outSlope: -0.61890507
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.47531736
+      value: 0.72811884
+      inSlope: 0.37057173
+      outSlope: 0.37057173
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.6131941
+      value: 0.4411338
+      inSlope: 0.76408875
+      outSlope: 0.76408875
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.7276746
+      value: 0.85436696
+      inSlope: 1.5527787
+      outSlope: 1.5527787
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.864414
+      value: 0.78543925
+      inSlope: 0.5391943
+      outSlope: 0.5391943
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1.5824695
+      outSlope: 1.5824695
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  renders: []
 --- !u!54 &6050028807799618209
 Rigidbody:
   m_ObjectHideFlags: 0

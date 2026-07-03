@@ -9,7 +9,15 @@ public class Obstacle : MonoBehaviour
     [SerializeField] bool applyKnockBack = true;
     [SerializeField] float knockbackForce = 5f;
 
+    bool inCD = false;
+    [SerializeField] float cd = 1f;
+    float timercd;
+
     [SerializeField] int interest = 5;
+
+    [SerializeField] AnimationCurve curve;
+    [SerializeField] Renderer[] renders;
+
     public int InterestToRemove
     {
         get 
@@ -18,19 +26,57 @@ public class Obstacle : MonoBehaviour
         }
     }
 
+    private void Awake()
+    {
+        renders = GetComponentsInChildren<Renderer>();
+    }
+
+    const string COLOR_PROP = "_Color";
+    Color current = Color.white;
     void Update()
     {
         transform.forward = direction;
+
+        if (inCD)
+        {
+            if (timercd < cd)
+            {
+                timercd += Time.deltaTime;
+
+                float curveVal = curve.Evaluate(timercd / cd);
+
+                for (int i = 0; i < renders.Length; i++)
+                {
+                    current = renders[i].material.GetColor(COLOR_PROP);
+                    current.a = curveVal;
+                    renders[i].material.SetColor(COLOR_PROP, current);
+                }
+            }
+            else
+            {
+                timercd = 0f;
+                inCD = false;
+            }
+        }
     }
 
     private void FixedUpdate()
     {
+        if (inCD) return;
         myRb.linearVelocity = direction * Time.deltaTime * obstacleSpeed;
     }
 
     public void HitKnockback(Vector3 dir)
     {
-        if(applyKnockBack) myRb.AddForce(dir * knockbackForce, ForceMode.Acceleration);
+        if (inCD) return;
+        
+        inCD = true;
+
+        if (applyKnockBack)
+        {
+            myRb.linearVelocity = Vector3.zero;
+            myRb.AddForce(dir * knockbackForce, ForceMode.VelocityChange); 
+        }
     }
 
 }

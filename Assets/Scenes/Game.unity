@@ -14490,7 +14490,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 256722197810718724, guid: 1ca35cb06b98b14428f3fe0c6a0f21a1, type: 3}
       propertyPath: knockbackForce
-      value: 50
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1671309443928804091, guid: 1ca35cb06b98b14428f3fe0c6a0f21a1, type: 3}
       propertyPath: time_to_trans
@@ -14502,7 +14502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2333986416948829858, guid: 1ca35cb06b98b14428f3fe0c6a0f21a1, type: 3}
       propertyPath: knockbackForce
-      value: 50
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3005612202384612899, guid: 1ca35cb06b98b14428f3fe0c6a0f21a1, type: 3}
       propertyPath: time_to_trans
@@ -14518,7 +14518,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4686741252575821196, guid: 1ca35cb06b98b14428f3fe0c6a0f21a1, type: 3}
       propertyPath: knockbackForce
-      value: 50
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5975106341421913595, guid: 1ca35cb06b98b14428f3fe0c6a0f21a1, type: 3}
       propertyPath: applyKnockBack
@@ -14526,7 +14526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5975106341421913595, guid: 1ca35cb06b98b14428f3fe0c6a0f21a1, type: 3}
       propertyPath: knockbackForce
-      value: 50
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7117274223667550464, guid: 1ca35cb06b98b14428f3fe0c6a0f21a1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14586,7 +14586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7263015969893539147, guid: 1ca35cb06b98b14428f3fe0c6a0f21a1, type: 3}
       propertyPath: knockbackForce
-      value: 50
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8436503530397243480, guid: 1ca35cb06b98b14428f3fe0c6a0f21a1, type: 3}
       propertyPath: applyKnockBack
@@ -14594,7 +14594,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8436503530397243480, guid: 1ca35cb06b98b14428f3fe0c6a0f21a1, type: 3}
       propertyPath: knockbackForce
-      value: 50
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8674252185256924002, guid: 1ca35cb06b98b14428f3fe0c6a0f21a1, type: 3}
       propertyPath: m_fontSize
@@ -14610,7 +14610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8856831489654138424, guid: 1ca35cb06b98b14428f3fe0c6a0f21a1, type: 3}
       propertyPath: knockbackForce
-      value: 50
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
