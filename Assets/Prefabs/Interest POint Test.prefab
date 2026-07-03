@@ -5977,6 +5977,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  myMonument: {fileID: 0}
   time_to_trans: 3
   curve:
     serializedVersion: 2
