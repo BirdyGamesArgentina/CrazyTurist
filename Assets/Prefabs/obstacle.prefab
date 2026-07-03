@@ -190,7 +190,7 @@ MonoBehaviour:
   obstacleSpeed: 100
   myRb: {fileID: 6050028807799618209}
   applyKnockBack: 1
-  knockbackForce: 50
+  knockbackForce: 10
   cd: 1
   interest: 5
   curve:
