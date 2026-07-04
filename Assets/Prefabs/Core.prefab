@@ -234,7 +234,6 @@ MonoBehaviour:
   particleSparks: {fileID: 3235197360494537455, guid: 2eb4414cba434764ebaf4a63a9d1c140, type: 3}
   explosionParticle: {fileID: 6334829413274573023, guid: dd434c5a9fe37e446b215284ef9ba147, type: 3}
   player: {fileID: 0}
-  invulnerable: 0
 --- !u!1 &8647103327748184135
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,6 +358,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Audio
       objectReference: {fileID: 0}
+    - target: {fileID: 7701801535529178750, guid: 0570f7d4157e1e14794c1910221c3107, type: 3}
+      propertyPath: sounds.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7701801535529178750, guid: 0570f7d4157e1e14794c1910221c3107, type: 3}
+      propertyPath: sounds.Array.data[3].ID
+      value: GenteFestejando
+      objectReference: {fileID: 0}
+    - target: {fileID: 7701801535529178750, guid: 0570f7d4157e1e14794c1910221c3107, type: 3}
+      propertyPath: sounds.Array.data[4].ID
+      value: AutoChocando
+      objectReference: {fileID: 0}
+    - target: {fileID: 7701801535529178750, guid: 0570f7d4157e1e14794c1910221c3107, type: 3}
+      propertyPath: sounds.Array.data[3].group
+      value: 
+      objectReference: {fileID: 8530024845299122342, guid: 1e3aeef1834bbfd459605378c9c8a8b2, type: 2}
+    - target: {fileID: 7701801535529178750, guid: 0570f7d4157e1e14794c1910221c3107, type: 3}
+      propertyPath: sounds.Array.data[4].group
+      value: 
+      objectReference: {fileID: 8530024845299122342, guid: 1e3aeef1834bbfd459605378c9c8a8b2, type: 2}
+    - target: {fileID: 7701801535529178750, guid: 0570f7d4157e1e14794c1910221c3107, type: 3}
+      propertyPath: sounds.Array.data[3].sounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7701801535529178750, guid: 0570f7d4157e1e14794c1910221c3107, type: 3}
+      propertyPath: sounds.Array.data[4].sounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7701801535529178750, guid: 0570f7d4157e1e14794c1910221c3107, type: 3}
+      propertyPath: 'sounds.Array.data[3].sounds.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 84c44db88df58644c9a84022e8edfb55, type: 3}
+    - target: {fileID: 7701801535529178750, guid: 0570f7d4157e1e14794c1910221c3107, type: 3}
+      propertyPath: 'sounds.Array.data[4].sounds.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 01a68e1f6d0c4e54683bcee727ac421b, type: 3}
     - target: {fileID: 7715993448947242308, guid: 0570f7d4157e1e14794c1910221c3107, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
