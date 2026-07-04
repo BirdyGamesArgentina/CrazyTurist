@@ -1555,6 +1555,58 @@ PrefabInstance:
       propertyPath: ticketsArrive_animator
       value: 
       objectReference: {fileID: 204409153}
+    - target: {fileID: 8513262103791578677, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+      propertyPath: sounds.Array.data[0].ID
+      value: DestroyedCar
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513262103791578677, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+      propertyPath: sounds.Array.data[0].sounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513262103791578677, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+      propertyPath: 'sounds.Array.data[0].sounds.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 01a68e1f6d0c4e54683bcee727ac421b, type: 3}
+    - target: {fileID: 8911049893515386106, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+      propertyPath: sounds.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911049893515386106, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+      propertyPath: sounds.Array.data[3].ID
+      value: GenteFestejando
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911049893515386106, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+      propertyPath: sounds.Array.data[4].ID
+      value: AutoChocando
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911049893515386106, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+      propertyPath: sounds.Array.data[3].group
+      value: 
+      objectReference: {fileID: 8530024845299122342, guid: 1e3aeef1834bbfd459605378c9c8a8b2, type: 2}
+    - target: {fileID: 8911049893515386106, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+      propertyPath: sounds.Array.data[4].group
+      value: 
+      objectReference: {fileID: 8530024845299122342, guid: 1e3aeef1834bbfd459605378c9c8a8b2, type: 2}
+    - target: {fileID: 8911049893515386106, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+      propertyPath: sounds.Array.data[3].isLoop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911049893515386106, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+      propertyPath: sounds.Array.data[3].sounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911049893515386106, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+      propertyPath: sounds.Array.data[4].sounds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8911049893515386106, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+      propertyPath: 'sounds.Array.data[3].sounds.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 84c44db88df58644c9a84022e8edfb55, type: 3}
+    - target: {fileID: 8911049893515386106, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+      propertyPath: 'sounds.Array.data[4].sounds.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 01a68e1f6d0c4e54683bcee727ac421b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

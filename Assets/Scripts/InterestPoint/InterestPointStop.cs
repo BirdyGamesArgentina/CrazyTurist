@@ -18,6 +18,7 @@ public class InterestPointStop : InterestPoint
     protected override void OnEnter()
     {
         progressionModule.Begin();
+
     }
     protected override void OnExit()
     {

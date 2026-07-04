@@ -45,7 +45,10 @@ public class InterestPointProgressive : InterestPoint
     {
         if (visited) return;
 
+
         if (canReactive == false) return;
+        SoundFX.PlaySound("GenteFestejando");
+
         imInAMonument = true;
     
         progresor.Begin();
@@ -53,7 +56,8 @@ public class InterestPointProgressive : InterestPoint
 
     protected override void OnExit()
     {
-     
+
+        SoundFX.StopSound("GenteFestejando");
 
         if (canReactive == false) return;
         imInAMonument = false;

@@ -49,7 +49,9 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        float throttle = Input.GetAxisRaw("Vertical");
+
+       
+            float throttle = Input.GetAxisRaw("Vertical");
         float steer = Input.GetAxisRaw("Horizontal");
 
         float wheelAngle = steer * 35f;

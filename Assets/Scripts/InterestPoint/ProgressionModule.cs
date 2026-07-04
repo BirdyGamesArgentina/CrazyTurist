@@ -30,7 +30,6 @@ public class ProgressionModule : MonoBehaviour
     {
         
         if (finished) return;
-
         filling = true;
         draining = false;
     }
@@ -45,6 +44,9 @@ public class ProgressionModule : MonoBehaviour
 
     public void Stop()
     {
+        SoundFX.StopSound("GenteFestejando");
+        
+
         filling = false;
         draining = false;
     }
