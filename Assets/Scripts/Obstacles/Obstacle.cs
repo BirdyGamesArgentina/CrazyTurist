@@ -45,7 +45,16 @@ public class Obstacle : MonoBehaviour
         {
             op.SetActive(false);
         }
-        options[Random.Range(0, options.Length)].SetActive(true);
+        var selected = options[Random.Range(0, options.Length)];
+        selected.SetActive(true);
+
+        ChangeRandomColor(selected.GetComponent<Renderer>());
+    }
+
+    void ChangeRandomColor(Renderer render)
+    {
+
+        render.material.SetColor("_VertextColor", Random.ColorHSV());
     }
 
     void OnStart()
