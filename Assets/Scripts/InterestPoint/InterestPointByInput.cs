@@ -34,6 +34,8 @@ public class InterestPointByInput : InterestPoint
     protected override void OnFinishVisit()
     {
         spended = true;
+        SoundFX.PlaySound("camera");
+        FLash.Instance.SnapShot();
         ScoreFeedbackManager.ShowScoreInPos("+"+interestQuantity, Color.green, pointToScore.position);
         PointOfInterestSystem.Instance.AddInterest(interestQuantity);
         PointOfInterestSystem.Instance.HideSideFeedback();

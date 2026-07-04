@@ -62,24 +62,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - ID: loopBroom
+  - ID: camera
     sounds:
-    - {fileID: 8300000, guid: 5aea081bd1bbaee4b8cf8a3e64ca9c14, type: 3}
-    currentIndex: 0
-    priority: 0
-    isLoop: 1
-    group: {fileID: 8530024845299122342, guid: 1e3aeef1834bbfd459605378c9c8a8b2, type: 2}
-  - ID: initiBroom
-    sounds:
-    - {fileID: 8300000, guid: a7ec2b32b90777c488f4fc5510bceed7, type: 3}
+    - {fileID: 8300000, guid: c97872d16ff0ad841a511427fc7eaaf9, type: 3}
     currentIndex: 0
     priority: 0
     isLoop: 0
-    group: {fileID: 8530024845299122342, guid: 1e3aeef1834bbfd459605378c9c8a8b2, type: 2}
-  - ID: loopMotor
-    sounds:
-    - {fileID: 8300000, guid: 6c83754dcccb99f4791726ac79f4cfd4, type: 3}
-    currentIndex: 0
-    priority: 0
-    isLoop: 1
     group: {fileID: 8530024845299122342, guid: 1e3aeef1834bbfd459605378c9c8a8b2, type: 2}

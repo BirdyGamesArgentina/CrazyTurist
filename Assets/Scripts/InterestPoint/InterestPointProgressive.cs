@@ -120,6 +120,8 @@ public class InterestPointProgressive : InterestPoint
     }
     protected override void OnFinishVisit()
     {
+        SoundFX.PlaySound("camera");
+        FLash.Instance.SnapShot();
         Debug.Log("Interest Point Visited: " + gameObject.name);
         PointOfInterestSystem.Instance.CompleteInterest();
         visited= true;
