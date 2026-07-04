@@ -11,6 +11,7 @@ public class PowerUp_InterestLock : PowerUp
     protected override void OnEndPowerUp()
     {
         PointOfInterestSystem.Instance.InterestLock(false);
+        MusicHandler.ChangeTo("music_gameplay");
     }
 
     protected override void OnPickUp(Player player)
@@ -19,6 +20,7 @@ public class PowerUp_InterestLock : PowerUp
 
     protected override void OnStartPowerUp(Player player)
     {
+        MusicHandler.ChangeTo("music_interesInmune");
         PointOfInterestSystem.Instance.InterestLock(true);
         current = Instantiate(prefab, transform);
         transform.localPosition = new Vector3(0, 0.8f, -1.25f);

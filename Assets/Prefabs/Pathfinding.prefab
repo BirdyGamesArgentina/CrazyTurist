@@ -47,9 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 181664952452661592}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -62,7 +61,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -98,6 +97,126 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 56998190685446730}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &127086987920746283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8036290407132021869}
+  - component: {fileID: 694128334971849323}
+  - component: {fileID: 6397243922444582061}
+  - component: {fileID: 846217884485421344}
+  m_Layer: 12
+  m_Name: GameObject (72)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8036290407132021869
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127086987920746283}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 71.15, y: 0.08, z: 117.52}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &694128334971849323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127086987920746283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 3459823181389813637}
+  - {fileID: 6739923365543991845}
+  - {fileID: 4125769879599482567}
+  - {fileID: 4413220750490229349}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &6397243922444582061
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127086987920746283}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &846217884485421344
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127086987920746283}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -165,10 +284,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 6252755322129202681}
+  - {fileID: 6488956734284521619}
+  - {fileID: 6117962951176635177}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -181,7 +300,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -290,6 +409,127 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &314370266667723162
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5843259381478516207}
+  - component: {fileID: 3544392219638999604}
+  - component: {fileID: 3903266538758531723}
+  - component: {fileID: 2482005164809828604}
+  m_Layer: 12
+  m_Name: GameObject (69)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5843259381478516207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314370266667723162}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 92.68, y: 0.08, z: 114.58}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3544392219638999604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314370266667723162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 6573288404368572612}
+  - {fileID: 1598757613390502318}
+  - {fileID: 8163571184317275450}
+  - {fileID: 3459823181389813637}
+  - {fileID: 6739923365543991845}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &3903266538758531723
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314370266667723162}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &2482005164809828604
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314370266667723162}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &323511049859818967
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,6 +583,123 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &361244355068518594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5079117658051324837}
+  - component: {fileID: 1919636362640979967}
+  - component: {fileID: 5100411980250909651}
+  - component: {fileID: 5079598074630524982}
+  m_Layer: 12
+  m_Name: GameObject (82)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5079117658051324837
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361244355068518594}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.1, y: 0.08, z: 136.45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1919636362640979967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361244355068518594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 2968428988713655768}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &5100411980250909651
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361244355068518594}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &5079598074630524982
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361244355068518594}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &437813630350306524
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,10 +747,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 4370741925764318030}
+  - {fileID: 5567347855703059607}
+  - {fileID: 5715192814501143024}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -406,7 +763,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -509,14 +866,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 6631210083337284854}
+  - {fileID: 6867013689153827158}
+  - {fileID: 7962695477940906853}
+  - {fileID: 1293461597656265411}
+  - {fileID: 7743466869604962279}
+  - {fileID: 1884602494207548912}
+  - {fileID: 8151634360081013363}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -529,7 +886,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -632,10 +989,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 7736491101690872956}
+  - {fileID: 309566652395138304}
+  - {fileID: 6092551298543098407}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -648,7 +1005,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -684,6 +1041,126 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498884244152058191}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &532504356170126153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8907468883212014794}
+  - component: {fileID: 9144445875059153308}
+  - component: {fileID: 7231236939737550634}
+  - component: {fileID: 6147531991014124489}
+  m_Layer: 12
+  m_Name: GameObject (64)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8907468883212014794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532504356170126153}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 94.57, y: 0.08, z: 92.57}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9144445875059153308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532504356170126153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 1376938317432421582}
+  - {fileID: 5757986681987968320}
+  - {fileID: 1361542126591887952}
+  - {fileID: 6062546309906948208}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &7231236939737550634
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532504356170126153}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &6147531991014124489
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532504356170126153}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -751,15 +1228,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 6252755322129202681}
+  - {fileID: 1033929075307551182}
+  - {fileID: 1293461597656265411}
+  - {fileID: 7743466869604962279}
+  - {fileID: 6488956734284521619}
+  - {fileID: 7635737251688323218}
+  - {fileID: 2071021879776218510}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -772,7 +1248,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -875,15 +1351,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 3760267489848366236}
+  - {fileID: 708170732246957494}
+  - {fileID: 2658078922785093378}
+  - {fileID: 7962695477940906853}
+  - {fileID: 7743466869604962279}
+  - {fileID: 6117962951176635177}
+  - {fileID: 2071021879776218510}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -896,7 +1371,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -1036,6 +1511,245 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &811088599560815091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2575976761037825123}
+  - component: {fileID: 5193277718817834233}
+  - component: {fileID: 3197135178458847573}
+  - component: {fileID: 3129618185093503984}
+  m_Layer: 12
+  m_Name: GameObject (88)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2575976761037825123
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811088599560815091}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 94.8, y: 0.08, z: 174.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5193277718817834233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811088599560815091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 8283853316019902466}
+  - {fileID: 3811525825739716530}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &3197135178458847573
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811088599560815091}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3129618185093503984
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811088599560815091}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &914704221736168270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4216949586912113415}
+  - component: {fileID: 1361542126591887952}
+  - component: {fileID: 2649487348503193952}
+  - component: {fileID: 1146416071589189424}
+  m_Layer: 12
+  m_Name: GameObject (60)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4216949586912113415
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914704221736168270}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 75.52, y: 0.08, z: 89.77}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1361542126591887952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914704221736168270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 5757986681987968320}
+  - {fileID: 9144445875059153308}
+  - {fileID: 6062546309906948208}
+  - {fileID: 2509263211055495016}
+  - {fileID: 6290373655314422912}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &2649487348503193952
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914704221736168270}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1146416071589189424
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914704221736168270}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &927690359480896200
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,10 +1797,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 708170732246957494}
+  - {fileID: 7962695477940906853}
+  - {fileID: 1293461597656265411}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -1099,7 +1813,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -1202,10 +1916,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 5580032152386728594}
+  - {fileID: 8691958416021549746}
+  - {fileID: 8776233279735978482}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -1218,7 +1932,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -1321,14 +2035,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 309566652395138304}
+  - {fileID: 4244827512212780362}
+  - {fileID: 3601499803717379653}
+  - {fileID: 1508726255099266312}
+  - {fileID: 6631210083337284854}
+  - {fileID: 6867013689153827158}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -1341,7 +2054,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -1444,14 +2157,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 3312463567985205994}
+  - {fileID: 5580032152386728594}
+  - {fileID: 8776233279735978482}
+  - {fileID: 1435325090009565342}
+  - {fileID: 6068499691391581304}
+  - {fileID: 6047766574770907257}
+  - {fileID: 5220610605409212875}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -1464,7 +2177,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -1500,6 +2213,246 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387793721932483802}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &1518556956228771998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8316174463915648637}
+  - component: {fileID: 2968428988713655768}
+  - component: {fileID: 2379950051673617317}
+  - component: {fileID: 4857456597675537314}
+  m_Layer: 12
+  m_Name: GameObject (79)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8316174463915648637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518556956228771998}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 95.88, y: 0.08, z: 136.45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2968428988713655768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518556956228771998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 8283853316019902466}
+  - {fileID: 3811525825739716530}
+  - {fileID: 5181235619010182346}
+  - {fileID: 1919636362640979967}
+  - {fileID: 6573288404368572612}
+  - {fileID: 8163571184317275450}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &2379950051673617317
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518556956228771998}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &4857456597675537314
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518556956228771998}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &1587032096900550468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6639776954147132087}
+  - component: {fileID: 6290373655314422912}
+  - component: {fileID: 604247936139363738}
+  - component: {fileID: 7905518664155943868}
+  m_Layer: 12
+  m_Name: GameObject (57)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6639776954147132087
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587032096900550468}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 73.55, y: 0.08, z: 72.33}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6290373655314422912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587032096900550468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 1361542126591887952}
+  - {fileID: 2509263211055495016}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &604247936139363738
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587032096900550468}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &7905518664155943868
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1587032096900550468}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -1567,13 +2520,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 1884602494207548912}
+  - {fileID: 8151634360081013363}
+  - {fileID: 3249320553443789686}
+  - {fileID: 5138050999129162451}
+  - {fileID: 4131645543277358699}
+  - {fileID: 2282196508126623359}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -1586,7 +2539,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -1642,6 +2595,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!1 &1693556949839622913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8948698561293365535}
+  m_Layer: 0
+  m_Name: pos (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8948698561293365535
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1693556949839622913}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 41.7, y: 0.416, z: 136.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 657241095395334260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1764238748653084617
 GameObject:
   m_ObjectHideFlags: 0
@@ -1680,8 +2664,6 @@ Transform:
   - {fileID: 2556193733984911278}
   - {fileID: 4535407977379573710}
   - {fileID: 740990241736668822}
-  - {fileID: 1810129105206093259}
-  - {fileID: 439305062409705620}
   - {fileID: 7068121741418716383}
   - {fileID: 5288362237617935309}
   - {fileID: 1612489199651364883}
@@ -1728,6 +2710,41 @@ Transform:
   - {fileID: 1101335264323311645}
   - {fileID: 5682023344560879667}
   - {fileID: 7216235212415742694}
+  - {fileID: 4070297810634889386}
+  - {fileID: 6639776954147132087}
+  - {fileID: 1724032898955345467}
+  - {fileID: 1926878062518710015}
+  - {fileID: 5960329646550559305}
+  - {fileID: 8406216088471141599}
+  - {fileID: 7688117673540529433}
+  - {fileID: 3083046974009472760}
+  - {fileID: 8316174463915648637}
+  - {fileID: 3572258292441423502}
+  - {fileID: 4718655475238773001}
+  - {fileID: 3659183421389766437}
+  - {fileID: 1011166015685393219}
+  - {fileID: 7812416369808528190}
+  - {fileID: 2575976761037825123}
+  - {fileID: 1728762322213159800}
+  - {fileID: 7193949805118390286}
+  - {fileID: 4415076396988228298}
+  - {fileID: 5079117658051324837}
+  - {fileID: 5706671015173906237}
+  - {fileID: 5249452655913005506}
+  - {fileID: 6462969683806313701}
+  - {fileID: 8781396352695891909}
+  - {fileID: 5680422636715944996}
+  - {fileID: 8036290407132021869}
+  - {fileID: 1680307228567511622}
+  - {fileID: 4238610563242411186}
+  - {fileID: 5843259381478516207}
+  - {fileID: 3823393180956679890}
+  - {fileID: 3759775704552223385}
+  - {fileID: 8907468883212014794}
+  - {fileID: 4803385481547519834}
+  - {fileID: 4216949586912113415}
+  - {fileID: 5485454692893562777}
+  - {fileID: 7694765358830767163}
   m_Father: {fileID: 657241095395334260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &510580476539529472
@@ -1751,8 +2768,6 @@ MonoBehaviour:
   - {fileID: 4131645543277358699}
   - {fileID: 5209430230174466368}
   - {fileID: 5715192814501143024}
-  - {fileID: 6520403812068721584}
-  - {fileID: 2875493658899153440}
   - {fileID: 7466172927792038107}
   - {fileID: 8806979069746987137}
   - {fileID: 467804460360757217}
@@ -1799,8 +2814,518 @@ MonoBehaviour:
   - {fileID: 8691958416021549746}
   - {fileID: 8776233279735978482}
   - {fileID: 5567347855703059607}
+  - {fileID: 7883649458376772425}
+  - {fileID: 6290373655314422912}
+  - {fileID: 6943851393046584993}
+  - {fileID: 1376938317432421582}
+  - {fileID: 1598757613390502318}
+  - {fileID: 7736491101690872956}
+  - {fileID: 968615458631816213}
+  - {fileID: 6408046198576734074}
+  - {fileID: 2968428988713655768}
+  - {fileID: 3811525825739716530}
+  - {fileID: 2425897856657727372}
+  - {fileID: 1872771434255537480}
+  - {fileID: 4522008619180023407}
+  - {fileID: 5177502857860254111}
+  - {fileID: 5193277718817834233}
+  - {fileID: 1823088573255878968}
+  - {fileID: 6981250742705865561}
+  - {fileID: 8283853316019902466}
+  - {fileID: 1919636362640979967}
+  - {fileID: 5181235619010182346}
+  - {fileID: 8041485284804809597}
+  - {fileID: 1789411329760968018}
+  - {fileID: 4413220750490229349}
+  - {fileID: 4125769879599482567}
+  - {fileID: 694128334971849323}
+  - {fileID: 3459823181389813637}
+  - {fileID: 6739923365543991845}
+  - {fileID: 3544392219638999604}
+  - {fileID: 8163571184317275450}
+  - {fileID: 6573288404368572612}
+  - {fileID: 9144445875059153308}
+  - {fileID: 5757986681987968320}
+  - {fileID: 1361542126591887952}
+  - {fileID: 6062546309906948208}
+  - {fileID: 2509263211055495016}
   bake: 0
   update: 0
+--- !u!1 &1779853492335421145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5680422636715944996}
+  - component: {fileID: 4125769879599482567}
+  - component: {fileID: 5469532028357755058}
+  - component: {fileID: 1259203304875988205}
+  m_Layer: 12
+  m_Name: GameObject (73)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5680422636715944996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779853492335421145}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 71.4, y: 0.08, z: 114.64}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4125769879599482567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779853492335421145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 3459823181389813637}
+  - {fileID: 6739923365543991845}
+  - {fileID: 694128334971849323}
+  - {fileID: 4413220750490229349}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &5469532028357755058
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779853492335421145}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1259203304875988205
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779853492335421145}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &1905043891664119449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1926878062518710015}
+  - component: {fileID: 1376938317432421582}
+  - component: {fileID: 5751026446064096069}
+  - component: {fileID: 6206511286145432487}
+  m_Layer: 12
+  m_Name: GameObject (62)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1926878062518710015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905043891664119449}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 99.68, y: 0.08, z: 93.18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1376938317432421582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905043891664119449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 1598757613390502318}
+  - {fileID: 5757986681987968320}
+  - {fileID: 9144445875059153308}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &5751026446064096069
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905043891664119449}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &6206511286145432487
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905043891664119449}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &1980830359566744020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4070297810634889386}
+  - component: {fileID: 7883649458376772425}
+  - component: {fileID: 6975495587587150076}
+  - component: {fileID: 6477139750309773823}
+  m_Layer: 12
+  m_Name: GameObject (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4070297810634889386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980830359566744020}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 53.5, y: 0.08, z: 90.46}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7883649458376772425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980830359566744020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 2509263211055495016}
+  - {fileID: 433581649764078785}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &6975495587587150076
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980830359566744020}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &6477139750309773823
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980830359566744020}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &2057063173600674365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6462969683806313701}
+  - component: {fileID: 1789411329760968018}
+  - component: {fileID: 8841499550569146552}
+  - component: {fileID: 807382613469841068}
+  m_Layer: 12
+  m_Name: GameObject (76)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6462969683806313701
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057063173600674365}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 42.08, y: 0.08, z: 136.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1789411329760968018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057063173600674365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 968615458631816213}
+  - {fileID: 7736491101690872956}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &8841499550569146552
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057063173600674365}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &807382613469841068
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057063173600674365}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2167723875309989582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1870,6 +3395,16 @@ MonoBehaviour:
   - {fileID: 5094226064263064143}
   - {fileID: 4329956344596684869}
   - {fileID: 6471435666068134727}
+  - {fileID: 7005946819895818399}
+  - {fileID: 9040048439449503001}
+  - {fileID: 3620101059688541032}
+  - {fileID: 8273696002399661300}
+  - {fileID: 8637472372805192479}
+  - {fileID: 7348103555956903891}
+  - {fileID: 6398322212548940538}
+  - {fileID: 2263414501918375210}
+  - {fileID: 7463924499081734332}
+  - {fileID: 8948698561293365535}
 --- !u!1 &2255934071868300696
 GameObject:
   m_ObjectHideFlags: 0
@@ -1917,12 +3452,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 7263483210092114308}
+  - {fileID: 3111057485826338671}
+  - {fileID: 3568038316410173568}
+  - {fileID: 8151634360081013363}
+  - {fileID: 5138050999129162451}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -1935,7 +3470,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -1971,6 +3506,156 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2255934071868300696}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &2270341225584228182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7005946819895818399}
+  m_Layer: 0
+  m_Name: pos (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7005946819895818399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2270341225584228182}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 70.8, y: 0.416, z: 154.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 657241095395334260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2350681110548520323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4718655475238773001}
+  - component: {fileID: 2425897856657727372}
+  - component: {fileID: 5110211693345925320}
+  - component: {fileID: 3537733738585418951}
+  m_Layer: 12
+  m_Name: GameObject (83)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4718655475238773001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2350681110548520323}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 72.04, y: 0.08, z: 155.65}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2425897856657727372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2350681110548520323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 6981250742705865561}
+  - {fileID: 1823088573255878968}
+  - {fileID: 8041485284804809597}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &5110211693345925320
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2350681110548520323}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3537733738585418951
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2350681110548520323}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -2122,13 +3807,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 6092551298543098407}
+  - {fileID: 1508726255099266312}
+  - {fileID: 6631210083337284854}
+  - {fileID: 3111057485826338671}
+  - {fileID: 2658078922785093378}
+  - {fileID: 7962695477940906853}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -2141,7 +3826,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -2244,10 +3929,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 760048717706993393}
+  - {fileID: 5567347855703059607}
+  - {fileID: 8806979069746987137}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -2260,7 +3945,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -2363,14 +4048,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 8691958416021549746}
+  - {fileID: 8776233279735978482}
+  - {fileID: 6068499691391581304}
+  - {fileID: 6047766574770907257}
+  - {fileID: 5220610605409212875}
+  - {fileID: 6762191357919501596}
+  - {fileID: 760048717706993393}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -2383,7 +4068,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -2486,14 +4171,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 6252755322129202681}
+  - {fileID: 1033929075307551182}
+  - {fileID: 6117962951176635177}
+  - {fileID: 7635737251688323218}
+  - {fileID: 2071021879776218510}
+  - {fileID: 8776233279735978482}
+  - {fileID: 6068499691391581304}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -2506,7 +4191,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -2542,6 +4227,126 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2895426749395316401}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &2907091143255010443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5960329646550559305}
+  - component: {fileID: 1598757613390502318}
+  - component: {fileID: 4938595664163807789}
+  - component: {fileID: 5975902376616563350}
+  m_Layer: 12
+  m_Name: GameObject (65)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5960329646550559305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2907091143255010443}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 100.01, y: 0.08, z: 112.55}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1598757613390502318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2907091143255010443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 6573288404368572612}
+  - {fileID: 8163571184317275450}
+  - {fileID: 3544392219638999604}
+  - {fileID: 1376938317432421582}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &4938595664163807789
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2907091143255010443}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &5975902376616563350
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2907091143255010443}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -2609,13 +4414,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 3249320553443789686}
+  - {fileID: 8397883397131857031}
+  - {fileID: 5209430230174466368}
+  - {fileID: 2282196508126623359}
+  - {fileID: 6762191357919501596}
+  - {fileID: 4370741925764318030}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -2628,7 +4433,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -2664,6 +4469,126 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2924237447108330157}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &2987529581640671869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3083046974009472760}
+  - component: {fileID: 6408046198576734074}
+  - component: {fileID: 1812919719465215882}
+  - component: {fileID: 1944529533074033124}
+  m_Layer: 12
+  m_Name: GameObject (77)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3083046974009472760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2987529581640671869}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 74.97, y: 0.08, z: 136.38}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6408046198576734074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2987529581640671869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 5181235619010182346}
+  - {fileID: 6981250742705865561}
+  - {fileID: 8041485284804809597}
+  - {fileID: 6739923365543991845}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &1812919719465215882
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2987529581640671869}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1944529533074033124
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2987529581640671869}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -2737,6 +4662,37 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &3034981631312195659
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7463924499081734332}
+  m_Layer: 0
+  m_Name: pos (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7463924499081734332
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3034981631312195659}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 73, y: 0.416, z: 70}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 657241095395334260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3045511783760883304
 GameObject:
   m_ObjectHideFlags: 0
@@ -2784,12 +4740,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 6867013689153827158}
+  - {fileID: 3772383582013189167}
+  - {fileID: 7263483210092114308}
+  - {fileID: 8151634360081013363}
+  - {fileID: 5138050999129162451}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -2802,7 +4758,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -2936,9 +4892,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 4761288940879341894}
+  - {fileID: 5138050999129162451}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -2951,7 +4907,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -3054,14 +5010,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 6631210083337284854}
+  - {fileID: 6867013689153827158}
+  - {fileID: 3760267489848366236}
+  - {fileID: 708170732246957494}
+  - {fileID: 2658078922785093378}
+  - {fileID: 1293461597656265411}
+  - {fileID: 7743466869604962279}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -3074,7 +5030,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -3177,10 +5133,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 4370741925764318030}
+  - {fileID: 5567347855703059607}
+  - {fileID: 7466172927792038107}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -3193,7 +5149,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -3296,10 +5252,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 3760267489848366236}
+  - {fileID: 7962695477940906853}
+  - {fileID: 1293461597656265411}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -3312,7 +5268,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -3368,6 +5324,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!1 &3381232629110622888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7348103555956903891}
+  m_Layer: 0
+  m_Name: pos (18)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7348103555956903891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3381232629110622888}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 100.5, y: 0.416, z: 114.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 657241095395334260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3396782691389705872
 GameObject:
   m_ObjectHideFlags: 0
@@ -3415,14 +5402,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 2658078922785093378}
+  - {fileID: 7962695477940906853}
+  - {fileID: 1293461597656265411}
+  - {fileID: 1884602494207548912}
+  - {fileID: 8151634360081013363}
+  - {fileID: 6117962951176635177}
+  - {fileID: 2071021879776218510}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -3435,7 +5422,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -3538,14 +5525,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 1884602494207548912}
+  - {fileID: 3249320553443789686}
+  - {fileID: 8397883397131857031}
+  - {fileID: 4761288940879341894}
+  - {fileID: 181664952452661592}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -3558,7 +5543,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -3661,10 +5646,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 8691958416021549746}
+  - {fileID: 1435325090009565342}
+  - {fileID: 5220610605409212875}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -3677,7 +5662,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -3733,6 +5718,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!1 &3589554375094917156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8637472372805192479}
+  m_Layer: 0
+  m_Name: pos (19)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8637472372805192479
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3589554375094917156}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 118, y: 0.416, z: 136}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 657241095395334260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3623120755875099472
 GameObject:
   m_ObjectHideFlags: 0
@@ -3780,14 +5796,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 7449140566796363549}
+  - {fileID: 9155115651237674548}
+  - {fileID: 2741002818912797573}
+  - {fileID: 3772383582013189167}
+  - {fileID: 3111057485826338671}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -3800,7 +5814,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -3836,6 +5850,127 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3623120755875099472}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &3742554691499197673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3572258292441423502}
+  - component: {fileID: 3811525825739716530}
+  - component: {fileID: 7486565311323173728}
+  - component: {fileID: 3405318165927436393}
+  m_Layer: 12
+  m_Name: GameObject (81)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3572258292441423502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3742554691499197673}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 93.4, y: 0.08, z: 155.45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3811525825739716530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3742554691499197673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 5193277718817834233}
+  - {fileID: 8283853316019902466}
+  - {fileID: 5181235619010182346}
+  - {fileID: 2968428988713655768}
+  - {fileID: 6981250742705865561}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &7486565311323173728
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3742554691499197673}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3405318165927436393
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3742554691499197673}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -3940,6 +6075,124 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &3824415196446999005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1728762322213159800}
+  - component: {fileID: 1823088573255878968}
+  - component: {fileID: 799573546541889151}
+  - component: {fileID: 257971226087953013}
+  m_Layer: 12
+  m_Name: GameObject (87)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1728762322213159800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3824415196446999005}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 73.25, y: 0.08, z: 174.65}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1823088573255878968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3824415196446999005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 6981250742705865561}
+  - {fileID: 2425897856657727372}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &799573546541889151
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3824415196446999005}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &257971226087953013
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3824415196446999005}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &3892564572416894568
 GameObject:
   m_ObjectHideFlags: 0
@@ -3987,10 +6240,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 7449140566796363549}
+  - {fileID: 1872771434255537480}
+  - {fileID: 7263483210092114308}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -4003,7 +6256,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -4106,10 +6359,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 8691958416021549746}
+  - {fileID: 1435325090009565342}
+  - {fileID: 6047766574770907257}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -4122,7 +6375,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -4278,14 +6531,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 3772383582013189167}
+  - {fileID: 3111057485826338671}
+  - {fileID: 2658078922785093378}
+  - {fileID: 7743466869604962279}
+  - {fileID: 1884602494207548912}
+  - {fileID: 4761288940879341894}
+  - {fileID: 5138050999129162451}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -4298,7 +6551,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -4401,10 +6654,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 4522008619180023407}
+  - {fileID: 309566652395138304}
+  - {fileID: 6092551298543098407}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -4417,7 +6670,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -4520,10 +6773,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 7449140566796363549}
+  - {fileID: 394950578045131363}
+  - {fileID: 7263483210092114308}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -4536,7 +6789,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -4572,6 +6825,127 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4314545508551810052}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &4376900379135481315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5706671015173906237}
+  - component: {fileID: 5181235619010182346}
+  - component: {fileID: 5046237834234885592}
+  - component: {fileID: 413536236031952085}
+  m_Layer: 12
+  m_Name: GameObject (80)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5706671015173906237
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4376900379135481315}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 93.4, y: 0.08, z: 136.24}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5181235619010182346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4376900379135481315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 8283853316019902466}
+  - {fileID: 3811525825739716530}
+  - {fileID: 2968428988713655768}
+  - {fileID: 6408046198576734074}
+  - {fileID: 8163571184317275450}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &5046237834234885592
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4376900379135481315}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &413536236031952085
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4376900379135481315}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -4639,14 +7013,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 2658078922785093378}
+  - {fileID: 7743466869604962279}
+  - {fileID: 8151634360081013363}
+  - {fileID: 3249320553443789686}
+  - {fileID: 4761288940879341894}
+  - {fileID: 5138050999129162451}
+  - {fileID: 2282196508126623359}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -4659,7 +7033,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -4715,6 +7089,37 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!1 &4397197284042871345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3620101059688541032}
+  m_Layer: 0
+  m_Name: pos (21)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3620101059688541032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4397197284042871345}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 94, y: 0.416, z: 174}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 657241095395334260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4440394458792420674
 GameObject:
   m_ObjectHideFlags: 0
@@ -4743,7 +7148,7 @@ Transform:
   m_GameObject: {fileID: 4440394458792420674}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 41.19, y: 0.08, z: 90.08}
+  m_LocalPosition: {x: 42.1, y: 0.08, z: 90.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4762,10 +7167,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 7883649458376772425}
+  - {fileID: 1508726255099266312}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -4778,7 +7182,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -4881,15 +7285,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 8397883397131857031}
+  - {fileID: 181664952452661592}
+  - {fileID: 1435325090009565342}
+  - {fileID: 6068499691391581304}
+  - {fileID: 760048717706993393}
+  - {fileID: 4370741925764318030}
+  - {fileID: 5567347855703059607}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -4902,7 +7305,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -4938,6 +7341,154 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4721087832123361489}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &4866730943920056792
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8273696002399661300}
+  m_Layer: 0
+  m_Name: pos (20)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8273696002399661300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4866730943920056792}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 116.6, y: 0.416, z: 156.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 657241095395334260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &4997798698475820419
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7812416369808528190}
+  - component: {fileID: 5177502857860254111}
+  - component: {fileID: 6643894123181185434}
+  - component: {fileID: 554723131636628647}
+  m_Layer: 12
+  m_Name: GameObject (89)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7812416369808528190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4997798698475820419}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.8, y: 0.08, z: 156.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5177502857860254111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4997798698475820419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 8283853316019902466}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &6643894123181185434
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4997798698475820419}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &554723131636628647
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4997798698475820419}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -5036,11 +7587,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 433581649764078785}
+  - {fileID: 6092551298543098407}
+  - {fileID: 6631210083337284854}
+  - {fileID: 6867013689153827158}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -5053,7 +7604,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -5156,11 +7707,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 1872771434255537480}
+  - {fileID: 9155115651237674548}
+  - {fileID: 2741002818912797573}
+  - {fileID: 7263483210092114308}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -5173,7 +7724,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -5209,6 +7760,248 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5324502624622418248}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &5523193423021030392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4238610563242411186}
+  - component: {fileID: 6739923365543991845}
+  - component: {fileID: 5686027311135351565}
+  - component: {fileID: 4241379066560760134}
+  m_Layer: 12
+  m_Name: GameObject (70)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4238610563242411186
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5523193423021030392}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 75.4, y: 0.08, z: 117.92}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6739923365543991845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5523193423021030392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 8041485284804809597}
+  - {fileID: 6408046198576734074}
+  - {fileID: 8163571184317275450}
+  - {fileID: 3544392219638999604}
+  - {fileID: 3459823181389813637}
+  - {fileID: 4125769879599482567}
+  - {fileID: 694128334971849323}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &5686027311135351565
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5523193423021030392}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &4241379066560760134
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5523193423021030392}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &5617824401454896094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8406216088471141599}
+  - component: {fileID: 7736491101690872956}
+  - component: {fileID: 7484385659728191802}
+  - component: {fileID: 412000260576738915}
+  m_Layer: 12
+  m_Name: GameObject (66)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8406216088471141599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5617824401454896094}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 41.82, y: 0.08, z: 117.45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7736491101690872956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5617824401454896094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 4413220750490229349}
+  - {fileID: 1789411329760968018}
+  - {fileID: 4244827512212780362}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &7484385659728191802
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5617824401454896094}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &412000260576738915
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5617824401454896094}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -5382,14 +8175,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 1293461597656265411}
+  - {fileID: 7743466869604962279}
+  - {fileID: 6488956734284521619}
+  - {fileID: 6117962951176635177}
+  - {fileID: 7635737251688323218}
+  - {fileID: 3249320553443789686}
+  - {fileID: 8397883397131857031}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -5402,7 +8195,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -5505,13 +8298,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 3772383582013189167}
+  - {fileID: 3111057485826338671}
+  - {fileID: 1884602494207548912}
+  - {fileID: 8151634360081013363}
+  - {fileID: 4761288940879341894}
+  - {fileID: 4131645543277358699}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -5524,7 +8317,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -5611,7 +8404,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 657241095395334260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6135250310402334815
+--- !u!1 &6005332033710699505
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5619,46 +8412,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1810129105206093259}
-  - component: {fileID: 6520403812068721584}
-  - component: {fileID: 2157817221356694748}
-  - component: {fileID: 4207529326982355294}
+  - component: {fileID: 7193949805118390286}
+  - component: {fileID: 6981250742705865561}
+  - component: {fileID: 4410715550674253620}
+  - component: {fileID: 5782357793611939347}
   m_Layer: 12
-  m_Name: GameObject (55)
+  m_Name: GameObject (85)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1810129105206093259
+--- !u!4 &7193949805118390286
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6135250310402334815}
+  m_GameObject: {fileID: 6005332033710699505}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.259998, y: 3.835, z: 7.989998}
+  m_LocalPosition: {x: 75.3, y: 0.08, z: 155.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9011134727922823770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6520403812068721584
+--- !u!114 &6981250742705865561
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6135250310402334815}
+  m_GameObject: {fileID: 6005332033710699505}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  neighbors: []
-  detectionRadius: 23
+  neighbors:
+  - {fileID: 3811525825739716530}
+  - {fileID: 1823088573255878968}
+  - {fileID: 2425897856657727372}
+  - {fileID: 6408046198576734074}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -5671,7 +8468,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -5679,13 +8476,13 @@ MonoBehaviour:
   environmental: 0
   isVisited: 0
   isOpen: 0
---- !u!135 &2157817221356694748
+--- !u!135 &4410715550674253620
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6135250310402334815}
+  m_GameObject: {fileID: 6005332033710699505}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -5700,13 +8497,492 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &4207529326982355294
+--- !u!54 &5782357793611939347
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6135250310402334815}
+  m_GameObject: {fileID: 6005332033710699505}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &6041157964641731544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7688117673540529433}
+  - component: {fileID: 968615458631816213}
+  - component: {fileID: 5194827780995801513}
+  - component: {fileID: 8058362833684212894}
+  m_Layer: 12
+  m_Name: GameObject (75)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7688117673540529433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6041157964641731544}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 52.99, y: 0.08, z: 136.03}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &968615458631816213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6041157964641731544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 8041485284804809597}
+  - {fileID: 4413220750490229349}
+  - {fileID: 1789411329760968018}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &5194827780995801513
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6041157964641731544}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &8058362833684212894
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6041157964641731544}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &6047895104497376969
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1680307228567511622}
+  - component: {fileID: 3459823181389813637}
+  - component: {fileID: 6492278073057080853}
+  - component: {fileID: 2964742044004172144}
+  m_Layer: 12
+  m_Name: GameObject (71)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1680307228567511622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6047895104497376969}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 75.4, y: 0.08, z: 114.38}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3459823181389813637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6047895104497376969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 8163571184317275450}
+  - {fileID: 3544392219638999604}
+  - {fileID: 6739923365543991845}
+  - {fileID: 4125769879599482567}
+  - {fileID: 694128334971849323}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &6492278073057080853
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6047895104497376969}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &2964742044004172144
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6047895104497376969}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &6185906386887277307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3759775704552223385}
+  - component: {fileID: 6573288404368572612}
+  - component: {fileID: 4875127371790086676}
+  - component: {fileID: 5614042561024684015}
+  m_Layer: 12
+  m_Name: GameObject (67)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3759775704552223385
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6185906386887277307}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 96.41, y: 0.08, z: 117.07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6573288404368572612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6185906386887277307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 2968428988713655768}
+  - {fileID: 1598757613390502318}
+  - {fileID: 8163571184317275450}
+  - {fileID: 3544392219638999604}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &4875127371790086676
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6185906386887277307}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &5614042561024684015
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6185906386887277307}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &6191325791114663541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5485454692893562777}
+  - component: {fileID: 6062546309906948208}
+  - component: {fileID: 5280964170599317761}
+  - component: {fileID: 3723093430938123226}
+  m_Layer: 12
+  m_Name: GameObject (59)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5485454692893562777
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6191325791114663541}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 75.2, y: 0.08, z: 92.39}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6062546309906948208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6191325791114663541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 9144445875059153308}
+  - {fileID: 1361542126591887952}
+  - {fileID: 2509263211055495016}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &5280964170599317761
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6191325791114663541}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3723093430938123226
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6191325791114663541}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -5774,11 +9050,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 4522008619180023407}
+  - {fileID: 4244827512212780362}
+  - {fileID: 3601499803717379653}
+  - {fileID: 6092551298543098407}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -5791,7 +9067,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -5894,14 +9170,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 8397883397131857031}
+  - {fileID: 181664952452661592}
+  - {fileID: 6762191357919501596}
+  - {fileID: 760048717706993393}
+  - {fileID: 5567347855703059607}
+  - {fileID: 5715192814501143024}
+  - {fileID: 7466172927792038107}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -5914,7 +9190,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -6017,13 +9293,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 6092551298543098407}
+  - {fileID: 1508726255099266312}
+  - {fileID: 6867013689153827158}
+  - {fileID: 2658078922785093378}
+  - {fileID: 7962695477940906853}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -6036,7 +9311,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -6123,6 +9398,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 657241095395334260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6581972425925230788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6398322212548940538}
+  m_Layer: 0
+  m_Name: pos (17)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6398322212548940538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6581972425925230788}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 103.4, y: 0.416, z: 92.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 657241095395334260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6586365518927162679
 GameObject:
   m_ObjectHideFlags: 0
@@ -6170,15 +9476,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 7635737251688323218}
+  - {fileID: 2071021879776218510}
+  - {fileID: 3249320553443789686}
+  - {fileID: 181664952452661592}
+  - {fileID: 2282196508126623359}
+  - {fileID: 6762191357919501596}
+  - {fileID: 4370741925764318030}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -6191,7 +9496,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -6291,6 +9596,16 @@ Transform:
   - {fileID: 5094226064263064143}
   - {fileID: 4329956344596684869}
   - {fileID: 6471435666068134727}
+  - {fileID: 7005946819895818399}
+  - {fileID: 9040048439449503001}
+  - {fileID: 3620101059688541032}
+  - {fileID: 8273696002399661300}
+  - {fileID: 8637472372805192479}
+  - {fileID: 7348103555956903891}
+  - {fileID: 6398322212548940538}
+  - {fileID: 2263414501918375210}
+  - {fileID: 7463924499081734332}
+  - {fileID: 8948698561293365535}
   - {fileID: 2216960496678030233}
   - {fileID: 2577511971579198346}
   - {fileID: 601712040392622208}
@@ -6336,6 +9651,244 @@ Transform:
   m_Children: []
   m_Father: {fileID: 657241095395334260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7015241060849609947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4415076396988228298}
+  - component: {fileID: 8283853316019902466}
+  - component: {fileID: 1269647533043136255}
+  - component: {fileID: 1696941593169521496}
+  m_Layer: 12
+  m_Name: GameObject (84)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4415076396988228298
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7015241060849609947}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 95.72, y: 0.08, z: 155.43}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8283853316019902466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7015241060849609947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 5193277718817834233}
+  - {fileID: 5177502857860254111}
+  - {fileID: 3811525825739716530}
+  - {fileID: 5181235619010182346}
+  - {fileID: 2968428988713655768}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &1269647533043136255
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7015241060849609947}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1696941593169521496
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7015241060849609947}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &7170026172638408815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1724032898955345467}
+  - component: {fileID: 6943851393046584993}
+  - component: {fileID: 3985186675351005918}
+  - component: {fileID: 4547278011797990806}
+  m_Layer: 12
+  m_Name: GameObject (61)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1724032898955345467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7170026172638408815}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 94.57, y: 0.08, z: 71.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6943851393046584993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7170026172638408815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 5757986681987968320}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &3985186675351005918
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7170026172638408815}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &4547278011797990806
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7170026172638408815}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &7222945000012695028
 GameObject:
   m_ObjectHideFlags: 0
@@ -6364,7 +9917,7 @@ Transform:
   m_GameObject: {fileID: 7222945000012695028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 41.29, y: 0.08, z: 26.61}
+  m_LocalPosition: {x: 40.9, y: 0.08, z: 26.690002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6383,11 +9936,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 3312463567985205994}
+  - {fileID: 8691958416021549746}
+  - {fileID: 8776233279735978482}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -6400,7 +9952,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -6503,14 +10055,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 6762191357919501596}
+  - {fileID: 760048717706993393}
+  - {fileID: 4370741925764318030}
+  - {fileID: 5715192814501143024}
+  - {fileID: 7466172927792038107}
+  - {fileID: 8806979069746987137}
+  - {fileID: 467804460360757217}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -6523,7 +10075,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -6610,7 +10162,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 657241095395334260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &7599760784696729237
+--- !u!1 &7539749137242163860
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6618,115 +10170,29 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 439305062409705620}
-  - component: {fileID: 2875493658899153440}
-  - component: {fileID: 3388083147294272615}
-  - component: {fileID: 8537084985298046717}
-  m_Layer: 12
-  m_Name: GameObject (56)
+  - component: {fileID: 2263414501918375210}
+  m_Layer: 0
+  m_Name: pos (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &439305062409705620
+--- !u!4 &2263414501918375210
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7599760784696729237}
+  m_GameObject: {fileID: 7539749137242163860}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 41.01, y: 0.08, z: 8.610001}
+  m_LocalPosition: {x: 96, y: 0.416, z: 71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 9011134727922823770}
+  m_Father: {fileID: 657241095395334260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2875493658899153440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7599760784696729237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighbors:
-  - {fileID: 0}
-  detectionRadius: 23
-  floorsAndObstacles:
-    serializedVersion: 2
-    m_Bits: 2112
-  nodes:
-    serializedVersion: 2
-    m_Bits: 4096
-  nodeMask:
-    serializedVersion: 2
-    m_Bits: 6144
-  floorOffset: 0.08
-  maxSlope: 0.5
-  drawsphere: 0
-  sphereRadius: 0.25
-  drawDetection: 0
-  drawConnections: 0
-  costo: 9999.9
-  costoFinal: 9999.9
-  environmental: 0
-  isVisited: 0
-  isOpen: 0
---- !u!135 &3388083147294272615
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7599760784696729237}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &8537084985298046717
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7599760784696729237}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &7611358685535247176
 GameObject:
   m_ObjectHideFlags: 0
@@ -6753,6 +10219,157 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 22.6, y: 0.416, z: 119.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 657241095395334260}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7622514625781779110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4803385481547519834}
+  - component: {fileID: 5757986681987968320}
+  - component: {fileID: 6565200331887102100}
+  - component: {fileID: 8169281415710741996}
+  m_Layer: 12
+  m_Name: GameObject (63)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4803385481547519834
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7622514625781779110}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 94.62, y: 0.08, z: 89.99}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5757986681987968320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7622514625781779110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 1376938317432421582}
+  - {fileID: 9144445875059153308}
+  - {fileID: 1361542126591887952}
+  - {fileID: 6943851393046584993}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &6565200331887102100
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7622514625781779110}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &8169281415710741996
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7622514625781779110}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &7656352417025588268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9040048439449503001}
+  m_Layer: 0
+  m_Name: pos (22)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9040048439449503001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7656352417025588268}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 72.6, y: 0.416, z: 175.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6836,14 +10453,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 6488956734284521619}
+  - {fileID: 7635737251688323218}
+  - {fileID: 8691958416021549746}
+  - {fileID: 8776233279735978482}
+  - {fileID: 1435325090009565342}
+  - {fileID: 6762191357919501596}
+  - {fileID: 760048717706993393}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -6856,7 +10473,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -6892,6 +10509,124 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7884583356259073872}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &7972137605363170053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1011166015685393219}
+  - component: {fileID: 4522008619180023407}
+  - component: {fileID: 2643252410676496933}
+  - component: {fileID: 3157816535844977627}
+  m_Layer: 12
+  m_Name: GameObject (90)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1011166015685393219
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7972137605363170053}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 21.2, y: 0.08, z: 136.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4522008619180023407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7972137605363170053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 309566652395138304}
+  - {fileID: 3601499803717379653}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &2643252410676496933
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7972137605363170053}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3157816535844977627
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7972137605363170053}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -6959,14 +10694,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 1435325090009565342}
+  - {fileID: 6068499691391581304}
+  - {fileID: 6762191357919501596}
+  - {fileID: 4370741925764318030}
+  - {fileID: 5567347855703059607}
+  - {fileID: 8806979069746987137}
+  - {fileID: 467804460360757217}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -6979,7 +10714,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -7015,6 +10750,244 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8009100315758883217}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &8061962925270935333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7694765358830767163}
+  - component: {fileID: 2509263211055495016}
+  - component: {fileID: 2801335943542489025}
+  - component: {fileID: 7208866916709183962}
+  m_Layer: 12
+  m_Name: GameObject (58)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7694765358830767163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8061962925270935333}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 71.99, y: 0.08, z: 89.83}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2509263211055495016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8061962925270935333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 1361542126591887952}
+  - {fileID: 6062546309906948208}
+  - {fileID: 7883649458376772425}
+  - {fileID: 6290373655314422912}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &2801335943542489025
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8061962925270935333}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &7208866916709183962
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8061962925270935333}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &8127536958123888948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3659183421389766437}
+  - component: {fileID: 1872771434255537480}
+  - component: {fileID: 489013643021325050}
+  - component: {fileID: 3479384618031723572}
+  m_Layer: 12
+  m_Name: GameObject (86)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3659183421389766437
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8127536958123888948}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.099998474, y: 0.08, z: 136.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1872771434255537480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8127536958123888948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 7449140566796363549}
+  - {fileID: 2741002818912797573}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &489013643021325050
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8127536958123888948}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &3479384618031723572
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8127536958123888948}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -7119,6 +11092,126 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &8171439360226367665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8781396352695891909}
+  - component: {fileID: 4413220750490229349}
+  - component: {fileID: 8924930443771191058}
+  - component: {fileID: 17608956793414736}
+  m_Layer: 12
+  m_Name: GameObject (74)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8781396352695891909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8171439360226367665}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 53.93, y: 0.08, z: 117.19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4413220750490229349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8171439360226367665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 968615458631816213}
+  - {fileID: 4125769879599482567}
+  - {fileID: 694128334971849323}
+  - {fileID: 7736491101690872956}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &8924930443771191058
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8171439360226367665}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &17608956793414736
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8171439360226367665}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &8228714998281362380
 GameObject:
   m_ObjectHideFlags: 0
@@ -7166,10 +11259,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 1033929075307551182}
+  - {fileID: 6488956734284521619}
+  - {fileID: 6117962951176635177}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -7182,7 +11275,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -7285,15 +11378,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 6488956734284521619}
+  - {fileID: 6117962951176635177}
+  - {fileID: 2071021879776218510}
+  - {fileID: 3249320553443789686}
+  - {fileID: 8397883397131857031}
+  - {fileID: 8776233279735978482}
+  - {fileID: 6068499691391581304}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -7306,7 +11398,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -7409,14 +11501,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 1884602494207548912}
+  - {fileID: 7635737251688323218}
+  - {fileID: 2071021879776218510}
+  - {fileID: 8397883397131857031}
+  - {fileID: 4761288940879341894}
+  - {fileID: 181664952452661592}
+  - {fileID: 2282196508126623359}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -7429,7 +11521,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -7585,10 +11677,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 760048717706993393}
+  - {fileID: 5567347855703059607}
+  - {fileID: 467804460360757217}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -7601,7 +11693,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -7704,14 +11796,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 6488956734284521619}
+  - {fileID: 7635737251688323218}
+  - {fileID: 3312463567985205994}
+  - {fileID: 5580032152386728594}
+  - {fileID: 8691958416021549746}
+  - {fileID: 1435325090009565342}
+  - {fileID: 6068499691391581304}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -7724,7 +11816,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -7760,6 +11852,126 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8773676887082384010}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &8801213777033822693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5249452655913005506}
+  - component: {fileID: 8041485284804809597}
+  - component: {fileID: 5613233059053154085}
+  - component: {fileID: 4155696169076103766}
+  m_Layer: 12
+  m_Name: GameObject (78)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5249452655913005506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8801213777033822693}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 72.2, y: 0.08, z: 136.31}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8041485284804809597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8801213777033822693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 2425897856657727372}
+  - {fileID: 6408046198576734074}
+  - {fileID: 968615458631816213}
+  - {fileID: 6739923365543991845}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &5613233059053154085
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8801213777033822693}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &4155696169076103766
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8801213777033822693}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
@@ -7827,9 +12039,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 9155115651237674548}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -7842,7 +12053,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -7945,8 +12156,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 0}
-  detectionRadius: 23
+  - {fileID: 3772383582013189167}
+  detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
     m_Bits: 2112
@@ -7959,7 +12170,7 @@ MonoBehaviour:
   floorOffset: 0.08
   maxSlope: 0.5
   drawsphere: 0
-  sphereRadius: 0.25
+  sphereRadius: 0.99
   drawDetection: 0
   drawConnections: 0
   costo: 9999.9
@@ -7995,6 +12206,129 @@ Rigidbody:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8918217887474311803}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!1 &8964908144568723393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3823393180956679890}
+  - component: {fileID: 8163571184317275450}
+  - component: {fileID: 1569245284976180321}
+  - component: {fileID: 7439656240207136638}
+  m_Layer: 12
+  m_Name: GameObject (68)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3823393180956679890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8964908144568723393}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 92.55, y: 0.08, z: 117.46}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9011134727922823770}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8163571184317275450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8964908144568723393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 5181235619010182346}
+  - {fileID: 2968428988713655768}
+  - {fileID: 6573288404368572612}
+  - {fileID: 1598757613390502318}
+  - {fileID: 3544392219638999604}
+  - {fileID: 3459823181389813637}
+  - {fileID: 6739923365543991845}
+  detectionRadius: 18.9
+  floorsAndObstacles:
+    serializedVersion: 2
+    m_Bits: 2112
+  nodes:
+    serializedVersion: 2
+    m_Bits: 4096
+  nodeMask:
+    serializedVersion: 2
+    m_Bits: 6144
+  floorOffset: 0.08
+  maxSlope: 0.5
+  drawsphere: 0
+  sphereRadius: 0.99
+  drawDetection: 0
+  drawConnections: 0
+  costo: 9999.9
+  costoFinal: 9999.9
+  environmental: 0
+  isVisited: 0
+  isOpen: 0
+--- !u!135 &1569245284976180321
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8964908144568723393}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &7439656240207136638
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8964908144568723393}
   serializedVersion: 4
   m_Mass: 1
   m_Drag: 0
