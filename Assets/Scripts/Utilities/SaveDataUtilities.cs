@@ -9,6 +9,7 @@ using UnityEditor;
 public static class SaveDataUtilities
 {
     public const string SettingsPath = "Settings";
+    public const string SaveDataPath = "SaveData";
 
 #if UNITY_EDITOR
     [MenuItem("Save Data Utility/Reset All Saves")]
