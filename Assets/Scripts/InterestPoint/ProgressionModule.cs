@@ -28,6 +28,7 @@ public class ProgressionModule : MonoBehaviour
 
     public void Begin()
     {
+        
         if (finished) return;
 
         filling = true;
@@ -53,7 +54,8 @@ public class ProgressionModule : MonoBehaviour
         if (finished)
             return;
 
-        if (filling)
+            
+        if (filling && Player.instance.speed<=0.5f)
         {
             progress += Time.deltaTime / fillTime;
         }

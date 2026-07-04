@@ -27,9 +27,10 @@ public class InterestPointProgressive : InterestPoint
 
     protected override void OnEnter()
     {
+
         if (canReactive == false) return;
         imInAMonument = true;
-        CameraTarget.instance.isFollowing = false;
+    
         progresor.Begin();
     }
 
@@ -45,8 +46,9 @@ public class InterestPointProgressive : InterestPoint
     private void Update()
     {
         if(visited) return;
-        if (imInAMonument && OnExited==false)
+        if (imInAMonument && OnExited==false && Player.instance.speed <= 0.5f)
         {
+            CameraTarget.instance.isFollowing = false;
             cam.transform.position = Vector3.Lerp(cam.transform.position, myTransformOfCam.transform.position, moveSpeed * Time.deltaTime);
             cam.transform.rotation = Quaternion.Lerp(cam.transform.rotation, myTransformOfCam.transform.rotation, moveSpeed * Time.deltaTime);
             if(Vector3.Distance(cam.transform.position, myTransformOfCam.transform.position) < 0.1f)
