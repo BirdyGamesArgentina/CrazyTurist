@@ -28,8 +28,10 @@ public class PointOfInterestSystem : MonoBehaviour
     [SerializeField] Transform player;
 
     [SerializeField] private float scoreMultiplier;
-    private long _currentScore;
     private InterestPoint lastInterestPoint;
+
+    private long _currentScore;
+    public static long CurrentScore => Instance._currentScore;
 
     [SerializeField] TextMeshProUGUI ticketsArrive;
     [SerializeField] TextMeshProUGUI auxiliarModif;
@@ -48,6 +50,8 @@ public class PointOfInterestSystem : MonoBehaviour
 
     private void Start()
     {
+        GameLoop.Instance.OnStartGame += BeginCountDown;
+
         sensor.SubscribeToInterestPoint(OnEnterInterestPoint, OnExitInterestPoint);
         img.fillAmount = 1f;
 
@@ -71,6 +75,8 @@ public class PointOfInterestSystem : MonoBehaviour
     
     public void BeginCountDown()
     {
+        GameLoop.Instance.OnStartGame -= BeginCountDown;
+
         anim = true;
         interest = maxInterest;
 
@@ -108,7 +114,6 @@ public class PointOfInterestSystem : MonoBehaviour
     {
         img.fillAmount = (float)interest / maxInterest;
     }
-
     public void AddInterest(int toAdd)
     {
         interest += toAdd;
@@ -128,7 +133,8 @@ public class PointOfInterestSystem : MonoBehaviour
 
         if(interest <= 0)
         {
-            ServiceLocator.Instance.GetService<IEventBus>().Publish(new OnEndScreenResult("Perdiste", _currentScore));
+            GameLoop.Lose(_currentScore);
+            
         }
     }
 

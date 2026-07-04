@@ -4310,17 +4310,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &512072544 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7903252535988095680, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
-  m_PrefabInstance: {fileID: 739466639870359387}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9dc68dfa098c864439fef6fc7c4ed661, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &519352701
 GameObject:
   m_ObjectHideFlags: 0
@@ -8693,9 +8682,9 @@ MonoBehaviour:
   OnEnter:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 512072544}
-        m_TargetAssemblyTypeName: PointOfInterestSystem, Assembly-CSharp
-        m_MethodName: BeginCountDown
+      - m_Target: {fileID: 739466639870359388}
+        m_TargetAssemblyTypeName: GameLoop, Assembly-CSharp
+        m_MethodName: BeginGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9566,6 +9555,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+--- !u!114 &739466639870359388 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7694337866752447293, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+  m_PrefabInstance: {fileID: 739466639870359387}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd1bf6f638d393e4db68ec9a8d29e30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1200409057532220442
 GameObject:
   m_ObjectHideFlags: 0
