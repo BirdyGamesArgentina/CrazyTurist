@@ -99,7 +99,7 @@ MonoBehaviour:
     group: {fileID: 8530024845299122342, guid: 1e3aeef1834bbfd459605378c9c8a8b2, type: 2}
   - ID: ticket
     sounds:
-    - {fileID: 8300000, guid: 2e3b8edb600df634a9523c6eb853b729, type: 3}
+    - {fileID: 8300000, guid: aa571ac0ae5699d4f9b8af2e0c4edf4f, type: 3}
     currentIndex: 0
     priority: 0
     isLoop: 0
@@ -116,5 +116,5 @@ MonoBehaviour:
     - {fileID: 8300000, guid: e641cb1f0f607fc4ebb04f7eda9c6d8c, type: 3}
     currentIndex: 0
     priority: 0
-    isLoop: 0
+    isLoop: 1
     group: {fileID: 8530024845299122342, guid: 1e3aeef1834bbfd459605378c9c8a8b2, type: 2}

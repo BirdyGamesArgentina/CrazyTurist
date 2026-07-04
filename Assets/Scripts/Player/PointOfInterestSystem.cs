@@ -99,6 +99,8 @@ public class PointOfInterestSystem : MonoBehaviour
         ticketsArrive.text = Player.PeopleAmount.ToString();
         if (!NO_Animate) 
         {
+            SoundFX.PlaySound("ticket");
+
             if (modif != 0)
             {
                 bool pos = modif > 0;

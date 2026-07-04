@@ -10,6 +10,8 @@ public class InterestPointStop : InterestPoint
     public GameObject[] countOfX;
     public int peopleToLeave;
 
+    bool finished = false;
+
     private void Awake()
     {
         progressionModule.SetCallbackOnFinish(FinishVisit);
@@ -17,16 +19,23 @@ public class InterestPointStop : InterestPoint
 
     protected override void OnEnter()
     {
+        if(finished) return;
+        SoundFX.PlaySound("steps", AudioManager.OverlapMode.DontDisturb);
         progressionModule.Begin();
 
     }
     protected override void OnExit()
     {
+        if (finished) return;
+        SoundFX.StopSound("steps");
         progressionModule.End();
     }
 
     protected override void OnFinishVisit()
     {
+        SoundFX.StopSound("steps");
+        finished = true;
+
         int modif = 0;
         if (PointOfInterestSystem.Interest < 50)
         {
