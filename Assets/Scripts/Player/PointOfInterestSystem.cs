@@ -12,6 +12,9 @@ public class PointOfInterestSystem : MonoBehaviour
     float interest = 100;
     [SerializeField] int maxInterest = 100;
 
+    [Range(0f,1f)]
+    [SerializeField] float percentInterestToWin;
+
     public static float Interest { get { return Instance.interest; } }
     public static float MaxInterest { get { return Instance.maxInterest; } }
 
@@ -39,6 +42,15 @@ public class PointOfInterestSystem : MonoBehaviour
 
     bool anim = false;
     bool interestLocked;
+
+    public static bool WinByInterest
+    {
+        get 
+        {
+            return Instance.interest / Instance.maxInterest > Instance.percentInterestToWin;
+        }
+       
+    }
 
     private void Awake()
     {
@@ -134,7 +146,6 @@ public class PointOfInterestSystem : MonoBehaviour
         if(interest <= 0)
         {
             GameLoop.Lose(_currentScore);
-            
         }
     }
 

@@ -775,8 +775,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbors:
   - {fileID: 374396414}
-  - {fileID: 1497925543}
   - {fileID: 1614154862}
+  - {fileID: 1497925543}
   - {fileID: 2123646140}
   detectionRadius: 18.9
   floorsAndObstacles:
@@ -5634,9 +5634,9 @@ MonoBehaviour:
   neighbors:
   - {fileID: 838128047}
   - {fileID: 1147934740}
-  - {fileID: 2083253427}
   - {fileID: 1414210963}
   - {fileID: 1433152797}
+  - {fileID: 2083253427}
   - {fileID: 1644931112}
   - {fileID: 1263355640}
   detectionRadius: 18.9
@@ -6067,8 +6067,8 @@ MonoBehaviour:
   - {fileID: 717515635}
   - {fileID: 1636820515}
   - {fileID: 838128047}
-  - {fileID: 954380860}
   - {fileID: 1414210963}
+  - {fileID: 954380860}
   detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
@@ -6321,11 +6321,11 @@ MonoBehaviour:
   neighbors:
   - {fileID: 1331151118}
   - {fileID: 2038700874}
-  - {fileID: 2083253427}
   - {fileID: 954380860}
-  - {fileID: 1497925543}
+  - {fileID: 2083253427}
   - {fileID: 1644931112}
   - {fileID: 1614154862}
+  - {fileID: 1497925543}
   detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
@@ -6907,9 +6907,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbors:
   - {fileID: 1147934740}
-  - {fileID: 2083253427}
-  - {fileID: 954380860}
   - {fileID: 1433152797}
+  - {fileID: 954380860}
+  - {fileID: 2083253427}
   detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
@@ -7027,8 +7027,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbors:
   - {fileID: 717515635}
-  - {fileID: 1676201306}
   - {fileID: 1860881527}
+  - {fileID: 1676201306}
   - {fileID: 2038700874}
   detectionRadius: 18.9
   floorsAndObstacles:
@@ -7146,9 +7146,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 2083253427}
-  - {fileID: 954380860}
   - {fileID: 1414210963}
+  - {fileID: 954380860}
+  - {fileID: 2083253427}
   - {fileID: 761197457}
   detectionRadius: 18.9
   floorsAndObstacles:
@@ -7524,9 +7524,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 1497925543}
   - {fileID: 1644931112}
   - {fileID: 1263355640}
+  - {fileID: 1497925543}
   - {fileID: 263889897}
   detectionRadius: 18.9
   floorsAndObstacles:
@@ -7889,11 +7889,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 2083253427}
   - {fileID: 954380860}
-  - {fileID: 1497925543}
+  - {fileID: 2083253427}
   - {fileID: 1263355640}
   - {fileID: 1614154862}
+  - {fileID: 1497925543}
   detectionRadius: 18.9
   floorsAndObstacles:
     serializedVersion: 2
@@ -8988,9 +8988,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 954380860}
   - {fileID: 1414210963}
   - {fileID: 1433152797}
+  - {fileID: 954380860}
   - {fileID: 1644931112}
   - {fileID: 1263355640}
   detectionRadius: 18.9
@@ -9526,6 +9526,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7694337866752447293, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+      propertyPath: txt_timer
+      value: 
+      objectReference: {fileID: 3940757597629835806}
     - target: {fileID: 7903252535988095680, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
       propertyPath: img
       value: 
@@ -9680,6 +9684,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
+--- !u!114 &3940757597629835806 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6628885942445402753, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
+  m_PrefabInstance: {fileID: 3940757597629835805}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4751259487898696457
 PrefabInstance:
   m_ObjectHideFlags: 0

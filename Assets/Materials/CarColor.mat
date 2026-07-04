@@ -37,6 +37,7 @@ Material:
     - _BUILTIN_QueueOffset: 0
     - _Metallic: 0.76
     m_Colors:
+    - _VertexColor: {r: 0.5773585, g: 0.059914477, b: 0.059914477, a: 0}
     - _VertextColor: {r: 0.5698112, g: 0.37479082, b: 0.33866137, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

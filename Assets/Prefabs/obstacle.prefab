@@ -196,7 +196,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  renders: []
   pathfinder: {fileID: 5324440969888064490}
   options:
   - {fileID: 6895865197941613237}

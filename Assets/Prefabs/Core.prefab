@@ -92,6 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxInterest: 100
+  percentInterestToWin: 0.1
   sensor: {fileID: 0}
   img: {fileID: 0}
   duration: 10
@@ -187,6 +188,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd1bf6f638d393e4db68ec9a8d29e30d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  time_to_play: 120
+  txt_timer: {fileID: 0}
 --- !u!1 &5481324290657508408
 GameObject:
   m_ObjectHideFlags: 0

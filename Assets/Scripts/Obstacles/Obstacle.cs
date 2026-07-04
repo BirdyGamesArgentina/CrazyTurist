@@ -17,7 +17,7 @@ public class Obstacle : MonoBehaviour
     [SerializeField] int interest = 5;
 
     [SerializeField] AnimationCurve curve;
-    [SerializeField] Renderer[] renders;
+    
 
     //[SerializeField] Transform destiny;
     [SerializeField] PathFinder pathfinder;
@@ -32,10 +32,6 @@ public class Obstacle : MonoBehaviour
         }
     }
 
-    private void Awake()
-    {
-        renders = GetComponentsInChildren<Renderer>();
-    }
 
     private void Start()
     {
@@ -48,13 +44,17 @@ public class Obstacle : MonoBehaviour
         var selected = options[Random.Range(0, options.Length)];
         selected.SetActive(true);
 
-        ChangeRandomColor(selected.GetComponent<Renderer>());
+        modelToScale = selected.transform;
+        min = modelToScale.localScale - offset;
+        max = modelToScale.localScale + offset;
+
+        rend = selected.GetComponent<Renderer>();
+        ChangeRandomColor();
     }
 
-    void ChangeRandomColor(Renderer render)
+    void ChangeRandomColor()
     {
-
-        render.material.SetColor("_VertextColor", Random.ColorHSV());
+        rend.material.SetColor(VERTEXTCOLOR, Random.ColorHSV());
     }
 
     void OnStart()
@@ -68,8 +68,15 @@ public class Obstacle : MonoBehaviour
         pathfinder.GoToPosition(PathFindingOptions.GetRandomPosition());
     }
 
-    const string COLOR_PROP = "_Color";
+
+    Transform modelToScale;
+    Renderer rend;
+    const string VERTEXTCOLOR = "_VertexColor";
     Color current = Color.white;
+
+    Vector3 offset = new Vector3(0.05f, 0.05f, 0.05f);
+    Vector3 min = new Vector3(0.05f, 0.05f, 0.05f);
+    Vector3 max = new Vector3(0.05f, 0.05f, 0.05f);
     void Update()
     {
 //        transform.forward = direction;
@@ -82,12 +89,11 @@ public class Obstacle : MonoBehaviour
 
                 float curveVal = curve.Evaluate(timercd / cd);
 
-                for (int i = 0; i < renders.Length; i++)
-                {
-                    current = renders[i].material.GetColor(COLOR_PROP);
-                    current.a = curveVal;
-                    renders[i].material.SetColor(COLOR_PROP, current);
-                }
+                modelToScale.localScale = Vector3.Lerp(min, max, curveVal);
+
+                current = rend.material.GetColor(VERTEXTCOLOR);
+                current.a = curveVal;
+                rend.material.SetColor(VERTEXTCOLOR, current);
             }
             else
             {
