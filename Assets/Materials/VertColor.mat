@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: VertexCarlor
-  m_Shader: {fileID: -6465566751694194690, guid: 33d4fb4173db46746a540900588665b5, type: 3}
+  m_Name: VertColor
+  m_Shader: {fileID: -6465566751694194690, guid: 32711858c261ef941b344ea396d57b1c, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
