@@ -12,7 +12,7 @@ public class ProgressionModule : MonoBehaviour
     [SerializeField] LerpedObject[] anims_lerped; // ejecuta el OnLerp(float)
 
     bool firstTime = true;
-    bool finished = false;
+  public  bool finished = false;
 
     Action onFinish = delegate { };
     public void SetCallbackOnFinish(Action _onFinish)

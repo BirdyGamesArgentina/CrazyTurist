@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
 
     Rigidbody rb;
 
-    float speed;
+    public float speed;
     private float currentSteerVelocity;
 
     void FixedUpdate()

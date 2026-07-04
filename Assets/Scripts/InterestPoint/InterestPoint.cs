@@ -28,6 +28,8 @@ public abstract class InterestPoint : MonoBehaviour
         OnFinishVisit();
     }
 
+
+
     protected abstract void OnEnter();
     protected abstract void OnExit();
     protected abstract void OnFinishVisit();
