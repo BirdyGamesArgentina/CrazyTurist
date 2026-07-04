@@ -12,8 +12,6 @@ public class Player : MonoBehaviour
     [Header("Game Feel")]
     public GameObject[] wheels;
 
-
-
     private void Awake()
     {
         instance = this;
@@ -107,26 +105,28 @@ public class Player : MonoBehaviour
 
         speed = Mathf.Clamp(speed, -reverseSpeed, maxSpeed);
 
-        if (speed < 0.1)
-        {
-            if (!oneshot_motor_stand)
-            {
-                oneshot_motor_stand = true;
-                PlayLoopMotor(true);
-                PlayLoopBroom(false);
-            }
-            oneshot_motor_Aceleration = false;
-        }
-        else
-        {
-            if (!oneshot_motor_Aceleration)
-            {
-                oneshot_motor_Aceleration = true;
-                PlayLoopMotor(false);
-                PlayLoopBroom(true);
-            }
-            oneshot_motor_stand = false;
-        }
+       
+
+        //if (speed < 0.1)
+        //{
+        //    if (!oneshot_motor_stand)
+        //    {
+        //        oneshot_motor_stand = true;
+        //        PlayLoopMotor(true);
+        //        PlayLoopBroom(false);
+        //    }
+        //    oneshot_motor_Aceleration = false;
+        //}
+        //else
+        //{
+        //    if (!oneshot_motor_Aceleration)
+        //    {
+        //        oneshot_motor_Aceleration = true;
+        //        PlayLoopMotor(false);
+        //        PlayLoopBroom(true);
+        //    }
+        //    oneshot_motor_stand = false;
+        //}
 
         //
         // STEERING
@@ -141,6 +141,8 @@ public class Player : MonoBehaviour
             Time.fixedDeltaTime;
 
         float speed01 = Mathf.Clamp01(Mathf.Abs(speed) / maxSpeed);
+
+        SoundEngineLerp.MainLerp(speed01);
 
         float maxYawSpeed = Mathf.Lerp(180f, 70f, speed01);
 
@@ -183,16 +185,6 @@ public class Player : MonoBehaviour
         {
             speed = 0;
         }
-    }
-    void PlayLoopMotor(bool val)
-    {
-        if (val) SoundFX.PlaySound("loopMotor");
-        else SoundFX.StopSound("loopMotor");
-    }
-    void PlayLoopBroom(bool val)
-    {
-        if (val) SoundFX.PlaySound("loopBroom");
-        else SoundFX.StopSound("loopBroom");
     }
 
     public void SpeedUp(float speed, float acc)
