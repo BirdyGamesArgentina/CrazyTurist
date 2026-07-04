@@ -99,7 +99,7 @@ MonoBehaviour:
   leftSide: {fileID: 7038150717006750890}
   rightSide: {fileID: 1017161717050049138}
   player: {fileID: 0}
-  scoreMultiplier: 0
+  scoreMultiplier: 22
   ticketsArrive: {fileID: 0}
   auxiliarModif: {fileID: 0}
   ticketsArrive_animator: {fileID: 0}
