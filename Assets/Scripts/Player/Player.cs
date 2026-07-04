@@ -151,4 +151,9 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void SpeedUp(float speed, float acc)
+    {
+        maxSpeed += speed;
+        acceleration += acc;
+    }
 }
