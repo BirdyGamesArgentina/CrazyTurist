@@ -47,6 +47,7 @@ public class InterestPointProgressive : InterestPoint
 
 
         if (canReactive == false) return;
+
         SoundFX.PlaySound("GenteFestejando");
 
         imInAMonument = true;
