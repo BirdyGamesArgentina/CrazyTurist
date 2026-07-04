@@ -15,8 +15,15 @@ public class InterestPointProgressive : InterestPoint
     bool visited = false , imInAMonument=false;   
     Vector3 originalPosition;
     public GameObject myTransformOfCam;
+    public Transform[] peopleTransform;
 
 
+
+    [SerializeField] float peopleSpeed = 2f;
+
+    private Transform[] movingPeople;
+    private Transform[] targetPoints;
+    private bool peopleWalking;
     private void Start()
     {
         if (canReactive == false) return;
@@ -27,6 +34,7 @@ public class InterestPointProgressive : InterestPoint
 
     protected override void OnEnter()
     {
+        if (visited) return;
 
         if (canReactive == false) return;
         imInAMonument = true;
@@ -36,17 +44,22 @@ public class InterestPointProgressive : InterestPoint
 
     protected override void OnExit()
     {
+     
+
         if (canReactive == false) return;
         imInAMonument = false;
         OnExited = true;
         SOManager.instance.myImage.SetActive(false);
         progresor.End();
+
+        if(visited)
+            GetComponent<Collider>().enabled = false;
+
     }
 
     private void Update()
     {
-        if(visited) return;
-        if (imInAMonument && OnExited==false && Player.instance.speed <= 0.5f)
+        if (imInAMonument && OnExited==false && Player.instance.speed <= 0.5f )
         {
             CameraTarget.instance.isFollowing = false;
             cam.transform.position = Vector3.Lerp(cam.transform.position, myTransformOfCam.transform.position, moveSpeed * Time.deltaTime);
@@ -73,6 +86,6 @@ public class InterestPointProgressive : InterestPoint
     {
         Debug.Log("Interest Point Visited: " + gameObject.name);
         PointOfInterestSystem.Instance.CompleteInterest();
-        visited = true;
+        visited= true;
     }
 }
