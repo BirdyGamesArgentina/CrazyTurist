@@ -69,7 +69,7 @@ MonoBehaviour:
     priority: 0
     isLoop: 1
     group: {fileID: 8530024845299122342, guid: 1e3aeef1834bbfd459605378c9c8a8b2, type: 2}
-  - ID: initibroom
+  - ID: initiBroom
     sounds:
     - {fileID: 8300000, guid: a7ec2b32b90777c488f4fc5510bceed7, type: 3}
     currentIndex: 0

@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     [Header("Game Feel")]
     public GameObject[] wheels;
 
-    
+
 
     private void Awake()
     {
@@ -47,6 +47,16 @@ public class Player : MonoBehaviour
     public float speed;
     private float currentSteerVelocity;
 
+    private void Start()
+    {
+        //PlayLoopMotor();
+    }
+
+    bool oneshot_motor_stand = false;
+    bool oneshot_motor_Aceleration = false;
+
+
+
     void FixedUpdate()
     {
 
@@ -61,7 +71,6 @@ public class Player : MonoBehaviour
         wheels[0].transform.localRotation = Quaternion.Slerp(wheels[0].transform.localRotation, targetRotation, 8f * Time.fixedDeltaTime);
 
         wheels[1].transform.localRotation = Quaternion.Slerp(wheels[1].transform.localRotation, targetRotation, 8f * Time.fixedDeltaTime);
-
 
 
 
@@ -83,7 +92,7 @@ public class Player : MonoBehaviour
             {
                 speed -= brake * Time.fixedDeltaTime;
 
-  
+
             }
             else
                 speed -= acceleration * Time.fixedDeltaTime;
@@ -97,6 +106,27 @@ public class Player : MonoBehaviour
         }
 
         speed = Mathf.Clamp(speed, -reverseSpeed, maxSpeed);
+
+        if (speed < 0.1)
+        {
+            if (!oneshot_motor_stand)
+            {
+                oneshot_motor_stand = true;
+                PlayLoopMotor(true);
+                PlayLoopBroom(false);
+            }
+            oneshot_motor_Aceleration = false;
+        }
+        else
+        {
+            if (!oneshot_motor_Aceleration)
+            {
+                oneshot_motor_Aceleration = true;
+                PlayLoopMotor(false);
+                PlayLoopBroom(true);
+            }
+            oneshot_motor_stand = false;
+        }
 
         //
         // STEERING
@@ -149,10 +179,20 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.GetComponent<Collider>()!= null)
+        if (collision.gameObject.GetComponent<Collider>() != null)
         {
-                speed = 0;
+            speed = 0;
         }
+    }
+    void PlayLoopMotor(bool val)
+    {
+        if (val) SoundFX.PlaySound("loopMotor");
+        else SoundFX.StopSound("loopMotor");
+    }
+    void PlayLoopBroom(bool val)
+    {
+        if (val) SoundFX.PlaySound("loopBroom");
+        else SoundFX.StopSound("loopBroom");
     }
 
     public void SpeedUp(float speed, float acc)
