@@ -232,7 +232,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensor: {fileID: 0}
   particleSparks: {fileID: 3235197360494537455, guid: 2eb4414cba434764ebaf4a63a9d1c140, type: 3}
+  explosionParticle: {fileID: 6334829413274573023, guid: dd434c5a9fe37e446b215284ef9ba147, type: 3}
   player: {fileID: 0}
+  invulnerable: 0
 --- !u!1 &8647103327748184135
 GameObject:
   m_ObjectHideFlags: 0

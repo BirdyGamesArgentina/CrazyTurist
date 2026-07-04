@@ -6,9 +6,11 @@ public class ObstacleReceiver : MonoBehaviour
 
     [SerializeField] Sensor sensor;
     [SerializeField] ParticleSystem particleSparks;
+    [SerializeField] ParticleSystem explosionParticle;
     public static string PARTICLE_SPARKS_NAME = "particle_sparks";
 
     [SerializeField] Transform player;
+    bool invulnerable;
 
     private void Awake()
     {
@@ -20,6 +22,13 @@ public class ObstacleReceiver : MonoBehaviour
         sensor.SubscribeToObstacle(OnHitObstacle);
 
         ParticlePool.AddRegistry(PARTICLE_SPARKS_NAME, particleSparks);
+        ParticlePool.AddRegistry(explosionParticle.name, explosionParticle);
+    }
+
+    public void SetInvulnerable(bool _invulnerable)
+    {
+        invulnerable = _invulnerable;
+        sensor.transform.localScale = invulnerable ? Vector3.one *1.5f : Vector3.one;
     }
 
     void OnHitObstacle(Obstacle obstacle)
@@ -33,6 +42,16 @@ public class ObstacleReceiver : MonoBehaviour
 
         p.transform.position = collision_center;
         p.Play();
+
+        if (invulnerable)
+        {
+            var explosion = ParticlePool.Get(PARTICLE_SPARKS_NAME, true);
+
+            explosion.transform.position = obstacle.transform.position;
+            explosion.Play();
+            obstacle.Explode();
+            return;
+        }
 
         PointOfInterestSystem.Instance.RemoveInterest(obstacle.InterestToRemove);
         ScoreFeedbackManager.ShowScoreInPos("-" + obstacle.InterestToRemove, Color.red, collision_center + Vector3.up);

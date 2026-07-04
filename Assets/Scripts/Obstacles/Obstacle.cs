@@ -110,4 +110,9 @@ public class Obstacle : MonoBehaviour
         }
     }
 
+    public void Explode()
+    {
+        Destroy(gameObject);
+    }
+
 }
