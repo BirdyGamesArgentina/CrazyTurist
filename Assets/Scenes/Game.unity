@@ -124,6 +124,17 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 8463954035210115433, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
   m_PrefabInstance: {fileID: 3940757597629835805}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &218691530 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7614860839891029506, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
+  m_PrefabInstance: {fileID: 3940757597629835805}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &450646266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1029,6 +1040,10 @@ PrefabInstance:
       propertyPath: sensor
       value: 
       objectReference: {fileID: 4751259487898696458}
+    - target: {fileID: 7903252535988095680, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+      propertyPath: auxiliarModif
+      value: 
+      objectReference: {fileID: 218691530}
     - target: {fileID: 7903252535988095680, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
       propertyPath: ticketsArrive
       value: 

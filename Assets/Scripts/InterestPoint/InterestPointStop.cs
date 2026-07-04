@@ -26,6 +26,7 @@ public class InterestPointStop : InterestPoint
 
     protected override void OnFinishVisit()
     {
+        int modif = 0;
         if (PointOfInterestSystem.Interest < 50)
         {
             int left = 0;
@@ -44,6 +45,8 @@ public class InterestPointStop : InterestPoint
 
                 left++;
             }
+
+            modif -= left;
         }
         int personIndex = 0;
 
@@ -56,9 +59,11 @@ public class InterestPointStop : InterestPoint
             countOfX[personIndex].transform.SetParent(seat, false);
             countOfX[personIndex].transform.localPosition = Vector3.zero;
 
+           
             personIndex++;
         }
+        modif += personIndex;
 
-        PointOfInterestSystem.Instance.RefreshTickets();
+        PointOfInterestSystem.Instance.RefreshTickets(NO_Animate: false, modif: modif);
     }
 }

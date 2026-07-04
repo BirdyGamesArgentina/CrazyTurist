@@ -32,6 +32,7 @@ public class PointOfInterestSystem : MonoBehaviour
     private InterestPoint lastInterestPoint;
 
     [SerializeField] TextMeshProUGUI ticketsArrive;
+    [SerializeField] TextMeshProUGUI auxiliarModif;
     [SerializeField] Animator ticketsArrive_animator;
 
     bool anim = false;
@@ -47,7 +48,7 @@ public class PointOfInterestSystem : MonoBehaviour
         sensor.SubscribeToInterestPoint(OnEnterInterestPoint, OnExitInterestPoint);
         img.fillAmount = 1f;
 
-        RefreshTickets(NO_Animate: true);
+        RefreshTickets(NO_Animate: true, modif: 0);
     }
 
     public void OnEnterInterestPoint(InterestPoint _ip)
@@ -72,10 +73,23 @@ public class PointOfInterestSystem : MonoBehaviour
 
     }
 
-    public void RefreshTickets(bool NO_Animate = false)
+    public void RefreshTickets(bool NO_Animate = false, int modif = 0)
     {
         ticketsArrive.text = Player.PeopleAmount.ToString();
-        if(!NO_Animate) ticketsArrive_animator.Play("TicketModify");
+        if (!NO_Animate) 
+        {
+            if (modif != 0)
+            {
+                bool pos = modif > 0;
+                auxiliarModif.text = $"<color={(pos ? "green":"red")}>{(pos ? "+" : "-")}{modif}</color>";
+            }
+            else
+            {
+                auxiliarModif.text = string.Empty;
+            }
+            
+            ticketsArrive_animator.Play("TicketModify"); 
+        }
     }
 
     private void Update()
