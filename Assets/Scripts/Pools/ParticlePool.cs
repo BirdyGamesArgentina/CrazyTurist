@@ -31,13 +31,6 @@ public class ParticlePool : MonoBehaviour
     {
         var part = instance._get(_key);
 
-        if (releaseEvent)
-        {
-            var pp = part.gameObject.AddComponent<PooledParticle>();
-            pp.SetKey(_key);
-            pp.OnFinished += Pp_OnFinished;
-        }
-
         return part;
     }
 
@@ -62,6 +55,10 @@ public class ParticlePool : MonoBehaviour
                  createFunc: () =>
                  {
                      ParticleSystem part = Instantiate(model, parent);
+                     var pp = part.gameObject.AddComponent<PooledParticle>();
+                     pp.SetKey(_key);
+                     pp.OnFinished += Pp_OnFinished;
+
                      return part;
                  },
                  actionOnGet: x => x.gameObject.SetActive(true),
