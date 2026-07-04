@@ -3,62 +3,79 @@ using UnityEngine;
 
 public class ProgressionModule : MonoBehaviour
 {
-    [Header("Tiempo de Completado")]
-    [SerializeField] float time_to_trans = 1f;
-    float timer_trans = 1f;
-    bool anim = false;
-    
-    [SerializeField] AnimationCurve curve;
-    [SerializeField] LerpedObject[] anims_lerped; // ejecuta el OnLerp(float)
+    [Header("Tiempo de llenado")]
+    [SerializeField] private float fillTime = 3f;
 
-    bool firstTime = true;
-  public  bool finished = false;
+    [Header("Tiempo de vaciado")]
+    [SerializeField] private float drainTime = 2f;
+
+    [SerializeField] private AnimationCurve curve;
+    [SerializeField] private LerpedObject[] anims_lerped;
+
+    private float progress = 0f;
+
+    private bool filling = false;
+    private bool draining = false;
+
+    public bool finished = false;
 
     Action onFinish = delegate { };
-    public void SetCallbackOnFinish(Action _onFinish)
+
+    public void SetCallbackOnFinish(Action callback)
     {
-        onFinish = _onFinish;
+        onFinish = callback;
     }
+
     public void Begin()
     {
         if (finished) return;
-        anim = true;
-        if (firstTime)
-        {
-            firstTime = false;
-            timer_trans = 0;
-        }
+
+        filling = true;
+        draining = false;
     }
+
     public void End()
     {
         if (finished) return;
-        anim = false;
+
+        filling = false;
+        draining = true;
+    }
+
+    public void Stop()
+    {
+        filling = false;
+        draining = false;
     }
 
     private void Update()
     {
-        if (finished) return;
-        
-        if (!anim) return;
+        if (finished)
+            return;
 
-        if (timer_trans < time_to_trans)
+        if (filling)
         {
-            timer_trans = timer_trans + 1 * Time.deltaTime;
-
-            float lerpValue = curve.Evaluate(timer_trans / time_to_trans);
-
-            for (int i = 0; i < anims_lerped.Length; i++)
-            {
-                anims_lerped[i].OnLerp(lerpValue);
-            }
+            progress += Time.deltaTime / fillTime;
         }
-        else
+        else if (draining)
+        {
+            progress -= Time.deltaTime / drainTime;
+        }
+
+        progress = Mathf.Clamp01(progress);
+
+        float value = curve.Evaluate(progress);
+
+        for (int i = 0; i < anims_lerped.Length; i++)
+            anims_lerped[i].OnLerp(value);
+
+        if (progress >= 1f)
         {
             finished = true;
-            timer_trans = 0;
-            anim = false;
-            onFinish.Invoke();
+            filling = false;
+            draining = false;
+
+            onFinish?.Invoke();
         }
-        
     }
 }

@@ -143,5 +143,12 @@ public class Player : MonoBehaviour
             10f * Time.fixedDeltaTime);
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.GetComponent<Collider>()!= null)
+        {
+                speed = 0;
+        }
+    }
 
 }

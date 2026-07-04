@@ -10,6 +10,7 @@ public class InterestPointProgressive : InterestPoint
     [SerializeField] float returnSpeed =3.5f; 
     [SerializeField] float cameraHeight = 7f;
     bool canReactive = true;
+    bool OnExited=false;
 
     bool visited = false , imInAMonument=false;   
     Vector3 originalPosition;
@@ -36,16 +37,15 @@ public class InterestPointProgressive : InterestPoint
     {
         if (canReactive == false) return;
         imInAMonument = false;
-        visited = true;
+        OnExited = true;
         SOManager.instance.myImage.SetActive(false);
         progresor.End();
     }
 
     private void Update()
     {
-
-        if (canReactive == false) return;
-        if (imInAMonument)
+        if(visited) return;
+        if (imInAMonument && OnExited==false)
         {
             cam.transform.position = Vector3.Lerp(cam.transform.position, myTransformOfCam.transform.position, moveSpeed * Time.deltaTime);
             cam.transform.rotation = Quaternion.Lerp(cam.transform.rotation, myTransformOfCam.transform.rotation, moveSpeed * Time.deltaTime);
@@ -55,22 +55,22 @@ public class InterestPointProgressive : InterestPoint
             }
         }
 
-        if (visited)
+        if (OnExited && imInAMonument==false)
         {
             /*cam.transform.position = Vector3.Lerp(cam.transform.position, posBeforeEnter, returnSpeed * Time.deltaTime);
             cam.transform.rotation = Quaternion.Lerp(cam.transform.rotation, Quaternion.identity, returnSpeed * Time.deltaTime);*/
 
-            if (Vector3.Distance(cam.transform.position, posBeforeEnter) < 0.5f&& visited==true)
-            {
-                visited = false;
+           
                 CameraTarget.instance.isFollowing = true;
-                canReactive = false;
+                OnExited = false;
 
-            }
+            
         }
     }
     protected override void OnFinishVisit()
     {
+        Debug.Log("Interest Point Visited: " + gameObject.name);
         PointOfInterestSystem.Instance.CompleteInterest();
+        visited = true;
     }
 }
