@@ -24,6 +24,15 @@ public class InterestPointProgressive : InterestPoint
     private Transform[] movingPeople;
     private Transform[] targetPoints;
     private bool peopleWalking;
+    [SerializeField] private GameObject[] monumentPeople;
+
+    public static InterestPointProgressive instance;
+
+    private void Awake()
+    {
+        instance = this;
+    }
+
     private void Start()
     {
         if (canReactive == false) return;
@@ -59,6 +68,29 @@ public class InterestPointProgressive : InterestPoint
 
     private void Update()
     {
+
+        if (peopleWalking)
+        {
+            bool allArrived = true;
+
+            for (int i = 0; i < movingPeople.Length; i++)
+            {
+                if (movingPeople[i] == null)
+                    continue;
+
+                movingPeople[i].position = Vector3.MoveTowards(movingPeople[i].position, targetPoints[i].position, peopleSpeed * Time.deltaTime);
+
+                movingPeople[i].rotation = Quaternion.RotateTowards(movingPeople[i].rotation, targetPoints[i].rotation, 360f * Time.deltaTime);
+
+                if (Vector3.Distance(movingPeople[i].position, targetPoints[i].position) > 0.05f)
+                    allArrived = false;
+            }
+
+            if (allArrived)
+                peopleWalking = false;
+        }
+
+
         if (imInAMonument && OnExited==false && Player.instance.speed <= 0.5f )
         {
             CameraTarget.instance.isFollowing = false;

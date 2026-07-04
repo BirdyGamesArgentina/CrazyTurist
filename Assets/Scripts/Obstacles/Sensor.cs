@@ -23,6 +23,7 @@ public class Sensor : MonoBehaviour
         if (obstacle != null)
         {
             OnHitObstacle.Invoke(obstacle);
+            SoundFX.PlaySound("DestroyedCar");
         }
 
         InterestPoint interest = other.GetComponent<InterestPoint>();
