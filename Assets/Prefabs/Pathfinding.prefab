@@ -47,10 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 4131645543277358699}
-  - {fileID: 2282196508126623359}
-  - {fileID: 181664952452661592}
-  - {fileID: 7466172927792038107}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -167,10 +165,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 6252755322129202681}
-  - {fileID: 6117962951176635177}
-  - {fileID: 6488956734284521619}
-  - {fileID: 3312463567985205994}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -393,10 +390,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 5209430230174466368}
-  - {fileID: 5567347855703059607}
-  - {fileID: 4370741925764318030}
-  - {fileID: 5715192814501143024}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -513,13 +509,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 6867013689153827158}
-  - {fileID: 6631210083337284854}
-  - {fileID: 7962695477940906853}
-  - {fileID: 1293461597656265411}
-  - {fileID: 7743466869604962279}
-  - {fileID: 8151634360081013363}
-  - {fileID: 1884602494207548912}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -636,8 +632,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 309566652395138304}
-  - {fileID: 6092551298543098407}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -754,14 +751,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 1293461597656265411}
-  - {fileID: 7743466869604962279}
-  - {fileID: 1033929075307551182}
-  - {fileID: 6252755322129202681}
-  - {fileID: 6488956734284521619}
-  - {fileID: 7635737251688323218}
-  - {fileID: 2071021879776218510}
-  - {fileID: 8397883397131857031}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -878,14 +875,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 3760267489848366236}
-  - {fileID: 708170732246957494}
-  - {fileID: 7962695477940906853}
-  - {fileID: 7743466869604962279}
-  - {fileID: 2658078922785093378}
-  - {fileID: 6117962951176635177}
-  - {fileID: 7635737251688323218}
-  - {fileID: 2071021879776218510}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -1086,10 +1083,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 708170732246957494}
-  - {fileID: 7962695477940906853}
-  - {fileID: 1293461597656265411}
-  - {fileID: 6252755322129202681}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -1206,10 +1202,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 1033929075307551182}
-  - {fileID: 8776233279735978482}
-  - {fileID: 5580032152386728594}
-  - {fileID: 8691958416021549746}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -1326,13 +1321,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 4244827512212780362}
-  - {fileID: 3601499803717379653}
-  - {fileID: 309566652395138304}
-  - {fileID: 1508726255099266312}
-  - {fileID: 6867013689153827158}
-  - {fileID: 6631210083337284854}
-  - {fileID: 7263483210092114308}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -1449,13 +1444,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 8776233279735978482}
-  - {fileID: 3312463567985205994}
-  - {fileID: 5580032152386728594}
-  - {fileID: 6068499691391581304}
-  - {fileID: 1435325090009565342}
-  - {fileID: 6047766574770907257}
-  - {fileID: 5220610605409212875}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -1572,12 +1567,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 8151634360081013363}
-  - {fileID: 5138050999129162451}
-  - {fileID: 1884602494207548912}
-  - {fileID: 4131645543277358699}
-  - {fileID: 3249320553443789686}
-  - {fileID: 2282196508126623359}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -1922,11 +1917,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 7263483210092114308}
-  - {fileID: 3111057485826338671}
-  - {fileID: 3568038316410173568}
-  - {fileID: 8151634360081013363}
-  - {fileID: 5138050999129162451}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -2127,12 +2122,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 1508726255099266312}
-  - {fileID: 6092551298543098407}
-  - {fileID: 6631210083337284854}
-  - {fileID: 3111057485826338671}
-  - {fileID: 7962695477940906853}
-  - {fileID: 2658078922785093378}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -2249,10 +2244,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 760048717706993393}
-  - {fileID: 5567347855703059607}
-  - {fileID: 8806979069746987137}
-  - {fileID: 6520403812068721584}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -2369,13 +2363,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 8776233279735978482}
-  - {fileID: 8691958416021549746}
-  - {fileID: 6068499691391581304}
-  - {fileID: 6047766574770907257}
-  - {fileID: 5220610605409212875}
-  - {fileID: 760048717706993393}
-  - {fileID: 6762191357919501596}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -2492,13 +2486,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 1033929075307551182}
-  - {fileID: 6252755322129202681}
-  - {fileID: 6117962951176635177}
-  - {fileID: 7635737251688323218}
-  - {fileID: 2071021879776218510}
-  - {fileID: 8776233279735978482}
-  - {fileID: 6068499691391581304}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -2615,12 +2609,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 3249320553443789686}
-  - {fileID: 2282196508126623359}
-  - {fileID: 8397883397131857031}
-  - {fileID: 5209430230174466368}
-  - {fileID: 6762191357919501596}
-  - {fileID: 4370741925764318030}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -2790,11 +2784,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 6867013689153827158}
-  - {fileID: 7263483210092114308}
-  - {fileID: 3772383582013189167}
-  - {fileID: 8151634360081013363}
-  - {fileID: 5138050999129162451}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -2942,10 +2936,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 3568038316410173568}
-  - {fileID: 5138050999129162451}
-  - {fileID: 4761288940879341894}
-  - {fileID: 5209430230174466368}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -3062,13 +3054,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 6867013689153827158}
-  - {fileID: 6631210083337284854}
-  - {fileID: 3760267489848366236}
-  - {fileID: 708170732246957494}
-  - {fileID: 1293461597656265411}
-  - {fileID: 7743466869604962279}
-  - {fileID: 2658078922785093378}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -3185,10 +3177,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 5567347855703059607}
-  - {fileID: 4370741925764318030}
-  - {fileID: 7466172927792038107}
-  - {fileID: 6520403812068721584}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -3305,10 +3296,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 433581649764078785}
-  - {fileID: 3760267489848366236}
-  - {fileID: 7962695477940906853}
-  - {fileID: 1293461597656265411}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -3425,13 +3415,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 7962695477940906853}
-  - {fileID: 1293461597656265411}
-  - {fileID: 2658078922785093378}
-  - {fileID: 8151634360081013363}
-  - {fileID: 1884602494207548912}
-  - {fileID: 6117962951176635177}
-  - {fileID: 2071021879776218510}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -3548,13 +3538,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 1884602494207548912}
-  - {fileID: 4761288940879341894}
-  - {fileID: 3249320553443789686}
-  - {fileID: 8397883397131857031}
-  - {fileID: 181664952452661592}
-  - {fileID: 5209430230174466368}
-  - {fileID: 6762191357919501596}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -3671,10 +3661,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 8691958416021549746}
-  - {fileID: 1435325090009565342}
-  - {fileID: 5220610605409212875}
-  - {fileID: 8806979069746987137}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -3791,13 +3780,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 6092551298543098407}
-  - {fileID: 7449140566796363549}
-  - {fileID: 2741002818912797573}
-  - {fileID: 9155115651237674548}
-  - {fileID: 394950578045131363}
-  - {fileID: 3111057485826338671}
-  - {fileID: 3772383582013189167}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -3998,8 +3987,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 7449140566796363549}
-  - {fileID: 7263483210092114308}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -4116,10 +4106,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 8691958416021549746}
-  - {fileID: 1435325090009565342}
-  - {fileID: 6047766574770907257}
-  - {fileID: 2875493658899153440}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -4289,13 +4278,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 3111057485826338671}
-  - {fileID: 3772383582013189167}
-  - {fileID: 7743466869604962279}
-  - {fileID: 2658078922785093378}
-  - {fileID: 5138050999129162451}
-  - {fileID: 1884602494207548912}
-  - {fileID: 4761288940879341894}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -4412,8 +4401,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 309566652395138304}
-  - {fileID: 6092551298543098407}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -4530,9 +4520,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 7449140566796363549}
-  - {fileID: 7263483210092114308}
-  - {fileID: 394950578045131363}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -4649,13 +4639,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 7743466869604962279}
-  - {fileID: 2658078922785093378}
-  - {fileID: 8151634360081013363}
-  - {fileID: 5138050999129162451}
-  - {fileID: 4761288940879341894}
-  - {fileID: 3249320553443789686}
-  - {fileID: 2282196508126623359}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -4772,9 +4762,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 1508726255099266312}
-  - {fileID: 6631210083337284854}
-  - {fileID: 708170732246957494}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -4891,14 +4881,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 6068499691391581304}
-  - {fileID: 1435325090009565342}
-  - {fileID: 2282196508126623359}
-  - {fileID: 8397883397131857031}
-  - {fileID: 181664952452661592}
-  - {fileID: 760048717706993393}
-  - {fileID: 5567347855703059607}
-  - {fileID: 4370741925764318030}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -5046,10 +5036,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 433581649764078785}
-  - {fileID: 6092551298543098407}
-  - {fileID: 6867013689153827158}
-  - {fileID: 6631210083337284854}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -5166,9 +5156,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 2741002818912797573}
-  - {fileID: 7263483210092114308}
-  - {fileID: 9155115651237674548}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -5391,13 +5382,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 1293461597656265411}
-  - {fileID: 7743466869604962279}
-  - {fileID: 6117962951176635177}
-  - {fileID: 6488956734284521619}
-  - {fileID: 7635737251688323218}
-  - {fileID: 3249320553443789686}
-  - {fileID: 8397883397131857031}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -5514,12 +5505,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 3111057485826338671}
-  - {fileID: 3772383582013189167}
-  - {fileID: 8151634360081013363}
-  - {fileID: 1884602494207548912}
-  - {fileID: 4761288940879341894}
-  - {fileID: 4131645543277358699}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -5648,7 +5639,7 @@ Transform:
   m_GameObject: {fileID: 6135250310402334815}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.259998, y: 0.08, z: 7.989998}
+  m_LocalPosition: {x: -19.259998, y: 3.835, z: 7.989998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5666,9 +5657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  neighbors:
-  - {fileID: 5715192814501143024}
-  - {fileID: 467804460360757217}
+  neighbors: []
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -5785,9 +5774,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 4244827512212780362}
-  - {fileID: 3601499803717379653}
-  - {fileID: 6092551298543098407}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -5904,13 +5894,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 8397883397131857031}
-  - {fileID: 181664952452661592}
-  - {fileID: 760048717706993393}
-  - {fileID: 6762191357919501596}
-  - {fileID: 5567347855703059607}
-  - {fileID: 5715192814501143024}
-  - {fileID: 7466172927792038107}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -6027,12 +6017,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 433581649764078785}
-  - {fileID: 1508726255099266312}
-  - {fileID: 6092551298543098407}
-  - {fileID: 6867013689153827158}
-  - {fileID: 7962695477940906853}
-  - {fileID: 2658078922785093378}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -6180,14 +6170,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 6117962951176635177}
-  - {fileID: 7635737251688323218}
-  - {fileID: 2071021879776218510}
-  - {fileID: 3249320553443789686}
-  - {fileID: 2282196508126623359}
-  - {fileID: 181664952452661592}
-  - {fileID: 6762191357919501596}
-  - {fileID: 4370741925764318030}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -6393,10 +6383,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 8776233279735978482}
-  - {fileID: 3312463567985205994}
-  - {fileID: 8691958416021549746}
-  - {fileID: 2875493658899153440}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -6513,13 +6503,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 760048717706993393}
-  - {fileID: 6762191357919501596}
-  - {fileID: 4370741925764318030}
-  - {fileID: 5715192814501143024}
-  - {fileID: 7466172927792038107}
-  - {fileID: 8806979069746987137}
-  - {fileID: 467804460360757217}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -6667,8 +6657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 5580032152386728594}
-  - {fileID: 5220610605409212875}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -6847,13 +6836,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 6488956734284521619}
-  - {fileID: 7635737251688323218}
-  - {fileID: 8776233279735978482}
-  - {fileID: 8691958416021549746}
-  - {fileID: 1435325090009565342}
-  - {fileID: 760048717706993393}
-  - {fileID: 6762191357919501596}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -6970,13 +6959,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 6068499691391581304}
-  - {fileID: 1435325090009565342}
-  - {fileID: 6762191357919501596}
-  - {fileID: 5567347855703059607}
-  - {fileID: 4370741925764318030}
-  - {fileID: 8806979069746987137}
-  - {fileID: 467804460360757217}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -7177,10 +7166,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 3760267489848366236}
-  - {fileID: 1033929075307551182}
-  - {fileID: 6117962951176635177}
-  - {fileID: 6488956734284521619}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -7297,14 +7285,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 1293461597656265411}
-  - {fileID: 6117962951176635177}
-  - {fileID: 6488956734284521619}
-  - {fileID: 2071021879776218510}
-  - {fileID: 8776233279735978482}
-  - {fileID: 6068499691391581304}
-  - {fileID: 3249320553443789686}
-  - {fileID: 8397883397131857031}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -7421,13 +7409,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 1884602494207548912}
-  - {fileID: 4761288940879341894}
-  - {fileID: 7635737251688323218}
-  - {fileID: 2071021879776218510}
-  - {fileID: 2282196508126623359}
-  - {fileID: 8397883397131857031}
-  - {fileID: 181664952452661592}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -7597,10 +7585,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 6047766574770907257}
-  - {fileID: 760048717706993393}
-  - {fileID: 5567347855703059607}
-  - {fileID: 467804460360757217}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -7717,13 +7704,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 6488956734284521619}
-  - {fileID: 7635737251688323218}
-  - {fileID: 3312463567985205994}
-  - {fileID: 5580032152386728594}
-  - {fileID: 8691958416021549746}
-  - {fileID: 6068499691391581304}
-  - {fileID: 1435325090009565342}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -7840,8 +7827,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 7263483210092114308}
-  - {fileID: 9155115651237674548}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2
@@ -7958,8 +7945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 3772383582013189167}
-  - {fileID: 4131645543277358699}
+  - {fileID: 0}
   detectionRadius: 23
   floorsAndObstacles:
     serializedVersion: 2

@@ -127,7 +127,6 @@ namespace PathFinding
 
         private void OnDrawGizmos()
         {
-            return;
 
             if (drawsphere)
             {
