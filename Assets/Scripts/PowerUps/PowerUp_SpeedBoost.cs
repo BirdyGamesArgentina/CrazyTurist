@@ -18,4 +18,10 @@ public class PowerUp_SpeedBoost : PowerUp
     {
         player.SpeedUp(maxSpeedToAdd, accelerationToAdd);
     }
+
+    protected override void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        base.OnDrawGizmos();
+    }
 }

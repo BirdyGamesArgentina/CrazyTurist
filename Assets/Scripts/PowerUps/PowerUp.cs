@@ -25,7 +25,7 @@ public abstract class PowerUp : MonoBehaviour
         _player = player;
         StartPowerUp(player);
         TimerManager.Instance.AddTimer(powerUpTime, EndPowerUp, timerKey);
-        _spawner.DeletePowerUp(this);
+        _spawner?.DeletePowerUp(this);
     }
 
     protected abstract void OnPickUp(Player player);
@@ -44,4 +44,9 @@ public abstract class PowerUp : MonoBehaviour
 
     protected abstract void OnStartPowerUp(Player player);
     protected abstract void OnEndPowerUp();
+
+    protected virtual void OnDrawGizmos()
+    {
+        Gizmos.DrawCube(transform.position, Vector3.one);
+    }
 }

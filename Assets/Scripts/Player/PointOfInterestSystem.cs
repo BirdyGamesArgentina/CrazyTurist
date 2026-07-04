@@ -36,12 +36,15 @@ public class PointOfInterestSystem : MonoBehaviour
     [SerializeField] Animator ticketsArrive_animator;
 
     bool anim = false;
+    bool interestLocked;
 
     private void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(this.gameObject);
     }
+
+    public void InterestLock(bool interestLock) => interestLocked = interestLock;
 
     private void Start()
     {
@@ -95,7 +98,7 @@ public class PointOfInterestSystem : MonoBehaviour
     private void Update()
     {
         if (!anim) return;
-        RemoveInterest(quantToRemove * Time.deltaTime);
+        if(!interestLocked) RemoveInterest(quantToRemove * Time.deltaTime);
 
         leftSide.transform.position = player.transform.position + Vector3.up + Vector3.left;
         rightSide.transform.position = player.transform.position + Vector3.up + Vector3.right;

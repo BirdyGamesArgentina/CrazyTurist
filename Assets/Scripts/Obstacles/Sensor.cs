@@ -7,6 +7,7 @@ public class Sensor : MonoBehaviour
     public Action<InterestPoint> OnEnterInterestPoint;
     public Action<InterestPoint> OnExitInterestPoint;
 
+
     public void SubscribeToObstacle(Action<Obstacle> _onHitObstacle)
     {
         OnHitObstacle = _onHitObstacle;
@@ -30,6 +31,11 @@ public class Sensor : MonoBehaviour
         if (interest != null)
         {
             OnEnterInterestPoint.Invoke(interest);
+        }
+        PowerUp powerUp = other.GetComponent<PowerUp>();
+        if (powerUp != null)
+        {
+            powerUp.PickUp(Player.instance);
         }
     }
 
