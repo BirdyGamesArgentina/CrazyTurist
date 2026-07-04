@@ -69,3 +69,52 @@ MonoBehaviour:
     priority: 0
     isLoop: 0
     group: {fileID: 8530024845299122342, guid: 1e3aeef1834bbfd459605378c9c8a8b2, type: 2}
+  - ID: camera_monument
+    sounds:
+    - {fileID: 8300000, guid: 41ac70c637e65e944b2a6ee8ae6e3a5a, type: 3}
+    currentIndex: 0
+    priority: 0
+    isLoop: 0
+    group: {fileID: 8530024845299122342, guid: 1e3aeef1834bbfd459605378c9c8a8b2, type: 2}
+  - ID: GenteFestejando
+    sounds:
+    - {fileID: 8300000, guid: 3c1abae0c633faa4785303b15ad21f3a, type: 3}
+    currentIndex: 0
+    priority: 0
+    isLoop: 0
+    group: {fileID: 8530024845299122342, guid: 1e3aeef1834bbfd459605378c9c8a8b2, type: 2}
+  - ID: AutoChocando
+    sounds:
+    - {fileID: 8300000, guid: 01a68e1f6d0c4e54683bcee727ac421b, type: 3}
+    currentIndex: 0
+    priority: 0
+    isLoop: 0
+    group: {fileID: 8530024845299122342, guid: 1e3aeef1834bbfd459605378c9c8a8b2, type: 2}
+  - ID: click
+    sounds:
+    - {fileID: 8300000, guid: e094703df70dc214e9210ca1dd4921b2, type: 3}
+    currentIndex: 0
+    priority: 0
+    isLoop: 0
+    group: {fileID: 8530024845299122342, guid: 1e3aeef1834bbfd459605378c9c8a8b2, type: 2}
+  - ID: ticket
+    sounds:
+    - {fileID: 8300000, guid: 2e3b8edb600df634a9523c6eb853b729, type: 3}
+    currentIndex: 0
+    priority: 0
+    isLoop: 0
+    group: {fileID: 8530024845299122342, guid: 1e3aeef1834bbfd459605378c9c8a8b2, type: 2}
+  - ID: screampeople
+    sounds:
+    - {fileID: 8300000, guid: 0170357b8cda66549a9fad6dbec1b59e, type: 3}
+    currentIndex: 0
+    priority: 0
+    isLoop: 0
+    group: {fileID: 8530024845299122342, guid: 1e3aeef1834bbfd459605378c9c8a8b2, type: 2}
+  - ID: steps
+    sounds:
+    - {fileID: 8300000, guid: e641cb1f0f607fc4ebb04f7eda9c6d8c, type: 3}
+    currentIndex: 0
+    priority: 0
+    isLoop: 0
+    group: {fileID: 8530024845299122342, guid: 1e3aeef1834bbfd459605378c9c8a8b2, type: 2}
