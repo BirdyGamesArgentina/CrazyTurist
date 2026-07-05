@@ -150,6 +150,30 @@ PrefabInstance:
       propertyPath: _onEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1375074928428247864, guid: 91b0a6d69d30eed4db7faeb88ec88fd4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.95104563
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375074928428247864, guid: 91b0a6d69d30eed4db7faeb88ec88fd4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.1688939
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375074928428247864, guid: 91b0a6d69d30eed4db7faeb88ec88fd4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.25483137
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375074928428247864, guid: 91b0a6d69d30eed4db7faeb88ec88fd4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.045254897
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375074928428247864, guid: 91b0a6d69d30eed4db7faeb88ec88fd4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 20.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1375074928428247864, guid: 91b0a6d69d30eed4db7faeb88ec88fd4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -30
+      objectReference: {fileID: 0}
     - target: {fileID: 1420179314629337575, guid: 91b0a6d69d30eed4db7faeb88ec88fd4, type: 3}
       propertyPath: m_IsActive
       value: 0
