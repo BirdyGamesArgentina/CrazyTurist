@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17beee49acfac4645b7e4c9c758cd450, type: 3}
+  m_Name: Caminito
+  m_EditorClassIdentifier: 
+  nameOfMonument: Caminito
+  informationText: "Caminito es un callej\xF3n, museo y un pasaje, de gran valor
+    cultural y tur\xEDstico, ubicado en el barrio de La Boca de la Ciudad de Buenos
+    Aires, Argentina. El lugar adquiri\xF3 significado cultural debido a que inspir\xF3
+    la m\xFAsica del famoso tango \"Caminito\" (1926), compuesta por Juan de Dios
+    Filiberto."
+  image: {fileID: 21300000, guid: 987595180a89e4e42ac94b65df6ff312, type: 3}

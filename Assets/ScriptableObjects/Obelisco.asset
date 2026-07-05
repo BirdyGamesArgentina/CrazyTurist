@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameOfMonument: Obelisco
   informationText: "El Obelisco de Buenos Aires es un monumento hist\xF3rico, considerado
-    \xEDcono de Buenos Aires, capital de Argentina.  Fue construido en 1936 con motivo
-    del cuarto centenario de la primera fundaci\xF3n de Buenos Aires por Pedro de
-    Mendoza."
+    \xEDcono de Buenos Aires, capital de Argentina. \nFue construido en 1936 con
+    motivo del cuarto centenario de la primera fundaci\xF3n de Buenos Aires por Pedro
+    de Mendoza."
   image: {fileID: 21300000, guid: 88036f3d99f0ddf4980e7dfdbab7fa3f, type: 3}
