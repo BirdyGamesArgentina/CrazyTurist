@@ -1,16 +1,8 @@
 using TMPro;
 using UnityEngine;
 
-public enum Side
-{
-    left,
-    right
-}
-
 public class InterestPointByInput : InterestPoint
 {
-
-    public Side side;
     bool canInput;
     bool spended = false;
 
@@ -22,13 +14,13 @@ public class InterestPointByInput : InterestPoint
     {
         if (spended) return;
         canInput = true;
-        PointOfInterestSystem.Instance.ShowSideFeedback(side);
+        PointOfInterestSystem.Instance.ShowJumpBar();
     }
 
     protected override void OnExit()
     {
         canInput = false;
-        PointOfInterestSystem.Instance.HideSideFeedback();
+        PointOfInterestSystem.Instance.HideJumpBar();
     }
 
     protected override void OnFinishVisit()
@@ -38,7 +30,7 @@ public class InterestPointByInput : InterestPoint
         FLash.Instance.SnapShot();
         ScoreFeedbackManager.ShowScoreInPos("+"+interestQuantity, Color.green, pointToScore.position);
         PointOfInterestSystem.Instance.AddInterest(interestQuantity);
-        PointOfInterestSystem.Instance.HideSideFeedback();
+        PointOfInterestSystem.Instance.HideJumpBar();
 
         InfoMonument.Instance.SetInfoFastPhoto(myMonument.nameOfMonument, myMonument.image);
     }
@@ -49,11 +41,7 @@ public class InterestPointByInput : InterestPoint
 
         if (canInput)
         {
-            if (Input.GetKeyDown(KeyCode.LeftArrow) && side == Side.left)
-            {
-                FinishVisit();
-            }
-            if (Input.GetKeyDown(KeyCode.RightArrow) && side == Side.right)
+            if (Input.GetButtonDown("Jump"))
             {
                 FinishVisit();
             }

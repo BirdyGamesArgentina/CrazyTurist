@@ -3314,6 +3314,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1201303887 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3923997445600816724, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
+  m_PrefabInstance: {fileID: 3940757597629835805}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1241428581
 GameObject:
   m_ObjectHideFlags: 0
@@ -6580,6 +6585,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1593050905}
     - target: {fileID: 7903252535988095680, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
+      propertyPath: jumpbarFeedback
+      value: 
+      objectReference: {fileID: 1201303887}
+    - target: {fileID: 7903252535988095680, guid: 5d327b2546399db438a5e8776eea09d0, type: 3}
       propertyPath: ticketsArrive_animator
       value: 
       objectReference: {fileID: 204409153}
@@ -6610,6 +6619,34 @@ PrefabInstance:
     - target: {fileID: 2218093633995686459, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2361802749672091411, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2361802749672091411, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2361802749672091411, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2361802749672091411, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2361802749672091411, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2972951155585706944, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3923997445600816724, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5317263370752121083, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
       propertyPath: m_Pivot.x
@@ -6690,6 +6727,34 @@ PrefabInstance:
     - target: {fileID: 5317263370752121083, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702827475080549080, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7812212893439985496, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7812212893439985496, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7812212893439985496, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 771.3139
+      objectReference: {fileID: 0}
+    - target: {fileID: 7812212893439985496, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7812212893439985496, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 385.65695
+      objectReference: {fileID: 0}
+    - target: {fileID: 7812212893439985496, guid: 2bbe7bb28b4f0c44e8febd1f2a9b6845, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -94.96
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

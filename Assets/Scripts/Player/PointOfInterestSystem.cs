@@ -26,8 +26,8 @@ public class PointOfInterestSystem : MonoBehaviour
 
     [SerializeField] float quantToRemove = 2f;
 
-    [SerializeField] GameObject leftSide;
-    [SerializeField] GameObject rightSide;
+    //[SerializeField] GameObject leftSide;
+    //[SerializeField] GameObject rightSide;
     [SerializeField] Transform player;
 
     [SerializeField] private float scoreMultiplier;
@@ -39,6 +39,8 @@ public class PointOfInterestSystem : MonoBehaviour
     [SerializeField] TextMeshProUGUI ticketsArrive;
     [SerializeField] TextMeshProUGUI auxiliarModif;
     [SerializeField] Animator ticketsArrive_animator;
+
+    [SerializeField] CanvasGroup jumpbarFeedback;
 
     bool anim = false;
     bool interestLocked;
@@ -120,8 +122,7 @@ public class PointOfInterestSystem : MonoBehaviour
         if (!anim) return;
         if(!interestLocked) RemoveInterest(quantToRemove * Time.deltaTime);
 
-        leftSide.transform.position = player.transform.position + Vector3.up + Vector3.left;
-        rightSide.transform.position = player.transform.position + Vector3.up + Vector3.right;
+       
     }
 
     void Refresh()
@@ -151,20 +152,12 @@ public class PointOfInterestSystem : MonoBehaviour
         }
     }
 
-    public void ShowSideFeedback(Side side)
+    public void ShowJumpBar()
     {
-        if (side == Side.left)
-        {
-            leftSide.SetActive(true);
-        }
-        else if(side == Side.right)
-        {
-            rightSide.SetActive(true);
-        }
+        jumpbarFeedback.alpha = 1;
     }
-    public void HideSideFeedback()
+    public void HideJumpBar()
     {
-        leftSide.SetActive(false);
-        rightSide.SetActive(false);
+        jumpbarFeedback.alpha = 0;
     }
 }
