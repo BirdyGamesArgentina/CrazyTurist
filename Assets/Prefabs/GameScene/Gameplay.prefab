@@ -907,17 +907,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: IP BusStop (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5977945285316508552, guid: c9ce8333834f15d41b5d67a4aa15e769, type: 3}
+      propertyPath: m_Center.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8697026595097527771, guid: c9ce8333834f15d41b5d67a4aa15e769, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 56.56
+      value: 55.57
       objectReference: {fileID: 0}
     - target: {fileID: 8697026595097527771, guid: c9ce8333834f15d41b5d67a4aa15e769, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.36
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8697026595097527771, guid: c9ce8333834f15d41b5d67a4aa15e769, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 80.51
+      value: 79.56
       objectReference: {fileID: 0}
     - target: {fileID: 8697026595097527771, guid: c9ce8333834f15d41b5d67a4aa15e769, type: 3}
       propertyPath: m_LocalRotation.w
