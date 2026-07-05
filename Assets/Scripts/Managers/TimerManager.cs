@@ -43,6 +43,12 @@ public class TimerManager : MonoSingleton<TimerManager>, IPause
 
         return key;
     }
+    public string AddTimerLerp(float timer, Action OnEndTimer, string key, Action<float> animCallback)
+    {
+        cdModule.AddCD(key, OnEndTimer, timer, animCallback);
+
+        return key;
+    }
 
     public bool TimerExist(string key) => cdModule.TimerExist(key);
 

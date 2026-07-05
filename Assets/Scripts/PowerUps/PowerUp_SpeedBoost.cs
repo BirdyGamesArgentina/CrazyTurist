@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PowerUp_SpeedBoost : PowerUp
 {
+    [Header("SpeedBost")]
     [SerializeField] float maxSpeedToAdd = 5;
     [SerializeField] float accelerationToAdd = 2;
 
@@ -19,9 +20,9 @@ public class PowerUp_SpeedBoost : PowerUp
         player.SpeedUp(maxSpeedToAdd, accelerationToAdd);
     }
 
-    protected override void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        base.OnDrawGizmos();
-    }
+    //protected override void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.red;
+    //    base.OnDrawGizmos();
+    //}
 }

@@ -71,6 +71,11 @@ MonoBehaviour:
   powerUpTime: 8
   timerKey: InterestLock_Timer
   col: {fileID: 8659808374880132069}
+  _sprite: {fileID: 21300000, guid: b7076a382ae09c846b217fee95cb08a7, type: 3}
+  _description: "congela el inter\xE9s"
+  tohideonCollect:
+  - {fileID: 7922200565510898602}
+  - {fileID: 5174912082118425739}
   prefab: {fileID: 8069072841888766339, guid: 5bdd41d67e6e1184395834c9d7f9c420, type: 3}
   changeFeedbackTime: 0.5
 --- !u!1001 &1217380579753694607
@@ -145,6 +150,11 @@ PrefabInstance:
 --- !u!4 &2879449850543487476 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3967914598364851323, guid: c7534d5b683924c4688f0387c9b17fb0, type: 3}
+  m_PrefabInstance: {fileID: 1217380579753694607}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5174912082118425739 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6284203943864445188, guid: c7534d5b683924c4688f0387c9b17fb0, type: 3}
   m_PrefabInstance: {fileID: 1217380579753694607}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5294678024769707377
@@ -223,5 +233,10 @@ PrefabInstance:
 --- !u!4 &2571974409713539481 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7695249358444938472, guid: 3e46905456f897846a3dfdab969814bc, type: 3}
+  m_PrefabInstance: {fileID: 5294678024769707377}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7922200565510898602 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2633258797067017947, guid: 3e46905456f897846a3dfdab969814bc, type: 3}
   m_PrefabInstance: {fileID: 5294678024769707377}
   m_PrefabAsset: {fileID: 0}

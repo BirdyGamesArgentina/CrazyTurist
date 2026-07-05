@@ -39,9 +39,9 @@ public class PowerUp_InterestLock : PowerUp
         }
     }
 
-    protected override void OnDrawGizmos()
-    {
-        Gizmos.color = Color.green;
-        base.OnDrawGizmos();
-    }
+    //protected override void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.green;
+    //    base.OnDrawGizmos();
+    //}
 }
