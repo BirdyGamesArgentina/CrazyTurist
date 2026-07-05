@@ -39,6 +39,8 @@ public class InterestPointByInput : InterestPoint
         ScoreFeedbackManager.ShowScoreInPos("+"+interestQuantity, Color.green, pointToScore.position);
         PointOfInterestSystem.Instance.AddInterest(interestQuantity);
         PointOfInterestSystem.Instance.HideSideFeedback();
+
+        InfoMonument.Instance.SetInfoFastPhoto(myMonument.nameOfMonument, myMonument.image);
     }
 
     private void Update()
