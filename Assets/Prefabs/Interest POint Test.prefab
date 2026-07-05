@@ -5275,6 +5275,37 @@ Transform:
   - {fileID: 3720627084569515796}
   m_Father: {fileID: 4816387832189844458}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3656278937127077530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1375074928428247864}
+  m_Layer: 7
+  m_Name: MiCamPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1375074928428247864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3656278937127077530}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.2588186, z: -0, w: 0.965926}
+  m_LocalPosition: {x: 7.4900007, y: 8.22, z: -15.690002}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4816387832189844458}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4146994937717690439
 GameObject:
   m_ObjectHideFlags: 0
@@ -5853,6 +5884,7 @@ Transform:
   - {fileID: 2347400116844352760}
   - {fileID: 650889878034217547}
   - {fileID: 5016129647472725076}
+  - {fileID: 1375074928428247864}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2547099464084758509
@@ -5945,13 +5977,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8857752957198827761}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   myMonument: {fileID: 11400000, guid: bb31163eb9c28e346bbd30a93d4ff4ef, type: 2}
   progresor: {fileID: 1476025699743460680}
-  cam: {fileID: 0}
   moveSpeed: 3
   returnSpeed: 3.5
   cameraHeight: 7
-  myTransformOfCam: {fileID: 0}
+  myTransformOfCam: {fileID: 3656278937127077530}
   peopleTransform: []
   peopleSpeed: 2
   monumentPeople: []

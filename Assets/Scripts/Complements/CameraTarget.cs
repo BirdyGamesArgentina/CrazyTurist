@@ -12,8 +12,6 @@ public class CameraTarget : MonoBehaviour
 
 
     public static CameraTarget instance;
-
-
     private void Awake()
     {
         instance = this;

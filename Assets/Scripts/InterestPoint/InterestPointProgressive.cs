@@ -5,7 +5,7 @@ using UnityEngine;
 public class InterestPointProgressive : InterestPoint
 {
     [SerializeField] ProgressionModule progresor;
-    public GameObject cam;
+   
     [SerializeField] float moveSpeed = 3f;
     [SerializeField] float returnSpeed = 3.5f;
     [SerializeField] float cameraHeight = 7f;
@@ -17,7 +17,7 @@ public class InterestPointProgressive : InterestPoint
     public GameObject myTransformOfCam;
     public Transform[] peopleTransform;
 
-
+    Transform cam;
 
     [SerializeField] float peopleSpeed = 2f;
 
@@ -37,6 +37,8 @@ public class InterestPointProgressive : InterestPoint
     {
         if (canReactive == false) return;
         progresor.SetCallbackOnFinish(FinishVisit);
+
+        cam = Camera.main.transform;
     }
     Vector3 posBeforeEnter;
     Vector3 currentPos;
@@ -99,24 +101,19 @@ public class InterestPointProgressive : InterestPoint
         if (imInAMonument && OnExited == false && Player.instance.speed <= 0.5f)
         {
             CameraTarget.instance.isFollowing = false;
-            cam.transform.position = Vector3.Lerp(cam.transform.position, myTransformOfCam.transform.position, moveSpeed * Time.deltaTime);
-            cam.transform.rotation = Quaternion.Lerp(cam.transform.rotation, myTransformOfCam.transform.rotation, moveSpeed * Time.deltaTime);
-            if (Vector3.Distance(cam.transform.position, myTransformOfCam.transform.position) < 0.1f)
+
+            cam.position = Vector3.Lerp(cam.position, myTransformOfCam.transform.position, moveSpeed * Time.deltaTime);
+            cam.rotation = Quaternion.Lerp(cam.rotation, myTransformOfCam.transform.rotation, moveSpeed * Time.deltaTime);
+            if (Vector3.Distance(cam.position, myTransformOfCam.transform.position) < 0.1f)
             {
-                posBeforeEnter = cam.transform.position;
+                posBeforeEnter = cam.position;
             }
         }
 
         if (OnExited && imInAMonument == false)
         {
-            /*cam.transform.position = Vector3.Lerp(cam.transform.position, posBeforeEnter, returnSpeed * Time.deltaTime);
-            cam.transform.rotation = Quaternion.Lerp(cam.transform.rotation, Quaternion.identity, returnSpeed * Time.deltaTime);*/
-
-
             CameraTarget.instance.isFollowing = true;
             OnExited = false;
-
-
         }
     }
     protected override void OnFinishVisit()
