@@ -2915,6 +2915,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3591772240569200457}
     m_Modifications:
+    - target: {fileID: 971400096774545596, guid: fa8f4e6fcb1d53741952d43bf7cd6e4f, type: 3}
+      propertyPath: time_ToMove
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 971400096774545596, guid: fa8f4e6fcb1d53741952d43bf7cd6e4f, type: 3}
+      propertyPath: time_to_show
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1157807369992654369, guid: fa8f4e6fcb1d53741952d43bf7cd6e4f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 18.514
@@ -3801,6 +3809,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2.3
       objectReference: {fileID: 0}
+    - target: {fileID: 971400096774545596, guid: 87909cd8e03ed414d95c3be3163f7cb7, type: 3}
+      propertyPath: time_ToMove
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 971400096774545596, guid: 87909cd8e03ed414d95c3be3163f7cb7, type: 3}
+      propertyPath: time_to_show
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1693214346952394833, guid: 87909cd8e03ed414d95c3be3163f7cb7, type: 3}
       propertyPath: fillTime
       value: 3
@@ -4650,6 +4666,14 @@ PrefabInstance:
       value: 52.405
       objectReference: {fileID: 0}
     - target: {fileID: 9061492603209640357, guid: 600254a6f9257734ba18031432ec7dde, type: 3}
+      propertyPath: time_ToMove
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 9061492603209640357, guid: 600254a6f9257734ba18031432ec7dde, type: 3}
+      propertyPath: time_to_show
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9061492603209640357, guid: 600254a6f9257734ba18031432ec7dde, type: 3}
       propertyPath: peopleTransform.Array.size
       value: 5
       objectReference: {fileID: 0}
@@ -4735,6 +4759,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3591772240569200457}
     m_Modifications:
+    - target: {fileID: 971400096774545596, guid: a13a8685bda6c8347a8aecc655150a54, type: 3}
+      propertyPath: time_ToMove
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 971400096774545596, guid: a13a8685bda6c8347a8aecc655150a54, type: 3}
+      propertyPath: time_to_show
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4743235715025821427, guid: a13a8685bda6c8347a8aecc655150a54, type: 3}
       propertyPath: m_LocalPosition.x
       value: -52.92
