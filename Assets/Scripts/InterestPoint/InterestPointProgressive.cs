@@ -1,5 +1,3 @@
-using Mono.Cecil;
-using UnityEditor.ShaderGraph.Legacy;
 using UnityEngine;
 
 public class InterestPointProgressive : InterestPoint
