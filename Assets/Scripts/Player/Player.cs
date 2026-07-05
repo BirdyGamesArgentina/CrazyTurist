@@ -12,6 +12,12 @@ public class Player : MonoBehaviour
     [Header("Game Feel")]
     public GameObject[] wheels;
 
+    bool canMove = true;
+    public void CanMove(bool val)
+    {
+        canMove = val;
+    }
+
     private void Awake()
     {
         instance = this;
@@ -45,21 +51,19 @@ public class Player : MonoBehaviour
     public float speed;
     private float currentSteerVelocity;
 
-    private void Start()
-    {
-        //PlayLoopMotor();
-    }
-
-    bool oneshot_motor_stand = false;
-    bool oneshot_motor_Aceleration = false;
-
-
 
     void FixedUpdate()
     {
+        if (!canMove)
+        {
+            rb.isKinematic = true;
+            return;
+        }
 
-       
-            float throttle = Input.GetAxisRaw("Vertical");
+        rb.isKinematic = false;
+
+
+        float throttle = Input.GetAxisRaw("Vertical");
         float steer = Input.GetAxisRaw("Horizontal");
 
         float wheelAngle = steer * 35f;

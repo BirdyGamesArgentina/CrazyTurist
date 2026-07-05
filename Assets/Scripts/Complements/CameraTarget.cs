@@ -34,8 +34,6 @@ public class CameraTarget : MonoBehaviour
         {
             transform.position = Vector3.Slerp(transform.position, target.position - offset, lerpAmount);
             transform.rotation = Quaternion.Slerp(Quaternion.Euler(67, 0, 0), Quaternion.identity, 0);
-
         }
-  
     }
 }
