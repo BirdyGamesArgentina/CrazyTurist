@@ -78,9 +78,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
+  - {fileID: 4131645543277358699}
   - {fileID: 2282196508126623359}
   - {fileID: 7466172927792038107}
-  - {fileID: 4131645543277358699}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -150,124 +150,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!1 &257640308468471807
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8611307522280344448}
-  - component: {fileID: 302562482049544111}
-  - component: {fileID: 829504736870978450}
-  - component: {fileID: 6864767722224746639}
-  m_Layer: 12
-  m_Name: GameObject (41)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8611307522280344448
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257640308468471807}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -83.399994, y: 0.08, z: 88.9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9011134727922823770}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &302562482049544111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257640308468471807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighbors:
-  - {fileID: 6895666596544282909}
-  - {fileID: 1396540130424086450}
-  detectionRadius: 21.8
-  floorsAndObstacles:
-    serializedVersion: 2
-    m_Bits: 2112
-  nodes:
-    serializedVersion: 2
-    m_Bits: 4096
-  nodeMask:
-    serializedVersion: 2
-    m_Bits: 6144
-  floorOffset: 0.08
-  maxSlope: 0.5
-  drawsphere: 1
-  sphereRadius: 0.99
-  drawDetection: 0
-  drawConnections: 1
-  costo: 9999.9
-  costoFinal: 9999.9
-  environmental: 0
-  isVisited: 0
-  isOpen: 0
---- !u!135 &829504736870978450
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257640308468471807}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &6864767722224746639
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 257640308468471807}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &361244355068518594
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,7 +198,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbors:
   - {fileID: 5181235619010182346}
-  - {fileID: 5177502857860254111}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -433,8 +314,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 6762191357919501596}
   - {fileID: 5209430230174466368}
+  - {fileID: 6762191357919501596}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -660,8 +541,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbors:
   - {fileID: 4845403514788621300}
-  - {fileID: 4679854100825203175}
   - {fileID: 7203720206981856056}
+  - {fileID: 4679854100825203175}
   - {fileID: 1633786089199623060}
   detectionRadius: 21.8
   floorsAndObstacles:
@@ -779,10 +660,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 6252755322129202681}
-  - {fileID: 2282196508126623359}
   - {fileID: 7962695477940906853}
+  - {fileID: 6252755322129202681}
   - {fileID: 1435325090009565342}
+  - {fileID: 2282196508126623359}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -960,124 +841,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770411518828884604}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &811088599560815091
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2575976761037825123}
-  - component: {fileID: 5193277718817834233}
-  - component: {fileID: 3197135178458847573}
-  - component: {fileID: 3129618185093503984}
-  m_Layer: 12
-  m_Name: GameObject (88)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2575976761037825123
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 811088599560815091}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 94.8, y: 0.08, z: 174.79}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9011134727922823770}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5193277718817834233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 811088599560815091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighbors:
-  - {fileID: 1364291109163340299}
-  - {fileID: 8283853316019902466}
-  detectionRadius: 21.8
-  floorsAndObstacles:
-    serializedVersion: 2
-    m_Bits: 2112
-  nodes:
-    serializedVersion: 2
-    m_Bits: 4096
-  nodeMask:
-    serializedVersion: 2
-    m_Bits: 6144
-  floorOffset: 0.08
-  maxSlope: 0.5
-  drawsphere: 1
-  sphereRadius: 0.99
-  drawDetection: 0
-  drawConnections: 1
-  costo: 9999.9
-  costoFinal: 9999.9
-  environmental: 0
-  isVisited: 0
-  isOpen: 0
---- !u!135 &3197135178458847573
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 811088599560815091}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &3129618185093503984
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 811088599560815091}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &825162381144167137
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,9 +889,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbors:
   - {fileID: 1827366858958526278}
-  - {fileID: 968615458631816213}
   - {fileID: 1201743029608848369}
   - {fileID: 1789411329760968018}
+  - {fileID: 968615458631816213}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -1363,8 +1126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 6867013689153827158}
   - {fileID: 309566652395138304}
+  - {fileID: 6867013689153827158}
   - {fileID: 7263483210092114308}
   detectionRadius: 21.8
   floorsAndObstacles:
@@ -1482,10 +1245,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
+  - {fileID: 394950578045131363}
+  - {fileID: 9155115651237674548}
   - {fileID: 2600723659342918052}
   - {fileID: 1633786089199623060}
-  - {fileID: 9155115651237674548}
-  - {fileID: 394950578045131363}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -1580,7 +1343,7 @@ Transform:
   m_GameObject: {fileID: 1243306638088888162}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -104.4, y: 0.416, z: 135.6}
+  m_LocalPosition: {x: -83.7, y: 0.416, z: 136.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1635,8 +1398,8 @@ MonoBehaviour:
   neighbors:
   - {fileID: 2425897856657727372}
   - {fileID: 257271198434628163}
-  - {fileID: 968615458631816213}
   - {fileID: 1789411329760968018}
+  - {fileID: 968615458631816213}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -1753,8 +1516,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 2509263211055495016}
   - {fileID: 6943851393046584993}
+  - {fileID: 2509263211055495016}
   - {fileID: 1427968277217890258}
   - {fileID: 6542769198369687207}
   detectionRadius: 21.8
@@ -1906,7 +1669,6 @@ MonoBehaviour:
   neighbors:
   - {fileID: 7398732019478645921}
   - {fileID: 3345835623524326453}
-  - {fileID: 6895666596544282909}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -2020,7 +1782,6 @@ Transform:
   - {fileID: 6938925256568787390}
   - {fileID: 3364222593217780680}
   - {fileID: 1137154946244264463}
-  - {fileID: 8611307522280344448}
   - {fileID: 8146156020481282411}
   - {fileID: 6290117051891275394}
   - {fileID: 6300340533682531126}
@@ -2034,7 +1795,6 @@ Transform:
   - {fileID: 7973044695211693995}
   - {fileID: 8757430777303460502}
   - {fileID: 4916486899265144085}
-  - {fileID: 5773999115814960457}
   - {fileID: 5713348371850318807}
   - {fileID: 4671972839563086495}
   - {fileID: 1116060038198793283}
@@ -2067,19 +1827,11 @@ Transform:
   - {fileID: 4718655475238773001}
   - {fileID: 3659183421389766437}
   - {fileID: 1011166015685393219}
-  - {fileID: 7812416369808528190}
-  - {fileID: 2575976761037825123}
-  - {fileID: 8987228447219929875}
-  - {fileID: 8400084122715628234}
-  - {fileID: 2870924461066309080}
-  - {fileID: 3095396187505931356}
   - {fileID: 589250728501880135}
   - {fileID: 7714496199274937400}
   - {fileID: 3742202516967226502}
   - {fileID: 8644991326456830600}
   - {fileID: 8159193766320049534}
-  - {fileID: 4306132085610210542}
-  - {fileID: 8490393672221914216}
   - {fileID: 4415076396988228298}
   - {fileID: 5079117658051324837}
   - {fileID: 5706671015173906237}
@@ -2120,7 +1872,6 @@ MonoBehaviour:
   - {fileID: 433581649764078785}
   - {fileID: 9155115651237674548}
   - {fileID: 2600723659342918052}
-  - {fileID: 302562482049544111}
   - {fileID: 1396540130424086450}
   - {fileID: 8885295526906343063}
   - {fileID: 394950578045131363}
@@ -2134,7 +1885,6 @@ MonoBehaviour:
   - {fileID: 5278040248642970359}
   - {fileID: 7398732019478645921}
   - {fileID: 2774336108206669755}
-  - {fileID: 6895666596544282909}
   - {fileID: 8042812159789106084}
   - {fileID: 4679854100825203175}
   - {fileID: 2300084881617067181}
@@ -2167,19 +1917,11 @@ MonoBehaviour:
   - {fileID: 2425897856657727372}
   - {fileID: 1872771434255537480}
   - {fileID: 4522008619180023407}
-  - {fileID: 5177502857860254111}
-  - {fileID: 5193277718817834233}
-  - {fileID: 4950139276372116163}
-  - {fileID: 690703416046579482}
-  - {fileID: 3383094033543429942}
-  - {fileID: 5899982420550646514}
   - {fileID: 556066388552903987}
   - {fileID: 4066472284055108906}
   - {fileID: 3036343780534188652}
   - {fileID: 3392782496206447867}
   - {fileID: 1427968277217890258}
-  - {fileID: 5888840510298714982}
-  - {fileID: 1364291109163340299}
   - {fileID: 8283853316019902466}
   - {fileID: 1919636362640979967}
   - {fileID: 5181235619010182346}
@@ -2240,8 +1982,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 8163571184317275450}
   - {fileID: 8041485284804809597}
+  - {fileID: 8163571184317275450}
   - {fileID: 4413220750490229349}
   detectionRadius: 21.8
   floorsAndObstacles:
@@ -2361,8 +2103,8 @@ MonoBehaviour:
   neighbors:
   - {fileID: 4679854100825203175}
   - {fileID: 3241104208219953937}
-  - {fileID: 8832590674462955980}
   - {fileID: 1633786089199623060}
+  - {fileID: 8832590674462955980}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -2432,123 +2174,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!1 &1859360750384920472
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4306132085610210542}
-  - component: {fileID: 5888840510298714982}
-  - component: {fileID: 5440457898484300840}
-  - component: {fileID: 6761039284903547511}
-  m_Layer: 12
-  m_Name: GameObject (112)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4306132085610210542
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1859360750384920472}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.6, y: 0.08, z: 176.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9011134727922823770}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5888840510298714982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1859360750384920472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighbors:
-  - {fileID: 1201743029608848369}
-  detectionRadius: 21.8
-  floorsAndObstacles:
-    serializedVersion: 2
-    m_Bits: 2112
-  nodes:
-    serializedVersion: 2
-    m_Bits: 4096
-  nodeMask:
-    serializedVersion: 2
-    m_Bits: 6144
-  floorOffset: 0.08
-  maxSlope: 0.5
-  drawsphere: 1
-  sphereRadius: 0.99
-  drawDetection: 0
-  drawConnections: 1
-  costo: 9999.9
-  costoFinal: 9999.9
-  environmental: 0
-  isVisited: 0
-  isOpen: 0
---- !u!135 &5440457898484300840
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1859360750384920472}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &6761039284903547511
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1859360750384920472}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &1905043891664119449
 GameObject:
   m_ObjectHideFlags: 0
@@ -2596,8 +2221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 5757986681987968320}
   - {fileID: 1598757613390502318}
+  - {fileID: 5757986681987968320}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -2811,7 +2436,7 @@ Transform:
   m_GameObject: {fileID: 1999478711589684646}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 115.2, y: 0.416, z: 155.1}
+  m_LocalPosition: {x: 94.26, y: 0.416, z: 155.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2866,8 +2491,8 @@ MonoBehaviour:
   neighbors:
   - {fileID: 1827366858958526278}
   - {fileID: 257271198434628163}
-  - {fileID: 7736491101690872956}
   - {fileID: 968615458631816213}
+  - {fileID: 7736491101690872956}
   - {fileID: 4522008619180023407}
   detectionRadius: 21.8
   floorsAndObstacles:
@@ -3060,10 +2685,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 1364291109163340299}
   - {fileID: 8283853316019902466}
-  - {fileID: 1827366858958526278}
   - {fileID: 8041485284804809597}
+  - {fileID: 1827366858958526278}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -3180,10 +2804,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 3111057485826338671}
   - {fileID: 6092551298543098407}
   - {fileID: 433581649764078785}
   - {fileID: 7962695477940906853}
+  - {fileID: 3111057485826338671}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -3253,127 +2877,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!1 &2859197350012921712
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5773999115814960457}
-  - component: {fileID: 6895666596544282909}
-  - component: {fileID: 4799643252786992308}
-  - component: {fileID: 1668205856952305651}
-  m_Layer: 12
-  m_Name: GameObject (106)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5773999115814960457
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2859197350012921712}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -82.94, y: 0.08, z: 97.85}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9011134727922823770}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6895666596544282909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2859197350012921712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighbors:
-  - {fileID: 5512660898079316966}
-  - {fileID: 2774336108206669755}
-  - {fileID: 1396540130424086450}
-  - {fileID: 5899982420550646514}
-  - {fileID: 302562482049544111}
-  detectionRadius: 21.8
-  floorsAndObstacles:
-    serializedVersion: 2
-    m_Bits: 2112
-  nodes:
-    serializedVersion: 2
-    m_Bits: 4096
-  nodeMask:
-    serializedVersion: 2
-    m_Bits: 6144
-  floorOffset: 0.08
-  maxSlope: 0.5
-  drawsphere: 1
-  sphereRadius: 0.99
-  drawDetection: 0
-  drawConnections: 1
-  costo: 9999.9
-  costoFinal: 9999.9
-  environmental: 0
-  isVisited: 0
-  isOpen: 0
---- !u!135 &4799643252786992308
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2859197350012921712}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &1668205856952305651
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2859197350012921712}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &2885623332156936379
 GameObject:
   m_ObjectHideFlags: 0
@@ -3421,10 +2924,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 3312463567985205994}
   - {fileID: 6117962951176635177}
-  - {fileID: 6762191357919501596}
+  - {fileID: 3312463567985205994}
   - {fileID: 6047766574770907257}
+  - {fileID: 6762191357919501596}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -3541,8 +3044,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 8163571184317275450}
   - {fileID: 6573288404368572612}
+  - {fileID: 8163571184317275450}
   - {fileID: 1376938317432421582}
   detectionRadius: 21.8
   floorsAndObstacles:
@@ -3660,11 +3163,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 1884602494207548912}
   - {fileID: 6867013689153827158}
   - {fileID: 7263483210092114308}
   - {fileID: 9155115651237674548}
   - {fileID: 3568038316410173568}
+  - {fileID: 1884602494207548912}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -3759,7 +3262,7 @@ Transform:
   m_GameObject: {fileID: 3099591042565261213}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -108.2, y: 0.416, z: 96.6}
+  m_LocalPosition: {x: -34.76, y: 0.416, z: 105.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3812,10 +3315,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 1884602494207548912}
-  - {fileID: 5209430230174466368}
   - {fileID: 3568038316410173568}
   - {fileID: 556066388552903987}
+  - {fileID: 1884602494207548912}
+  - {fileID: 5209430230174466368}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -3932,10 +3435,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 1884602494207548912}
-  - {fileID: 6867013689153827158}
   - {fileID: 708170732246957494}
+  - {fileID: 6867013689153827158}
   - {fileID: 6117962951176635177}
+  - {fileID: 1884602494207548912}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -4052,10 +3555,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 6252755322129202681}
   - {fileID: 433581649764078785}
   - {fileID: 6542769198369687207}
   - {fileID: 7962695477940906853}
+  - {fileID: 6252755322129202681}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -4244,123 +3747,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!1 &3440049742012236703
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8987228447219929875}
-  - component: {fileID: 4950139276372116163}
-  - component: {fileID: 5779823374370837346}
-  - component: {fileID: 2472935023335569246}
-  m_Layer: 12
-  m_Name: GameObject (94)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8987228447219929875
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3440049742012236703}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.4, y: 0.08, z: 176.4}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9011134727922823770}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4950139276372116163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3440049742012236703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighbors:
-  - {fileID: 2300084881617067181}
-  detectionRadius: 21.8
-  floorsAndObstacles:
-    serializedVersion: 2
-    m_Bits: 2112
-  nodes:
-    serializedVersion: 2
-    m_Bits: 4096
-  nodeMask:
-    serializedVersion: 2
-    m_Bits: 6144
-  floorOffset: 0.08
-  maxSlope: 0.5
-  drawsphere: 1
-  sphereRadius: 0.99
-  drawDetection: 0
-  drawConnections: 1
-  costo: 9999.9
-  costoFinal: 9999.9
-  environmental: 0
-  isVisited: 0
-  isOpen: 0
---- !u!135 &5779823374370837346
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3440049742012236703}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &2472935023335569246
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3440049742012236703}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &3536503150200093871
 GameObject:
   m_ObjectHideFlags: 0
@@ -4408,10 +3794,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 1884602494207548912}
   - {fileID: 6117962951176635177}
-  - {fileID: 6762191357919501596}
+  - {fileID: 1884602494207548912}
   - {fileID: 5209430230174466368}
+  - {fileID: 6762191357919501596}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -4512,124 +3898,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 657241095395334260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3564303894927451960
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8490393672221914216}
-  - component: {fileID: 1364291109163340299}
-  - component: {fileID: 8781539821794119959}
-  - component: {fileID: 2273046115774612822}
-  m_Layer: 12
-  m_Name: GameObject (111)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8490393672221914216
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3564303894927451960}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 73.7, y: 0.08, z: 174.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9011134727922823770}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1364291109163340299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3564303894927451960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighbors:
-  - {fileID: 5193277718817834233}
-  - {fileID: 2425897856657727372}
-  detectionRadius: 21.8
-  floorsAndObstacles:
-    serializedVersion: 2
-    m_Bits: 2112
-  nodes:
-    serializedVersion: 2
-    m_Bits: 4096
-  nodeMask:
-    serializedVersion: 2
-    m_Bits: 6144
-  floorOffset: 0.08
-  maxSlope: 0.5
-  drawsphere: 1
-  sphereRadius: 0.99
-  drawDetection: 0
-  drawConnections: 1
-  costo: 9999.9
-  costoFinal: 9999.9
-  environmental: 0
-  isVisited: 0
-  isOpen: 0
---- !u!135 &8781539821794119959
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3564303894927451960}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &2273046115774612822
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3564303894927451960}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &3566278594840177133
 GameObject:
   m_ObjectHideFlags: 0
@@ -4794,10 +4062,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 3111057485826338671}
   - {fileID: 6092551298543098407}
-  - {fileID: 9155115651237674548}
   - {fileID: 7449140566796363549}
+  - {fileID: 9155115651237674548}
+  - {fileID: 3111057485826338671}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -4945,8 +4213,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 4066472284055108906}
   - {fileID: 6943851393046584993}
+  - {fileID: 4066472284055108906}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -5041,7 +4309,7 @@ Transform:
   m_GameObject: {fileID: 4312629265124623346}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -83.6, y: 0.416, z: 88.4}
+  m_LocalPosition: {x: -64.28, y: 0.416, z: 89.17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5094,12 +4362,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 3111057485826338671}
-  - {fileID: 8382835146652915234}
   - {fileID: 7263483210092114308}
   - {fileID: 7449140566796363549}
   - {fileID: 394950578045131363}
+  - {fileID: 3111057485826338671}
   - {fileID: 3568038316410173568}
+  - {fileID: 8382835146652915234}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -5216,11 +4484,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 1919636362640979967}
-  - {fileID: 8163571184317275450}
-  - {fileID: 6573288404368572612}
   - {fileID: 8283853316019902466}
+  - {fileID: 1919636362640979967}
   - {fileID: 8041485284804809597}
+  - {fileID: 6573288404368572612}
+  - {fileID: 8163571184317275450}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -5337,10 +4605,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 3111057485826338671}
-  - {fileID: 2282196508126623359}
   - {fileID: 7962695477940906853}
+  - {fileID: 3111057485826338671}
   - {fileID: 4131645543277358699}
+  - {fileID: 2282196508126623359}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -5457,9 +4725,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 6867013689153827158}
-  - {fileID: 708170732246957494}
   - {fileID: 7883649458376772425}
+  - {fileID: 708170732246957494}
+  - {fileID: 6867013689153827158}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -5560,123 +4828,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 657241095395334260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4551935539472391888
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3095396187505931356}
-  - component: {fileID: 5899982420550646514}
-  - component: {fileID: 539466984196347834}
-  - component: {fileID: 9201864123654753348}
-  m_Layer: 12
-  m_Name: GameObject (115)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3095396187505931356
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4551935539472391888}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -104.2, y: 0.08, z: 97.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9011134727922823770}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5899982420550646514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4551935539472391888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighbors:
-  - {fileID: 6895666596544282909}
-  detectionRadius: 21.8
-  floorsAndObstacles:
-    serializedVersion: 2
-    m_Bits: 2112
-  nodes:
-    serializedVersion: 2
-    m_Bits: 4096
-  nodeMask:
-    serializedVersion: 2
-    m_Bits: 6144
-  floorOffset: 0.08
-  maxSlope: 0.5
-  drawsphere: 1
-  sphereRadius: 0.99
-  drawDetection: 0
-  drawConnections: 1
-  costo: 9999.9
-  costoFinal: 9999.9
-  environmental: 0
-  isVisited: 0
-  isOpen: 0
---- !u!135 &539466984196347834
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4551935539472391888}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &9201864123654753348
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4551935539472391888}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &4650095428208930981
 GameObject:
   m_ObjectHideFlags: 0
@@ -5724,8 +4875,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 8832590674462955980}
   - {fileID: 1633786089199623060}
+  - {fileID: 8832590674462955980}
   - {fileID: 5512660898079316966}
   - {fileID: 2774336108206669755}
   detectionRadius: 21.8
@@ -5844,10 +4995,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 2282196508126623359}
   - {fileID: 1435325090009565342}
-  - {fileID: 8806979069746987137}
+  - {fileID: 2282196508126623359}
   - {fileID: 7466172927792038107}
+  - {fileID: 8806979069746987137}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -5917,124 +5068,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!1 &4997798698475820419
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7812416369808528190}
-  - component: {fileID: 5177502857860254111}
-  - component: {fileID: 6643894123181185434}
-  - component: {fileID: 554723131636628647}
-  m_Layer: 12
-  m_Name: GameObject (89)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7812416369808528190
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4997798698475820419}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 114.8, y: 0.08, z: 156.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9011134727922823770}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5177502857860254111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4997798698475820419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighbors:
-  - {fileID: 1919636362640979967}
-  - {fileID: 8283853316019902466}
-  detectionRadius: 21.8
-  floorsAndObstacles:
-    serializedVersion: 2
-    m_Bits: 2112
-  nodes:
-    serializedVersion: 2
-    m_Bits: 4096
-  nodeMask:
-    serializedVersion: 2
-    m_Bits: 6144
-  floorOffset: 0.08
-  maxSlope: 0.5
-  drawsphere: 1
-  sphereRadius: 0.99
-  drawDetection: 0
-  drawConnections: 1
-  costo: 9999.9
-  costoFinal: 9999.9
-  environmental: 0
-  isVisited: 0
-  isOpen: 0
---- !u!135 &6643894123181185434
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4997798698475820419}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &554723131636628647
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4997798698475820419}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &5134229992492555370
 GameObject:
   m_ObjectHideFlags: 0
@@ -6082,10 +5115,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 5278040248642970359}
   - {fileID: 8832590674462955980}
+  - {fileID: 5278040248642970359}
   - {fileID: 2774336108206669755}
-  - {fileID: 3383094033543429942}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -6341,11 +5373,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 8956261598612604287}
   - {fileID: 2600723659342918052}
+  - {fileID: 8956261598612604287}
+  - {fileID: 556066388552903987}
   - {fileID: 5512660898079316966}
   - {fileID: 1396540130424086450}
-  - {fileID: 556066388552903987}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -6465,8 +5497,8 @@ MonoBehaviour:
   - {fileID: 309566652395138304}
   - {fileID: 1872771434255537480}
   - {fileID: 7263483210092114308}
-  - {fileID: 9155115651237674548}
   - {fileID: 394950578045131363}
+  - {fileID: 9155115651237674548}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -6583,10 +5615,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 968615458631816213}
-  - {fileID: 309566652395138304}
   - {fileID: 1789411329760968018}
+  - {fileID: 968615458631816213}
   - {fileID: 4413220750490229349}
+  - {fileID: 309566652395138304}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -6811,11 +5843,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
+  - {fileID: 8885295526906343063}
   - {fileID: 8956261598612604287}
   - {fileID: 5512660898079316966}
-  - {fileID: 6895666596544282909}
-  - {fileID: 8885295526906343063}
-  - {fileID: 302562482049544111}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -6932,8 +5962,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 7398732019478645921}
   - {fileID: 8042812159789106084}
+  - {fileID: 7398732019478645921}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -7003,123 +6033,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!1 &5956675015333614057
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8400084122715628234}
-  - component: {fileID: 690703416046579482}
-  - component: {fileID: 154725307277772836}
-  - component: {fileID: 5027255657227596799}
-  m_Layer: 12
-  m_Name: GameObject (113)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8400084122715628234
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5956675015333614057}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -62.500004, y: 0.08, z: 176.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9011134727922823770}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &690703416046579482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5956675015333614057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighbors:
-  - {fileID: 8042812159789106084}
-  detectionRadius: 21.8
-  floorsAndObstacles:
-    serializedVersion: 2
-    m_Bits: 2112
-  nodes:
-    serializedVersion: 2
-    m_Bits: 4096
-  nodeMask:
-    serializedVersion: 2
-    m_Bits: 6144
-  floorOffset: 0.08
-  maxSlope: 0.5
-  drawsphere: 1
-  sphereRadius: 0.99
-  drawDetection: 0
-  drawConnections: 1
-  costo: 9999.9
-  costoFinal: 9999.9
-  environmental: 0
-  isVisited: 0
-  isOpen: 0
---- !u!135 &154725307277772836
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5956675015333614057}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &5027255657227596799
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5956675015333614057}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &6012237315623375803
 GameObject:
   m_ObjectHideFlags: 0
@@ -7145,7 +6058,7 @@ Transform:
   m_GameObject: {fileID: 6012237315623375803}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -104.4, y: 0.416, z: 97.2}
+  m_LocalPosition: {x: -83.9, y: 0.416, z: 116.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7182,123 +6095,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 657241095395334260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &6024521994794830762
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2870924461066309080}
-  - component: {fileID: 3383094033543429942}
-  - component: {fileID: 4918235777918118076}
-  - component: {fileID: 7492146218710941772}
-  m_Layer: 12
-  m_Name: GameObject (114)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2870924461066309080
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6024521994794830762}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -104.09999, y: 0.08, z: 136.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9011134727922823770}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3383094033543429942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6024521994794830762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6ba2f79ae658c64bb3b87b4bd9dbef8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neighbors:
-  - {fileID: 7398732019478645921}
-  detectionRadius: 21.8
-  floorsAndObstacles:
-    serializedVersion: 2
-    m_Bits: 2112
-  nodes:
-    serializedVersion: 2
-    m_Bits: 4096
-  nodeMask:
-    serializedVersion: 2
-    m_Bits: 6144
-  floorOffset: 0.08
-  maxSlope: 0.5
-  drawsphere: 1
-  sphereRadius: 0.99
-  drawDetection: 0
-  drawConnections: 1
-  costo: 9999.9
-  costoFinal: 9999.9
-  environmental: 0
-  isVisited: 0
-  isOpen: 0
---- !u!135 &4918235777918118076
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6024521994794830762}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &7492146218710941772
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6024521994794830762}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
 --- !u!1 &6041157964641731544
 GameObject:
   m_ObjectHideFlags: 0
@@ -7346,11 +6142,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
+  - {fileID: 8041485284804809597}
   - {fileID: 1827366858958526278}
   - {fileID: 257271198434628163}
-  - {fileID: 8041485284804809597}
-  - {fileID: 7736491101690872956}
   - {fileID: 1789411329760968018}
+  - {fileID: 7736491101690872956}
   - {fileID: 4413220750490229349}
   detectionRadius: 21.8
   floorsAndObstacles:
@@ -7588,8 +6384,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbors:
   - {fileID: 7736491101690872956}
-  - {fileID: 6092551298543098407}
   - {fileID: 4522008619180023407}
+  - {fileID: 6092551298543098407}
   - {fileID: 7449140566796363549}
   detectionRadius: 21.8
   floorsAndObstacles:
@@ -7707,11 +6503,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 8956261598612604287}
+  - {fileID: 3568038316410173568}
   - {fileID: 2600723659342918052}
   - {fileID: 8885295526906343063}
+  - {fileID: 8956261598612604287}
   - {fileID: 4131645543277358699}
-  - {fileID: 3568038316410173568}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -7885,9 +6681,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 7398732019478645921}
   - {fileID: 7203720206981856056}
   - {fileID: 8042812159789106084}
+  - {fileID: 7398732019478645921}
   - {fileID: 3345835623524326453}
   detectionRadius: 21.8
   floorsAndObstacles:
@@ -7983,7 +6779,7 @@ Transform:
   m_GameObject: {fileID: 6745865038758957852}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.8, y: 0.416, z: 174.9}
+  m_LocalPosition: {x: -22, y: 0.416, z: 155.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8067,11 +6863,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
+  - {fileID: 8885295526906343063}
   - {fileID: 8956261598612604287}
   - {fileID: 3345835623524326453}
-  - {fileID: 6895666596544282909}
   - {fileID: 1396540130424086450}
-  - {fileID: 8885295526906343063}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -8188,10 +6983,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 5181235619010182346}
-  - {fileID: 5193277718817834233}
-  - {fileID: 5177502857860254111}
   - {fileID: 2425897856657727372}
+  - {fileID: 5181235619010182346}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -8309,8 +7102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbors:
   - {fileID: 2300084881617067181}
-  - {fileID: 3241104208219953937}
   - {fileID: 7203720206981856056}
+  - {fileID: 3241104208219953937}
   - {fileID: 8042812159789106084}
   detectionRadius: 21.8
   floorsAndObstacles:
@@ -8406,7 +7199,7 @@ Transform:
   m_GameObject: {fileID: 7154766852528959131}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.8, y: 0.416, z: 176.2}
+  m_LocalPosition: {x: 21.8, y: 0.416, z: 156.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8460,9 +7253,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbors:
   - {fileID: 5670871802633609716}
-  - {fileID: 4950139276372116163}
-  - {fileID: 4679854100825203175}
   - {fileID: 7433327460283950233}
+  - {fileID: 4679854100825203175}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -8580,8 +7372,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbors:
   - {fileID: 1872771434255537480}
-  - {fileID: 3241104208219953937}
   - {fileID: 7433327460283950233}
+  - {fileID: 3241104208219953937}
   - {fileID: 394950578045131363}
   detectionRadius: 21.8
   floorsAndObstacles:
@@ -8818,9 +7610,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 6252755322129202681}
   - {fileID: 1427968277217890258}
   - {fileID: 6542769198369687207}
+  - {fileID: 6252755322129202681}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -8938,9 +7730,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbors:
   - {fileID: 6290373655314422912}
+  - {fileID: 7883649458376772425}
   - {fileID: 708170732246957494}
   - {fileID: 1040165713496376016}
-  - {fileID: 7883649458376772425}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -9057,12 +7849,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 8956261598612604287}
+  - {fileID: 394950578045131363}
+  - {fileID: 3568038316410173568}
   - {fileID: 8382835146652915234}
   - {fileID: 1633786089199623060}
   - {fileID: 8885295526906343063}
-  - {fileID: 394950578045131363}
-  - {fileID: 3568038316410173568}
+  - {fileID: 8956261598612604287}
   - {fileID: 556066388552903987}
   detectionRadius: 21.8
   floorsAndObstacles:
@@ -9189,7 +7981,7 @@ Transform:
   m_GameObject: {fileID: 7496938675434231849}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 74.9, y: 0.416, z: 174.3}
+  m_LocalPosition: {x: 73.4, y: 0.416, z: 155.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9242,8 +8034,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 3036343780534188652}
   - {fileID: 3392782496206447867}
+  - {fileID: 3036343780534188652}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -9360,9 +8152,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 2509263211055495016}
   - {fileID: 1376938317432421582}
   - {fileID: 6943851393046584993}
+  - {fileID: 2509263211055495016}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -9576,7 +8368,7 @@ Transform:
   m_GameObject: {fileID: 7951836872302218213}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -62.2, y: 0.416, z: 176.2}
+  m_LocalPosition: {x: -63.5, y: 0.416, z: 156.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9629,9 +8421,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 309566652395138304}
   - {fileID: 1201743029608848369}
   - {fileID: 1789411329760968018}
+  - {fileID: 309566652395138304}
   - {fileID: 1872771434255537480}
   detectionRadius: 21.8
   floorsAndObstacles:
@@ -9988,9 +8780,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 7736491101690872956}
-  - {fileID: 968615458631816213}
   - {fileID: 4125769879599482567}
+  - {fileID: 968615458631816213}
+  - {fileID: 7736491101690872956}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -10107,10 +8899,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 3312463567985205994}
   - {fileID: 708170732246957494}
   - {fileID: 1040165713496376016}
   - {fileID: 6117962951176635177}
+  - {fileID: 3312463567985205994}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -10205,7 +8997,7 @@ Transform:
   m_GameObject: {fileID: 8467884809205251133}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 95.1, y: 0.416, z: 174}
+  m_LocalPosition: {x: 93.8, y: 0.416, z: 135.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10260,10 +9052,10 @@ MonoBehaviour:
   neighbors:
   - {fileID: 2600723659342918052}
   - {fileID: 1633786089199623060}
-  - {fileID: 5512660898079316966}
-  - {fileID: 1396540130424086450}
   - {fileID: 8885295526906343063}
   - {fileID: 556066388552903987}
+  - {fileID: 5512660898079316966}
+  - {fileID: 1396540130424086450}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -10380,10 +9172,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 690703416046579482}
-  - {fileID: 5278040248642970359}
   - {fileID: 4679854100825203175}
   - {fileID: 8832590674462955980}
+  - {fileID: 5278040248642970359}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -10617,11 +9408,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 3241104208219953937}
   - {fileID: 7203720206981856056}
-  - {fileID: 8956261598612604287}
-  - {fileID: 8382835146652915234}
+  - {fileID: 3241104208219953937}
   - {fileID: 2600723659342918052}
+  - {fileID: 8382835146652915234}
+  - {fileID: 8956261598612604287}
   - {fileID: 3345835623524326453}
   detectionRadius: 21.8
   floorsAndObstacles:
@@ -10857,10 +9648,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 5181235619010182346}
   - {fileID: 2425897856657727372}
-  - {fileID: 968615458631816213}
+  - {fileID: 5181235619010182346}
   - {fileID: 4125769879599482567}
+  - {fileID: 968615458631816213}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -11096,10 +9887,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbors:
   - {fileID: 4845403514788621300}
-  - {fileID: 8382835146652915234}
-  - {fileID: 2600723659342918052}
-  - {fileID: 9155115651237674548}
   - {fileID: 7449140566796363549}
+  - {fileID: 9155115651237674548}
+  - {fileID: 2600723659342918052}
+  - {fileID: 8382835146652915234}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -11216,11 +10007,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
+  - {fileID: 9155115651237674548}
   - {fileID: 3111057485826338671}
   - {fileID: 2600723659342918052}
-  - {fileID: 9155115651237674548}
-  - {fileID: 4131645543277358699}
   - {fileID: 556066388552903987}
+  - {fileID: 4131645543277358699}
   detectionRadius: 21.8
   floorsAndObstacles:
     serializedVersion: 2
@@ -11565,7 +10356,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 5888840510298714982}
   - {fileID: 257271198434628163}
   - {fileID: 4522008619180023407}
   - {fileID: 5670871802633609716}
