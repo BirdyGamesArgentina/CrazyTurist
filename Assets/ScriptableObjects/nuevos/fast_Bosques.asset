@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17beee49acfac4645b7e4c9c758cd450, type: 3}
-  m_Name: fast_est_BosquePalermo 3
+  m_Name: fast_Bosques
   m_EditorClassIdentifier: 
-  nameOfMonument: estatua San Martin
+  nameOfMonument: Bosque de Palermo
   informationText: 
-  image: {fileID: 21300000, guid: bd1c95aeed1177d46ba3915ee366564b, type: 3}
+  image: {fileID: 21300000, guid: b8cd23bb658207d468fe6a1470197d2f, type: 3}

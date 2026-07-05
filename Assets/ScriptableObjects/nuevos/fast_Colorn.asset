@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17beee49acfac4645b7e4c9c758cd450, type: 3}
-  m_Name: fast_est_BosquePalermo 4
+  m_Name: fast_Colorn
   m_EditorClassIdentifier: 
-  nameOfMonument: estatua San Martin
+  nameOfMonument: Teatro Colon
   informationText: 
-  image: {fileID: 21300000, guid: d645f01f4b35f8b4fbe7b069323ca920, type: 3}
+  image: {fileID: 21300000, guid: bd1c95aeed1177d46ba3915ee366564b, type: 3}

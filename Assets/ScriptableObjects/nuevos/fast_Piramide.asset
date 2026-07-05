@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 17beee49acfac4645b7e4c9c758cd450, type: 3}
-  m_Name: fast_Sillon_olmedoporcel
+  m_Name: fast_Piramide
   m_EditorClassIdentifier: 
-  nameOfMonument: Olmedo y Porcel
+  nameOfMonument: Piramide de mayo
   informationText: 
-  image: {fileID: 21300000, guid: 26b408df6b5b5e348b6ef9591b429181, type: 3}
+  image: {fileID: 21300000, guid: e3dc9d5f78d823b479824e7b29a89c67, type: 3}
