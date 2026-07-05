@@ -125,6 +125,7 @@ public class InterestPointProgressive : InterestPoint
         FLash.Instance.SnapShot();
         Debug.Log("Interest Point Visited: " + gameObject.name);
         PointOfInterestSystem.Instance.CompleteInterest();
+        InfoMonument.Instance.SetInfoBigMonument(myMonument.nameOfMonument, myMonument.informationText, myMonument.image);
         visited= true;
     }
 }
