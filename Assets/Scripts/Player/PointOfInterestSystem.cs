@@ -12,7 +12,7 @@ public class PointOfInterestSystem : MonoBehaviour
     float interest = 100;
     [SerializeField] int maxInterest = 100;
 
-    [Range(0f,1f)]
+    [Range(0f, 1f)]
     [SerializeField] float percentInterestToWin;
 
     public static float Interest { get { return Instance.interest; } }
@@ -22,7 +22,7 @@ public class PointOfInterestSystem : MonoBehaviour
     [SerializeField] Sensor sensor;
     [SerializeField] private Image img;
     [SerializeField] private float duration = 10f;
-   
+
 
     [SerializeField] float quantToRemove = 2f;
 
@@ -40,18 +40,18 @@ public class PointOfInterestSystem : MonoBehaviour
     [SerializeField] TextMeshProUGUI auxiliarModif;
     [SerializeField] Animator ticketsArrive_animator;
 
-    [SerializeField] CanvasGroup jumpbarFeedback;
+    [SerializeField] GameObject jumpbarFeedback;
 
     bool anim = false;
     bool interestLocked;
 
     public static bool WinByInterest
     {
-        get 
+        get
         {
             return Instance.interest / Instance.maxInterest > Instance.percentInterestToWin;
         }
-       
+
     }
 
     private void Awake()
@@ -75,7 +75,7 @@ public class PointOfInterestSystem : MonoBehaviour
     public void OnEnterInterestPoint(InterestPoint _ip)
     {
         _ip.Enter();
-        if(_ip != lastInterestPoint)
+        if (_ip != lastInterestPoint)
         {
             lastInterestPoint = _ip;
             _currentScore += (long)(Player.PeopleAmount * scoreMultiplier * (interest / maxInterest));
@@ -86,7 +86,7 @@ public class PointOfInterestSystem : MonoBehaviour
         _ip.Exit();
     }
 
-    
+
     public void BeginCountDown()
     {
         GameLoop.Instance.OnStartGame -= BeginCountDown;
@@ -99,30 +99,30 @@ public class PointOfInterestSystem : MonoBehaviour
     public void RefreshTickets(bool NO_Animate = false, int modif = 0)
     {
         ticketsArrive.text = Player.PeopleAmount.ToString();
-        if (!NO_Animate) 
+        if (!NO_Animate)
         {
             SoundFX.PlaySound("ticket");
 
             if (modif != 0)
             {
                 bool pos = modif > 0;
-                auxiliarModif.text = $"<color={(pos ? "green":"red")}>{(pos ? "+" : "-")}{modif}</color>";
+                auxiliarModif.text = $"<color={(pos ? "green" : "red")}>{(pos ? "+" : "-")}{modif}</color>";
             }
             else
             {
                 auxiliarModif.text = string.Empty;
             }
-            
-            ticketsArrive_animator.Play("TicketModify"); 
+
+            ticketsArrive_animator.Play("TicketModify");
         }
     }
 
     private void Update()
     {
         if (!anim) return;
-        if(!interestLocked) RemoveInterest(quantToRemove * Time.deltaTime);
+        if (!interestLocked) RemoveInterest(quantToRemove * Time.deltaTime);
 
-       
+
     }
 
     void Refresh()
@@ -146,7 +146,7 @@ public class PointOfInterestSystem : MonoBehaviour
         interest -= toRemove;
         Refresh();
 
-        if(interest <= 0)
+        if (interest <= 0)
         {
             GameLoop.Lose(_currentScore);
         }
@@ -154,10 +154,10 @@ public class PointOfInterestSystem : MonoBehaviour
 
     public void ShowJumpBar()
     {
-        jumpbarFeedback.alpha = 1;
+        jumpbarFeedback.SetActive(true);
     }
     public void HideJumpBar()
     {
-        jumpbarFeedback.alpha = 0;
+        jumpbarFeedback.SetActive(false);
     }
 }
